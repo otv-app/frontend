@@ -79,7 +79,6 @@ struct CustomTabsView: View {
         }
     }
     
-    
     func getTabSize() -> Float {
         if sizeClass == .compact {
             return 30
