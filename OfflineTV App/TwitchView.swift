@@ -11,7 +11,7 @@ import SwiftUI
 struct TwitchView: View {
     var body: some View {
         ZStack {
-            Color.purple.edgesIgnoringSafeArea(.top)
+            Color.purple.edgesIgnoringSafeArea(.all)
             Image("twitch")
         }
 

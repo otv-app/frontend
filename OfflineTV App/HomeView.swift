@@ -11,7 +11,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         ZStack {
-            Color.green.edgesIgnoringSafeArea(.top)
+            Color.green.edgesIgnoringSafeArea(.all)
             Image("home")
         }
     }

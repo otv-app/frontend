@@ -11,7 +11,7 @@ import SwiftUI
 struct TwitterView: View {
     var body: some View {
         ZStack {
-            Color.blue.edgesIgnoringSafeArea(.top)
+            Color.blue.edgesIgnoringSafeArea(.all)
             Image("twitter")
         }
     }
