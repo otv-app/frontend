@@ -1,0 +1,15 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "7988eea12473d06248ece11bdd21a57a"
+build_time: [1593707802, 209106000]
+inputs:
+  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/ViewRouter.swift": [1593706869, 211384997]
+  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/TwitchView.swift": [1593685864, 321605355]
+  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/AppDelegate.swift": [1593681094, 216582681]
+  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/SceneDelegate.swift": [1593707802, 142810746]
+  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/HomeView.swift": [1593685575, 265329676]
+  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/YoutubeView.swift": [1593685864, 307984563]
+  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/OTVView.swift": [1593707785, 192068887]
+  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/CustomTabBarView.swift": [1593707428, 199834370]
+  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/OTVViewModel.swift": [1593707708, 687037935]
+  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/MerchView.swift": [1593685864, 342737322]
+  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/TwitterView.swift": [1593685587, 543055964]

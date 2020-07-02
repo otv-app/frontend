@@ -1,0 +1,205 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ContentView"
+- "ContentView_Previews"
+provides-nominal:
+- "8OTVDraft11ContentViewV"
+- "8OTVDraft20ContentView_PreviewsV"
+provides-member:
+- ["8OTVDraft11ContentViewV", ""]
+- ["8OTVDraft20ContentView_PreviewsV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AnyView"
+- "AssignmentPrecedence"
+- "ContentView"
+- "ContentView_Previews"
+- !private "CustomTabBarView"
+- !private "HomeView"
+- !private "MerchView"
+- "ObservedObject"
+- "PreviewProvider"
+- !private "TabBarPage"
+- !private "TwitchView"
+- !private "TwitterView"
+- !private "VStack"
+- "View"
+- "ViewRouter"
+- !private "YoutubeView"
+depends-member:
+- !private ["7SwiftUI7AnyViewV", "init"]
+- ["8OTVDraft11ContentViewV", "$viewRouter"]
+- ["8OTVDraft11ContentViewV", "AnyView"]
+- ["8OTVDraft11ContentViewV", "Body"]
+- !private ["8OTVDraft11ContentViewV", "CustomTabBarView"]
+- !private ["8OTVDraft11ContentViewV", "HomeView"]
+- !private ["8OTVDraft11ContentViewV", "MerchView"]
+- ["8OTVDraft11ContentViewV", "ObservedObject"]
+- !private ["8OTVDraft11ContentViewV", "TabBarPage"]
+- !private ["8OTVDraft11ContentViewV", "TwitchView"]
+- !private ["8OTVDraft11ContentViewV", "TwitterView"]
+- !private ["8OTVDraft11ContentViewV", "VStack"]
+- ["8OTVDraft11ContentViewV", "View"]
+- ["8OTVDraft11ContentViewV", "ViewRouter"]
+- !private ["8OTVDraft11ContentViewV", "YoutubeView"]
+- ["8OTVDraft11ContentViewV", "_Default_Body"]
+- ["8OTVDraft11ContentViewV", "_makeView"]
+- ["8OTVDraft11ContentViewV", "_makeViewList"]
+- !private ["8OTVDraft11ContentViewV", "_viewRouter"]
+- ["8OTVDraft11ContentViewV", "body"]
+- ["8OTVDraft11ContentViewV", "deinit"]
+- ["8OTVDraft11ContentViewV", "getPageView"]
+- ["8OTVDraft11ContentViewV", "init"]
+- ["8OTVDraft11ContentViewV", "viewRouter"]
+- !private ["8OTVDraft20ContentView_PreviewsV", "ContentView"]
+- ["8OTVDraft20ContentView_PreviewsV", "Previews"]
+- ["8OTVDraft20ContentView_PreviewsV", "View"]
+- !private ["8OTVDraft20ContentView_PreviewsV", "ViewRouter"]
+- ["8OTVDraft20ContentView_PreviewsV", "_Default_Previews"]
+- ["8OTVDraft20ContentView_PreviewsV", "_platform"]
+- ["8OTVDraft20ContentView_PreviewsV", "_previews"]
+- ["8OTVDraft20ContentView_PreviewsV", "deinit"]
+- ["8OTVDraft20ContentView_PreviewsV", "init"]
+- ["8OTVDraft20ContentView_PreviewsV", "platform"]
+- ["8OTVDraft20ContentView_PreviewsV", "previews"]
+- !private ["8OTVDraft16CustomTabBarViewV", "deinit"]
+- !private ["8OTVDraft16CustomTabBarViewV", "init"]
+- ["7SwiftUI15DynamicPropertyP", "init"]
+- !private ["SQ", "bottom"]
+- ["SQ", "home"]
+- ["SQ", "merch"]
+- ["SQ", "twitch"]
+- ["SQ", "twitter"]
+- ["SQ", "youtube"]
+- !private ["s25ExpressibleByArrayLiteralP", "bottom"]
+- ["SH", "home"]
+- ["SH", "merch"]
+- ["SH", "twitch"]
+- ["SH", "twitter"]
+- ["SH", "youtube"]
+- !private ["8OTVDraft8HomeViewV", "deinit"]
+- !private ["8OTVDraft8HomeViewV", "init"]
+- !private ["8OTVDraft9MerchViewV", "deinit"]
+- !private ["8OTVDraft9MerchViewV", "init"]
+- !private ["7Combine16ObservableObjectP", "currentView"]
+- !private ["7Combine16ObservableObjectP", "init"]
+- ["7SwiftUI14ObservedObjectV", "init"]
+- !private ["s9OptionSetP", "bottom"]
+- !private ["7SwiftUI15PreviewProviderP", "ContentView"]
+- ["7SwiftUI15PreviewProviderP", "Previews"]
+- !private ["7SwiftUI15PreviewProviderP", "ViewRouter"]
+- ["7SwiftUI15PreviewProviderP", ""]
+- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI15PreviewProviderP", "_platform"]
+- ["7SwiftUI15PreviewProviderP", "_previews"]
+- ["7SwiftUI15PreviewProviderP", "platform"]
+- ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["SY", "bottom"]
+- !private ["7SwiftUI4EdgeO3SetV", "bottom"]
+- !private ["s10SetAlgebraP", "bottom"]
+- ["8OTVDraft10TabBarPageO", "home"]
+- ["8OTVDraft10TabBarPageO", "merch"]
+- ["8OTVDraft10TabBarPageO", "twitch"]
+- ["8OTVDraft10TabBarPageO", "twitter"]
+- ["8OTVDraft10TabBarPageO", "youtube"]
+- !private ["8OTVDraft10TwitchViewV", "deinit"]
+- !private ["8OTVDraft10TwitchViewV", "init"]
+- !private ["8OTVDraft11TwitterViewV", "deinit"]
+- !private ["8OTVDraft11TwitterViewV", "init"]
+- !private ["7SwiftUI6VStackV", "edgesIgnoringSafeArea"]
+- !private ["7SwiftUI6VStackV", "init"]
+- !private ["7SwiftUI4ViewP", "AnyView"]
+- ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "CustomTabBarView"]
+- !private ["7SwiftUI4ViewP", "HomeView"]
+- !private ["7SwiftUI4ViewP", "MerchView"]
+- ["7SwiftUI4ViewP", "ObservedObject"]
+- !private ["7SwiftUI4ViewP", "TwitchView"]
+- !private ["7SwiftUI4ViewP", "TwitterView"]
+- !private ["7SwiftUI4ViewP", "VStack"]
+- !private ["7SwiftUI4ViewP", "YoutubeView"]
+- ["7SwiftUI4ViewP", ""]
+- ["7SwiftUI4ViewP", "_Default_Body"]
+- ["7SwiftUI4ViewP", "_makeView"]
+- ["7SwiftUI4ViewP", "_makeViewList"]
+- ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "edgesIgnoringSafeArea"]
+- !private ["7SwiftUI4ViewP", "getPageView"]
+- !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "viewRouter"]
+- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["8OTVDraft10ViewRouterC", "currentView"]
+- ["8OTVDraft10ViewRouterC", "deinit"]
+- !private ["8OTVDraft10ViewRouterC", "init"]
+- !private ["8OTVDraft11YoutubeViewV", "deinit"]
+- !private ["8OTVDraft11YoutubeViewV", "init"]
+- !private ["7SwiftUI16_PreviewProviderP", "ContentView"]
+- ["7SwiftUI16_PreviewProviderP", "Previews"]
+- !private ["7SwiftUI16_PreviewProviderP", "ViewRouter"]
+- ["7SwiftUI16_PreviewProviderP", ""]
+- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI16_PreviewProviderP", "_platform"]
+- ["7SwiftUI16_PreviewProviderP", "_previews"]
+- ["7SwiftUI16_PreviewProviderP", "platform"]
+- ["7SwiftUI16_PreviewProviderP", "previews"]
+depends-nominal:
+- !private "7SwiftUI7AnyViewV"
+- "8OTVDraft11ContentViewV"
+- "8OTVDraft20ContentView_PreviewsV"
+- !private "8OTVDraft16CustomTabBarViewV"
+- "7SwiftUI15DynamicPropertyP"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- "SH"
+- !private "8OTVDraft8HomeViewV"
+- !private "8OTVDraft9MerchViewV"
+- !private "7Combine16ObservableObjectP"
+- "7SwiftUI14ObservedObjectV"
+- !private "s9OptionSetP"
+- "7SwiftUI15PreviewProviderP"
+- !private "SY"
+- !private "7SwiftUI4EdgeO3SetV"
+- !private "s10SetAlgebraP"
+- "8OTVDraft10TabBarPageO"
+- !private "8OTVDraft10TwitchViewV"
+- !private "8OTVDraft11TwitterViewV"
+- !private "7SwiftUI6VStackV"
+- "7SwiftUI4ViewP"
+- !private "7SwiftUI11ViewBuilderV"
+- "8OTVDraft10ViewRouterC"
+- !private "8OTVDraft11YoutubeViewV"
+- "7SwiftUI16_PreviewProviderP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "8cbf078d9b20d03d64cbcec6d6713bd2"
