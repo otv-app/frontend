@@ -1,31 +1,11 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "OTVViewModel"
 provides-nominal:
-- "8OTVDraft12OTVViewModelC"
 provides-member:
-- ["8OTVDraft12OTVViewModelC", ""]
 provides-dynamic-lookup:
-- "model"
 depends-top-level:
-- "OTVViewModel"
-- "ObservableObject"
-- "Published"
 depends-member:
-- ["8OTVDraft12OTVViewModelC", "ObjectWillChangePublisher"]
-- ["8OTVDraft12OTVViewModelC", "Published"]
-- ["8OTVDraft12OTVViewModelC", "_Default_ObjectWillChangePublisher"]
-- ["8OTVDraft12OTVViewModelC", "deinit"]
-- ["8OTVDraft12OTVViewModelC", "init"]
-- ["8OTVDraft12OTVViewModelC", "objectWillChange"]
-- ["7Combine16ObservableObjectP", "ObjectWillChangePublisher"]
-- ["7Combine16ObservableObjectP", "Published"]
-- ["7Combine16ObservableObjectP", ""]
-- ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
-- ["7Combine16ObservableObjectP", "objectWillChange"]
 depends-nominal:
-- "8OTVDraft12OTVViewModelC"
-- "7Combine16ObservableObjectP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -59,4 +39,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "431510ea49e04716d887fd6ea695eae4"
+interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"

@@ -24,6 +24,7 @@
 		B24457E024ADEE2700D8443A /* MerchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24457DF24ADEE2700D8443A /* MerchView.swift */; };
 		B24457E224AE443D00D8443A /* OTVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24457E124AE443D00D8443A /* OTVViewModel.swift */; };
 		B24457E424AE45C500D8443A /* OTVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24457E324AE45C500D8443A /* OTVModel.swift */; };
+		B24457E624AE5C0D00D8443A /* ImageModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24457E524AE5C0D00D8443A /* ImageModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		B24457DF24ADEE2700D8443A /* MerchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchView.swift; sourceTree = SOURCE_ROOT; };
 		B24457E124AE443D00D8443A /* OTVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTVViewModel.swift; sourceTree = "<group>"; };
 		B24457E324AE45C500D8443A /* OTVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTVModel.swift; sourceTree = "<group>"; };
+		B24457E524AE5C0D00D8443A /* ImageModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				B24457D524ADEDB800D8443A /* HomeView.swift */,
 				B24457D724ADEDC600D8443A /* TwitterView.swift */,
 				B24457D124ADDCF100D8443A /* CustomTabBarView.swift */,
+				B24457E524AE5C0D00D8443A /* ImageModifiers.swift */,
 				B24457D324ADE4EC00D8443A /* ViewRouter.swift */,
 				B24457A724ADDC4F00D8443A /* Assets.xcassets */,
 				B24457AC24ADDC4F00D8443A /* LaunchScreen.storyboard */,
@@ -302,6 +305,7 @@
 				B24457D624ADEDB800D8443A /* HomeView.swift in Sources */,
 				B24457DC24ADEE0D00D8443A /* YoutubeView.swift in Sources */,
 				B24457A624ADDC4600D8443A /* OTVView.swift in Sources */,
+				B24457E624AE5C0D00D8443A /* ImageModifiers.swift in Sources */,
 				B24457D224ADDCF100D8443A /* CustomTabBarView.swift in Sources */,
 				B24457E224AE443D00D8443A /* OTVViewModel.swift in Sources */,
 				B24457E024ADEE2700D8443A /* MerchView.swift in Sources */,

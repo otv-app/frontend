@@ -1,12 +1,12 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "ContentView"
+- "OTVView"
 - "ContentView_Previews"
 provides-nominal:
-- "8OTVDraft11ContentViewV"
+- "8OTVDraft7OTVViewV"
 - "8OTVDraft20ContentView_PreviewsV"
 provides-member:
-- ["8OTVDraft11ContentViewV", ""]
+- ["8OTVDraft7OTVViewV", ""]
 - ["8OTVDraft20ContentView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
@@ -14,7 +14,6 @@ depends-top-level:
 - "AnyView"
 - "AssignmentPrecedence"
 - !private "Color"
-- "ContentView"
 - "ContentView_Previews"
 - !private "CustomTabBarView"
 - "FloatLiteralType"
@@ -22,6 +21,7 @@ depends-top-level:
 - !private "HomeView"
 - !private "IntegerLiteralType"
 - !private "MerchView"
+- "OTVView"
 - "ObservedObject"
 - "PreviewProvider"
 - !private "Spacer"
@@ -40,33 +40,7 @@ depends-member:
 - !private ["So6CGSizeV", "width"]
 - !private ["7SwiftUI5ColorV", "black"]
 - !private ["7SwiftUI5ColorV", "shadow"]
-- ["8OTVDraft11ContentViewV", "$viewRouter"]
-- ["8OTVDraft11ContentViewV", "AnyView"]
-- ["8OTVDraft11ContentViewV", "Body"]
-- !private ["8OTVDraft11ContentViewV", "Color"]
-- !private ["8OTVDraft11ContentViewV", "CustomTabBarView"]
-- !private ["8OTVDraft11ContentViewV", "GeometryReader"]
-- !private ["8OTVDraft11ContentViewV", "HomeView"]
-- !private ["8OTVDraft11ContentViewV", "MerchView"]
-- ["8OTVDraft11ContentViewV", "ObservedObject"]
-- !private ["8OTVDraft11ContentViewV", "Spacer"]
-- !private ["8OTVDraft11ContentViewV", "TabBarPage"]
-- !private ["8OTVDraft11ContentViewV", "TwitchView"]
-- !private ["8OTVDraft11ContentViewV", "TwitterView"]
-- !private ["8OTVDraft11ContentViewV", "VStack"]
-- ["8OTVDraft11ContentViewV", "View"]
-- ["8OTVDraft11ContentViewV", "ViewRouter"]
-- !private ["8OTVDraft11ContentViewV", "YoutubeView"]
-- ["8OTVDraft11ContentViewV", "_Default_Body"]
-- ["8OTVDraft11ContentViewV", "_makeView"]
-- ["8OTVDraft11ContentViewV", "_makeViewList"]
-- !private ["8OTVDraft11ContentViewV", "_viewRouter"]
-- ["8OTVDraft11ContentViewV", "body"]
-- ["8OTVDraft11ContentViewV", "deinit"]
-- ["8OTVDraft11ContentViewV", "getPageView"]
-- ["8OTVDraft11ContentViewV", "init"]
-- ["8OTVDraft11ContentViewV", "viewRouter"]
-- !private ["8OTVDraft20ContentView_PreviewsV", "ContentView"]
+- !private ["8OTVDraft20ContentView_PreviewsV", "OTVView"]
 - ["8OTVDraft20ContentView_PreviewsV", "Previews"]
 - ["8OTVDraft20ContentView_PreviewsV", "View"]
 - !private ["8OTVDraft20ContentView_PreviewsV", "ViewRouter"]
@@ -115,11 +89,37 @@ depends-member:
 - !private ["8OTVDraft8HomeViewV", "init"]
 - !private ["8OTVDraft9MerchViewV", "deinit"]
 - !private ["8OTVDraft9MerchViewV", "init"]
+- ["8OTVDraft7OTVViewV", "$viewRouter"]
+- ["8OTVDraft7OTVViewV", "AnyView"]
+- ["8OTVDraft7OTVViewV", "Body"]
+- !private ["8OTVDraft7OTVViewV", "Color"]
+- !private ["8OTVDraft7OTVViewV", "CustomTabBarView"]
+- !private ["8OTVDraft7OTVViewV", "GeometryReader"]
+- !private ["8OTVDraft7OTVViewV", "HomeView"]
+- !private ["8OTVDraft7OTVViewV", "MerchView"]
+- ["8OTVDraft7OTVViewV", "ObservedObject"]
+- !private ["8OTVDraft7OTVViewV", "Spacer"]
+- !private ["8OTVDraft7OTVViewV", "TabBarPage"]
+- !private ["8OTVDraft7OTVViewV", "TwitchView"]
+- !private ["8OTVDraft7OTVViewV", "TwitterView"]
+- !private ["8OTVDraft7OTVViewV", "VStack"]
+- ["8OTVDraft7OTVViewV", "View"]
+- ["8OTVDraft7OTVViewV", "ViewRouter"]
+- !private ["8OTVDraft7OTVViewV", "YoutubeView"]
+- ["8OTVDraft7OTVViewV", "_Default_Body"]
+- ["8OTVDraft7OTVViewV", "_makeView"]
+- ["8OTVDraft7OTVViewV", "_makeViewList"]
+- !private ["8OTVDraft7OTVViewV", "_viewRouter"]
+- ["8OTVDraft7OTVViewV", "body"]
+- ["8OTVDraft7OTVViewV", "deinit"]
+- ["8OTVDraft7OTVViewV", "getPageView"]
+- ["8OTVDraft7OTVViewV", "init"]
+- ["8OTVDraft7OTVViewV", "viewRouter"]
 - !private ["7Combine16ObservableObjectP", "currentView"]
 - !private ["7Combine16ObservableObjectP", "init"]
 - ["7SwiftUI14ObservedObjectV", "init"]
 - !private ["s9OptionSetP", "bottom"]
-- !private ["7SwiftUI15PreviewProviderP", "ContentView"]
+- !private ["7SwiftUI15PreviewProviderP", "OTVView"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - !private ["7SwiftUI15PreviewProviderP", "ViewRouter"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -181,7 +181,7 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
-- !private ["7SwiftUI16_PreviewProviderP", "ContentView"]
+- !private ["7SwiftUI16_PreviewProviderP", "OTVView"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "ViewRouter"]
 - ["7SwiftUI16_PreviewProviderP", ""]
@@ -195,7 +195,6 @@ depends-nominal:
 - !private "7SwiftUI7AnyViewV"
 - !private "So6CGSizeV"
 - !private "7SwiftUI5ColorV"
-- "8OTVDraft11ContentViewV"
 - "8OTVDraft20ContentView_PreviewsV"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -211,6 +210,7 @@ depends-nominal:
 - "SH"
 - !private "8OTVDraft8HomeViewV"
 - !private "8OTVDraft9MerchViewV"
+- "8OTVDraft7OTVViewV"
 - !private "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
 - !private "s9OptionSetP"
@@ -264,4 +264,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8cbf078d9b20d03d64cbcec6d6713bd2"
+interface-hash: "8108f073f76575993da7d51fc64b8f7b"

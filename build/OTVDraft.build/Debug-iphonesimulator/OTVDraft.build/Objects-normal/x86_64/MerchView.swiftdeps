@@ -1,25 +1,195 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "MerchView"
+- "MerchRowView"
+- "MerchItemView"
+- "Merch"
+- "StreamerMerch"
 - "MerchView_Previews"
 provides-nominal:
 - "8OTVDraft9MerchViewV"
+- "8OTVDraft12MerchRowViewV"
+- "8OTVDraft13MerchItemViewV"
+- "8OTVDraft5MerchV"
+- "8OTVDraft13StreamerMerchV"
 - "8OTVDraft18MerchView_PreviewsV"
 provides-member:
 - ["8OTVDraft9MerchViewV", ""]
+- ["8OTVDraft12MerchRowViewV", ""]
+- ["8OTVDraft13MerchItemViewV", ""]
+- ["8OTVDraft5MerchV", ""]
+- ["8OTVDraft13StreamerMerchV", ""]
 - ["8OTVDraft18MerchView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "+"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "Button"
+- "CGFloat"
+- !private "CastingPrecedence"
+- "Double"
+- "FloatLiteralType"
+- !private "ForEach"
+- !private "HStack"
+- "Identifiable"
+- !private "Image"
+- "Int"
+- "IntegerLiteralType"
+- !private "List"
+- "Merch"
+- "MerchItemView"
+- "MerchRowView"
 - "MerchView"
 - "MerchView_Previews"
+- !private "NSURL"
+- !private "NavigationView"
+- !private "PlainButtonStyle"
 - "PreviewProvider"
-- !private "StringLiteralType"
+- !private "ScrollView"
+- !private "StackNavigationViewStyle"
+- "StreamerMerch"
+- "String"
+- "StringLiteralType"
 - !private "Text"
+- !private "UIApplication"
+- !private "UITableView"
+- !private "URL"
+- !private "UnicodeScalarType"
+- !private "VStack"
 - "View"
 depends-member:
+- !private ["SK", "init"]
+- !private ["7SwiftUI6ButtonV", "buttonStyle"]
+- !private ["7SwiftUI6ButtonV", "init"]
+- !private ["So15CALayerDelegateP", "appearance"]
+- !private ["So15CALayerDelegateP", "separatorStyle"]
+- !private ["So15CALayerDelegateP", "showsVerticalScrollIndicator"]
+- !private ["s7CVarArgP", "appearance"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "open"]
+- !private ["s7CVarArgP", "separatorStyle"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "showsVerticalScrollIndicator"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "appearance"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "open"]
+- !private ["s28CustomDebugStringConvertibleP", "separatorStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "showsVerticalScrollIndicator"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "appearance"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "open"]
+- !private ["s23CustomStringConvertibleP", "separatorStyle"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "showsVerticalScrollIndicator"]
+- !private ["Se", "init"]
+- !private ["7SwiftUI18DynamicViewContentP", "init"]
+- !private ["SE", "init"]
+- !private ["SQ", "appearance"]
+- !private ["SQ", "horizontal"]
 - !private ["SQ", "init"]
+- !private ["SQ", "leading"]
+- !private ["SQ", "none"]
+- !private ["SQ", "open"]
+- !private ["SQ", "resizable"]
+- !private ["SQ", "scaledToFit"]
+- !private ["SQ", "separatorStyle"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "showsVerticalScrollIndicator"]
+- !private ["s25ExpressibleByArrayLiteralP", "horizontal"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["7SwiftUI7ForEachV", "init"]
+- !private ["7SwiftUI6HStackV", "init"]
+- !private ["SH", "appearance"]
+- !private ["SH", "init"]
+- !private ["SH", "none"]
+- !private ["SH", "open"]
+- !private ["SH", "separatorStyle"]
+- !private ["SH", "shared"]
+- !private ["SH", "showsVerticalScrollIndicator"]
+- !private ["7SwiftUI19HorizontalAlignmentV", "leading"]
+- ["s12IdentifiableP", "ID"]
+- ["s12IdentifiableP", ""]
+- ["s12IdentifiableP", "_Default_ID"]
+- ["s12IdentifiableP", "id"]
+- !private ["s12IdentifiableP", "image"]
+- ["s12IdentifiableP", "init"]
+- !private ["s12IdentifiableP", "link"]
+- !private ["s12IdentifiableP", "merches"]
+- !private ["s12IdentifiableP", "price"]
+- !private ["s12IdentifiableP", "streamer"]
+- !private ["7SwiftUI5ImageV", "init"]
+- !private ["7SwiftUI5ImageV", "resizable"]
+- !private ["7SwiftUI5ImageV", "scaledToFit"]
+- !private ["7SwiftUI4ListV", "init"]
+- !private ["7SwiftUI4ListV", "navigationBarTitle"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- ["8OTVDraft5MerchV", "Double"]
+- ["8OTVDraft5MerchV", "ID"]
+- ["8OTVDraft5MerchV", "Int"]
+- ["8OTVDraft5MerchV", "String"]
+- ["8OTVDraft5MerchV", "_Default_ID"]
+- ["8OTVDraft5MerchV", "deinit"]
+- ["8OTVDraft5MerchV", "id"]
+- ["8OTVDraft5MerchV", "image"]
+- ["8OTVDraft5MerchV", "init"]
+- ["8OTVDraft5MerchV", "link"]
+- ["8OTVDraft5MerchV", "price"]
+- ["8OTVDraft13MerchItemViewV", "Body"]
+- !private ["8OTVDraft13MerchItemViewV", "Button"]
+- ["8OTVDraft13MerchItemViewV", "CGFloat"]
+- !private ["8OTVDraft13MerchItemViewV", "Image"]
+- ["8OTVDraft13MerchItemViewV", "Merch"]
+- !private ["8OTVDraft13MerchItemViewV", "NSURL"]
+- !private ["8OTVDraft13MerchItemViewV", "PlainButtonStyle"]
+- !private ["8OTVDraft13MerchItemViewV", "String"]
+- !private ["8OTVDraft13MerchItemViewV", "Text"]
+- !private ["8OTVDraft13MerchItemViewV", "UIApplication"]
+- !private ["8OTVDraft13MerchItemViewV", "URL"]
+- !private ["8OTVDraft13MerchItemViewV", "VStack"]
+- ["8OTVDraft13MerchItemViewV", "View"]
+- ["8OTVDraft13MerchItemViewV", "_Default_Body"]
+- ["8OTVDraft13MerchItemViewV", "_makeView"]
+- ["8OTVDraft13MerchItemViewV", "_makeViewList"]
+- ["8OTVDraft13MerchItemViewV", "body"]
+- ["8OTVDraft13MerchItemViewV", "cornerRadius"]
+- ["8OTVDraft13MerchItemViewV", "deinit"]
+- ["8OTVDraft13MerchItemViewV", "init"]
+- ["8OTVDraft13MerchItemViewV", "merch"]
+- !private ["8OTVDraft13MerchItemViewV", "padding"]
+- ["8OTVDraft13MerchItemViewV", "shadowRadius"]
+- ["8OTVDraft12MerchRowViewV", "Body"]
+- !private ["8OTVDraft12MerchRowViewV", "ForEach"]
+- !private ["8OTVDraft12MerchRowViewV", "HStack"]
+- !private ["8OTVDraft12MerchRowViewV", "MerchItemView"]
+- !private ["8OTVDraft12MerchRowViewV", "ScrollView"]
+- ["8OTVDraft12MerchRowViewV", "StreamerMerch"]
+- !private ["8OTVDraft12MerchRowViewV", "Text"]
+- !private ["8OTVDraft12MerchRowViewV", "VStack"]
+- ["8OTVDraft12MerchRowViewV", "View"]
+- ["8OTVDraft12MerchRowViewV", "_Default_Body"]
+- ["8OTVDraft12MerchRowViewV", "_makeView"]
+- ["8OTVDraft12MerchRowViewV", "_makeViewList"]
+- ["8OTVDraft12MerchRowViewV", "body"]
+- ["8OTVDraft12MerchRowViewV", "deinit"]
+- ["8OTVDraft12MerchRowViewV", "init"]
+- ["8OTVDraft12MerchRowViewV", "streamerAndMerch"]
 - ["8OTVDraft9MerchViewV", "Body"]
+- !private ["8OTVDraft9MerchViewV", "ForEach"]
+- !private ["8OTVDraft9MerchViewV", "List"]
+- !private ["8OTVDraft9MerchViewV", "MerchRowView"]
+- !private ["8OTVDraft9MerchViewV", "NavigationView"]
+- !private ["8OTVDraft9MerchViewV", "StackNavigationViewStyle"]
+- ["8OTVDraft9MerchViewV", "StreamerMerch"]
 - !private ["8OTVDraft9MerchViewV", "Text"]
+- !private ["8OTVDraft9MerchViewV", "UITableView"]
 - ["8OTVDraft9MerchViewV", "View"]
 - ["8OTVDraft9MerchViewV", "_Default_Body"]
 - ["8OTVDraft9MerchViewV", "_makeView"]
@@ -27,6 +197,7 @@ depends-member:
 - ["8OTVDraft9MerchViewV", "body"]
 - ["8OTVDraft9MerchViewV", "deinit"]
 - ["8OTVDraft9MerchViewV", "init"]
+- ["8OTVDraft9MerchViewV", "streamerMerchInfo"]
 - !private ["8OTVDraft18MerchView_PreviewsV", "MerchView"]
 - ["8OTVDraft18MerchView_PreviewsV", "Previews"]
 - ["8OTVDraft18MerchView_PreviewsV", "View"]
@@ -37,6 +208,25 @@ depends-member:
 - ["8OTVDraft18MerchView_PreviewsV", "init"]
 - ["8OTVDraft18MerchView_PreviewsV", "platform"]
 - ["8OTVDraft18MerchView_PreviewsV", "previews"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "appearance"]
+- !private ["So8NSCodingP", "separatorStyle"]
+- !private ["So8NSCodingP", "showsVerticalScrollIndicator"]
+- !private ["So8NSObjectC", "appearance"]
+- !private ["So8NSObjectC", "open"]
+- !private ["So8NSObjectC", "separatorStyle"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "showsVerticalScrollIndicator"]
+- !private ["So8NSObjectP", "appearance"]
+- !private ["So8NSObjectP", "open"]
+- !private ["So8NSObjectP", "separatorStyle"]
+- !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "showsVerticalScrollIndicator"]
+- !private ["7SwiftUI14NavigationViewV", "init"]
+- !private ["7SwiftUI14NavigationViewV", "navigationViewStyle"]
+- !private ["7SwiftUI19NavigationViewStyleP", "init"]
+- !private ["s9OptionSetP", "horizontal"]
+- !private ["7SwiftUI16PlainButtonStyleV", "init"]
 - !private ["7SwiftUI15PreviewProviderP", "MerchView"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -45,15 +235,161 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["7SwiftUI20PrimitiveButtonStyleP", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "horizontal"]
+- !private ["SY", "none"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["7SwiftUI10ScrollViewV", "init"]
+- !private ["So29UITableViewCellSeparatorStyleV", "none"]
+- !private ["ST", "init"]
+- !private ["7SwiftUI4AxisO3SetV", "horizontal"]
+- !private ["s10SetAlgebraP", "horizontal"]
+- !private ["7SwiftUI24StackNavigationViewStyleV", "init"]
+- ["8OTVDraft13StreamerMerchV", "ID"]
+- ["8OTVDraft13StreamerMerchV", "Int"]
+- ["8OTVDraft13StreamerMerchV", "Merch"]
+- ["8OTVDraft13StreamerMerchV", "String"]
+- ["8OTVDraft13StreamerMerchV", "_Default_ID"]
+- ["8OTVDraft13StreamerMerchV", "deinit"]
+- ["8OTVDraft13StreamerMerchV", "id"]
+- ["8OTVDraft13StreamerMerchV", "init"]
+- ["8OTVDraft13StreamerMerchV", "merches"]
+- ["8OTVDraft13StreamerMerchV", "streamer"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
 - !private ["7SwiftUI4TextV", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "appearance"]
+- !private ["So29UIAccessibilityIdentificationP", "separatorStyle"]
+- !private ["So29UIAccessibilityIdentificationP", "showsVerticalScrollIndicator"]
+- !private ["So12UIAppearanceP", "appearance"]
+- !private ["So12UIAppearanceP", "separatorStyle"]
+- !private ["So12UIAppearanceP", "showsVerticalScrollIndicator"]
+- !private ["So21UIAppearanceContainerP", "appearance"]
+- !private ["So21UIAppearanceContainerP", "separatorStyle"]
+- !private ["So21UIAppearanceContainerP", "showsVerticalScrollIndicator"]
+- !private ["So13UIApplicationC", "open"]
+- !private ["So13UIApplicationC", "shared"]
+- !private ["So17UICoordinateSpaceP", "appearance"]
+- !private ["So17UICoordinateSpaceP", "separatorStyle"]
+- !private ["So17UICoordinateSpaceP", "showsVerticalScrollIndicator"]
+- !private ["So23UIDataSourceTranslatingP", "appearance"]
+- !private ["So23UIDataSourceTranslatingP", "separatorStyle"]
+- !private ["So23UIDataSourceTranslatingP", "showsVerticalScrollIndicator"]
+- !private ["So13UIDynamicItemP", "appearance"]
+- !private ["So13UIDynamicItemP", "separatorStyle"]
+- !private ["So13UIDynamicItemP", "showsVerticalScrollIndicator"]
+- !private ["So18UIFocusEnvironmentP", "appearance"]
+- !private ["So18UIFocusEnvironmentP", "separatorStyle"]
+- !private ["So18UIFocusEnvironmentP", "showsVerticalScrollIndicator"]
+- !private ["So11UIFocusItemP", "appearance"]
+- !private ["So11UIFocusItemP", "separatorStyle"]
+- !private ["So11UIFocusItemP", "showsVerticalScrollIndicator"]
+- !private ["So20UIFocusItemContainerP", "appearance"]
+- !private ["So20UIFocusItemContainerP", "separatorStyle"]
+- !private ["So20UIFocusItemContainerP", "showsVerticalScrollIndicator"]
+- !private ["So30UIFocusItemScrollableContainerP", "appearance"]
+- !private ["So30UIFocusItemScrollableContainerP", "separatorStyle"]
+- !private ["So30UIFocusItemScrollableContainerP", "showsVerticalScrollIndicator"]
+- !private ["So24UILargeContentViewerItemP", "appearance"]
+- !private ["So24UILargeContentViewerItemP", "separatorStyle"]
+- !private ["So24UILargeContentViewerItemP", "showsVerticalScrollIndicator"]
+- !private ["So30UIPasteConfigurationSupportingP", "appearance"]
+- !private ["So30UIPasteConfigurationSupportingP", "open"]
+- !private ["So30UIPasteConfigurationSupportingP", "separatorStyle"]
+- !private ["So30UIPasteConfigurationSupportingP", "shared"]
+- !private ["So30UIPasteConfigurationSupportingP", "showsVerticalScrollIndicator"]
+- !private ["So11UIResponderC", "appearance"]
+- !private ["So11UIResponderC", "open"]
+- !private ["So11UIResponderC", "separatorStyle"]
+- !private ["So11UIResponderC", "shared"]
+- !private ["So11UIResponderC", "showsVerticalScrollIndicator"]
+- !private ["So30UIResponderStandardEditActionsP", "appearance"]
+- !private ["So30UIResponderStandardEditActionsP", "open"]
+- !private ["So30UIResponderStandardEditActionsP", "separatorStyle"]
+- !private ["So30UIResponderStandardEditActionsP", "shared"]
+- !private ["So30UIResponderStandardEditActionsP", "showsVerticalScrollIndicator"]
+- !private ["So12UIScrollViewC", "appearance"]
+- !private ["So12UIScrollViewC", "separatorStyle"]
+- !private ["So12UIScrollViewC", "showsVerticalScrollIndicator"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "appearance"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "separatorStyle"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "showsVerticalScrollIndicator"]
+- !private ["So11UITableViewC", "appearance"]
+- !private ["So11UITableViewC", "separatorStyle"]
+- !private ["So11UITableViewC", "showsVerticalScrollIndicator"]
+- !private ["So18UITraitEnvironmentP", "appearance"]
+- !private ["So18UITraitEnvironmentP", "separatorStyle"]
+- !private ["So18UITraitEnvironmentP", "showsVerticalScrollIndicator"]
+- !private ["So23UIUserActivityRestoringP", "appearance"]
+- !private ["So23UIUserActivityRestoringP", "open"]
+- !private ["So23UIUserActivityRestoringP", "separatorStyle"]
+- !private ["So23UIUserActivityRestoringP", "shared"]
+- !private ["So23UIUserActivityRestoringP", "showsVerticalScrollIndicator"]
+- !private ["So6UIViewC", "appearance"]
+- !private ["So6UIViewC", "separatorStyle"]
+- !private ["So6UIViewC", "showsVerticalScrollIndicator"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["7SwiftUI6VStackV", "frame"]
+- !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "Button"]
+- !private ["7SwiftUI4ViewP", "ForEach"]
+- !private ["7SwiftUI4ViewP", "HStack"]
+- !private ["7SwiftUI4ViewP", "Image"]
+- !private ["7SwiftUI4ViewP", "List"]
+- !private ["7SwiftUI4ViewP", "MerchItemView"]
+- !private ["7SwiftUI4ViewP", "MerchRowView"]
+- !private ["7SwiftUI4ViewP", "NavigationView"]
+- !private ["7SwiftUI4ViewP", "PlainButtonStyle"]
+- !private ["7SwiftUI4ViewP", "ScrollView"]
+- !private ["7SwiftUI4ViewP", "StackNavigationViewStyle"]
+- !private ["7SwiftUI4ViewP", "String"]
 - !private ["7SwiftUI4ViewP", "Text"]
+- !private ["7SwiftUI4ViewP", "UIApplication"]
+- !private ["7SwiftUI4ViewP", "UITableView"]
+- !private ["7SwiftUI4ViewP", "URL"]
+- !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "buttonStyle"]
+- !private ["7SwiftUI4ViewP", "cornerRadius"]
+- !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "merch"]
+- !private ["7SwiftUI4ViewP", "navigationBarTitle"]
+- !private ["7SwiftUI4ViewP", "navigationViewStyle"]
+- !private ["7SwiftUI4ViewP", "onAppear"]
+- !private ["7SwiftUI4ViewP", "padding"]
+- !private ["7SwiftUI4ViewP", "resizable"]
+- !private ["7SwiftUI4ViewP", "scaledToFit"]
+- !private ["7SwiftUI4ViewP", "shadow"]
+- !private ["7SwiftUI4ViewP", "shadowRadius"]
+- !private ["7SwiftUI4ViewP", "streamerAndMerch"]
+- !private ["7SwiftUI4ViewP", "streamerMerchInfo"]
+- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "appearance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "open"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "separatorStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "showsVerticalScrollIndicator"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "appearance"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "open"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "separatorStyle"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "showsVerticalScrollIndicator"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["7SwiftUI16_PreviewProviderP", "MerchView"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - ["7SwiftUI16_PreviewProviderP", ""]
@@ -62,14 +398,102 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "_previews"]
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "appearance"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "separatorStyle"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "showsVerticalScrollIndicator"]
 depends-nominal:
+- !private "SK"
+- !private "7SwiftUI6ButtonV"
+- !private "So15CALayerDelegateP"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "7SwiftUI18DynamicViewContentP"
+- !private "SE"
 - !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "7SwiftUI7ForEachV"
+- !private "7SwiftUI6HStackV"
+- !private "SH"
+- !private "7SwiftUI19HorizontalAlignmentV"
+- "s12IdentifiableP"
+- !private "7SwiftUI5ImageV"
+- !private "7SwiftUI4ListV"
+- !private "s25LosslessStringConvertibleP"
+- "8OTVDraft5MerchV"
+- "8OTVDraft13MerchItemViewV"
+- "8OTVDraft12MerchRowViewV"
 - "8OTVDraft9MerchViewV"
 - "8OTVDraft18MerchView_PreviewsV"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "7SwiftUI14NavigationViewV"
+- !private "7SwiftUI19NavigationViewStyleP"
+- !private "s9OptionSetP"
+- !private "7SwiftUI16PlainButtonStyleV"
 - "7SwiftUI15PreviewProviderP"
+- !private "7SwiftUI20PrimitiveButtonStyleP"
+- !private "Sm"
+- !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "7SwiftUI10ScrollViewV"
+- !private "So29UITableViewCellSeparatorStyleV"
+- !private "ST"
+- !private "7SwiftUI4AxisO3SetV"
+- !private "s10SetAlgebraP"
+- !private "7SwiftUI24StackNavigationViewStyleV"
+- "8OTVDraft13StreamerMerchV"
+- !private "SS"
+- !private "Sy"
 - !private "7SwiftUI4TextV"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So13UIApplicationC"
+- !private "So17UICoordinateSpaceP"
+- !private "So23UIDataSourceTranslatingP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
+- !private "So24UILargeContentViewerItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- !private "So11UITableViewC"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- !private "10Foundation3URLV"
+- !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
+- !private "7SwiftUI11ViewBuilderV"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -103,4 +527,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "eeab81ef1451cbe32d2d9b1451ebe4cd"
+interface-hash: "a02405799653dfcdbbeda5067619fbb4"
