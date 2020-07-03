@@ -9,10 +9,18 @@
 import SwiftUI
 
 struct OTVView: View {
+    //this is an observedObject so when objectWillChange.send() is called when @Published changes,
+    //this will redraw the view. This happens when currentView changes which keeps track of what
+    //tab we are on, and also happens when model changes like maybe when a new youtube video is
+    //out or something and view will be redrawn
+    //we can use @State for the currentView keeping track of tabs, ObservedObject is basically
+    //keeping track of a state but with complex data so instead of a string or int
     @ObservedObject var viewRouter: ViewRouter
+    @ObservedObject var viewModel: OTVViewModel
     
-    init(_ viewRouter: ViewRouter) {
+    init(_ viewRouter: ViewRouter, _ viewModel: OTVViewModel) {
         self.viewRouter = viewRouter
+        self.viewModel = viewModel
     }
     
     var body: some View {
@@ -29,6 +37,8 @@ struct OTVView: View {
         }
     }
     
+    //swiftui is new and sucks so it doesn't allow control flow in @ViewBuilders so I needa
+    //cast these views into AnyView
     func getPageView() -> AnyView {
         let currentPage: TabBarPage = self.viewRouter.currentView
         switch currentPage {
@@ -36,13 +46,7 @@ struct OTVView: View {
             case TabBarPage.youtube: return AnyView(YoutubeView())
             case TabBarPage.home: return AnyView(HomeView())
             case TabBarPage.twitter: return AnyView(TwitterView())
-            case TabBarPage.merch: return AnyView(MerchView())
+            case TabBarPage.merch: return AnyView(MerchView(self.viewModel))
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        OTVView(ViewRouter())
     }
 }

@@ -17,6 +17,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "CastingPrecedence"
 - !private "OTVView"
+- !private "OTVViewModel"
 - "SceneDelegate"
 - !private "UIHostingController"
 - "UIResponder"
@@ -32,6 +33,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "rootViewController"]
 - ["s7CVarArgP", "ConnectionOptions"]
 - !private ["s7CVarArgP", "OTVView"]
+- !private ["s7CVarArgP", "OTVViewModel"]
 - !private ["s7CVarArgP", "UIHostingController"]
 - !private ["s7CVarArgP", "UIWindow"]
 - !private ["s7CVarArgP", "ViewRouter"]
@@ -51,6 +53,7 @@ depends-member:
 - ["s7CVarArgP", "windowScene"]
 - ["s28CustomDebugStringConvertibleP", "ConnectionOptions"]
 - !private ["s28CustomDebugStringConvertibleP", "OTVView"]
+- !private ["s28CustomDebugStringConvertibleP", "OTVViewModel"]
 - !private ["s28CustomDebugStringConvertibleP", "UIHostingController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
 - !private ["s28CustomDebugStringConvertibleP", "ViewRouter"]
@@ -70,6 +73,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "windowScene"]
 - ["s23CustomStringConvertibleP", "ConnectionOptions"]
 - !private ["s23CustomStringConvertibleP", "OTVView"]
+- !private ["s23CustomStringConvertibleP", "OTVViewModel"]
 - !private ["s23CustomStringConvertibleP", "UIHostingController"]
 - !private ["s23CustomStringConvertibleP", "UIWindow"]
 - !private ["s23CustomStringConvertibleP", "ViewRouter"]
@@ -89,6 +93,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "windowScene"]
 - ["SQ", "ConnectionOptions"]
 - !private ["SQ", "OTVView"]
+- !private ["SQ", "OTVViewModel"]
 - !private ["SQ", "UIHostingController"]
 - !private ["SQ", "UIWindow"]
 - !private ["SQ", "ViewRouter"]
@@ -108,6 +113,7 @@ depends-member:
 - ["SQ", "windowScene"]
 - ["SH", "ConnectionOptions"]
 - !private ["SH", "OTVView"]
+- !private ["SH", "OTVViewModel"]
 - !private ["SH", "UIHostingController"]
 - !private ["SH", "UIWindow"]
 - !private ["SH", "ViewRouter"]
@@ -131,6 +137,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - ["So8NSObjectC", "ConnectionOptions"]
 - !private ["So8NSObjectC", "OTVView"]
+- !private ["So8NSObjectC", "OTVViewModel"]
 - !private ["So8NSObjectC", "UIHostingController"]
 - ["So8NSObjectC", "UIScene"]
 - ["So8NSObjectC", "UISceneSession"]
@@ -152,6 +159,7 @@ depends-member:
 - ["So8NSObjectC", "windowScene"]
 - ["So8NSObjectP", "ConnectionOptions"]
 - !private ["So8NSObjectP", "OTVView"]
+- !private ["So8NSObjectP", "OTVViewModel"]
 - !private ["So8NSObjectP", "UIHostingController"]
 - !private ["So8NSObjectP", "UIWindow"]
 - !private ["So8NSObjectP", "ViewRouter"]
@@ -171,8 +179,10 @@ depends-member:
 - ["So8NSObjectP", "windowScene"]
 - !private ["8OTVDraft7OTVViewV", "deinit"]
 - !private ["8OTVDraft7OTVViewV", "init"]
+- !private ["8OTVDraft12OTVViewModelC", "init"]
 - !private ["7Combine16ObservableObjectP", "init"]
 - !private ["8OTVDraft13SceneDelegateC", "OTVView"]
+- !private ["8OTVDraft13SceneDelegateC", "OTVViewModel"]
 - !private ["8OTVDraft13SceneDelegateC", "UIHostingController"]
 - ["8OTVDraft13SceneDelegateC", "UIScene"]
 - ["8OTVDraft13SceneDelegateC", "UISceneSession"]
@@ -222,6 +232,7 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "rootViewController"]
 - ["So30UIPasteConfigurationSupportingP", "ConnectionOptions"]
 - !private ["So30UIPasteConfigurationSupportingP", "OTVView"]
+- !private ["So30UIPasteConfigurationSupportingP", "OTVViewModel"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIHostingController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIWindow"]
 - !private ["So30UIPasteConfigurationSupportingP", "ViewRouter"]
@@ -241,6 +252,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "windowScene"]
 - ["So11UIResponderC", "ConnectionOptions"]
 - !private ["So11UIResponderC", "OTVView"]
+- !private ["So11UIResponderC", "OTVViewModel"]
 - !private ["So11UIResponderC", "UIHostingController"]
 - ["So11UIResponderC", "UIScene"]
 - ["So11UIResponderC", "UISceneSession"]
@@ -263,6 +275,7 @@ depends-member:
 - ["So11UIResponderC", "windowScene"]
 - ["So30UIResponderStandardEditActionsP", "ConnectionOptions"]
 - !private ["So30UIResponderStandardEditActionsP", "OTVView"]
+- !private ["So30UIResponderStandardEditActionsP", "OTVViewModel"]
 - !private ["So30UIResponderStandardEditActionsP", "UIHostingController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIWindow"]
 - !private ["So30UIResponderStandardEditActionsP", "ViewRouter"]
@@ -282,6 +295,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "windowScene"]
 - ["So7UISceneC", "ConnectionOptions"]
 - !private ["So15UISceneDelegateP", "OTVView"]
+- !private ["So15UISceneDelegateP", "OTVViewModel"]
 - !private ["So15UISceneDelegateP", "UIHostingController"]
 - !private ["So15UISceneDelegateP", "UIWindow"]
 - !private ["So15UISceneDelegateP", "ViewRouter"]
@@ -302,6 +316,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "rootViewController"]
 - ["So23UIUserActivityRestoringP", "ConnectionOptions"]
 - !private ["So23UIUserActivityRestoringP", "OTVView"]
+- !private ["So23UIUserActivityRestoringP", "OTVViewModel"]
 - !private ["So23UIUserActivityRestoringP", "UIHostingController"]
 - !private ["So23UIUserActivityRestoringP", "UIWindow"]
 - !private ["So23UIUserActivityRestoringP", "ViewRouter"]
@@ -327,6 +342,7 @@ depends-member:
 - !private ["So8UIWindowC", "makeKeyAndVisible"]
 - !private ["So8UIWindowC", "rootViewController"]
 - !private ["So21UIWindowSceneDelegateP", "OTVView"]
+- !private ["So21UIWindowSceneDelegateP", "OTVViewModel"]
 - !private ["So21UIWindowSceneDelegateP", "UIHostingController"]
 - !private ["So21UIWindowSceneDelegateP", "UIWindow"]
 - !private ["So21UIWindowSceneDelegateP", "ViewRouter"]
@@ -345,6 +361,7 @@ depends-member:
 - !private ["8OTVDraft10ViewRouterC", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ConnectionOptions"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "OTVView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "OTVViewModel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIHostingController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ViewRouter"]
@@ -364,6 +381,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "windowScene"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ConnectionOptions"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "OTVView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "OTVViewModel"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIHostingController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIWindow"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ViewRouter"]
@@ -397,6 +415,7 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "8OTVDraft7OTVViewV"
+- !private "8OTVDraft12OTVViewModelC"
 - !private "7Combine16ObservableObjectP"
 - "8OTVDraft13SceneDelegateC"
 - !private "So29UIAccessibilityIdentificationP"

@@ -3,22 +3,16 @@ provides-top-level:
 - "MerchView"
 - "MerchRowView"
 - "MerchItemView"
-- "Merch"
-- "StreamerMerch"
 - "MerchView_Previews"
 provides-nominal:
 - "8OTVDraft9MerchViewV"
 - "8OTVDraft12MerchRowViewV"
 - "8OTVDraft13MerchItemViewV"
-- "8OTVDraft5MerchV"
-- "8OTVDraft13StreamerMerchV"
 - "8OTVDraft18MerchView_PreviewsV"
 provides-member:
 - ["8OTVDraft9MerchViewV", ""]
 - ["8OTVDraft12MerchRowViewV", ""]
 - ["8OTVDraft13MerchItemViewV", ""]
-- ["8OTVDraft5MerchV", ""]
-- ["8OTVDraft13StreamerMerchV", ""]
 - ["8OTVDraft18MerchView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
@@ -26,14 +20,12 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - !private "Button"
+- "CGFloat"
 - !private "CastingPrecedence"
-- "Double"
 - "FloatLiteralType"
 - !private "ForEach"
 - !private "HStack"
-- "Identifiable"
 - !private "Image"
-- "Int"
 - "IntegerLiteralType"
 - !private "List"
 - "Merch"
@@ -43,13 +35,15 @@ depends-top-level:
 - "MerchView_Previews"
 - !private "NSURL"
 - !private "NavigationView"
+- "OTVStreamer"
+- "OTVViewModel"
+- "ObservedObject"
 - !private "PlainButtonStyle"
 - "PreviewProvider"
 - !private "ScrollView"
 - !private "StackNavigationViewStyle"
-- "StreamerMerch"
-- "String"
-- "StringLiteralType"
+- !private "String"
+- !private "StringLiteralType"
 - !private "Text"
 - !private "UIApplication"
 - !private "UITableView"
@@ -86,6 +80,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "showsVerticalScrollIndicator"]
 - !private ["Se", "init"]
+- ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["7SwiftUI18DynamicViewContentP", "init"]
 - !private ["SE", "init"]
 - !private ["SQ", "appearance"]
@@ -114,35 +109,25 @@ depends-member:
 - !private ["SH", "shared"]
 - !private ["SH", "showsVerticalScrollIndicator"]
 - !private ["7SwiftUI19HorizontalAlignmentV", "leading"]
-- ["s12IdentifiableP", "ID"]
-- ["s12IdentifiableP", ""]
-- ["s12IdentifiableP", "_Default_ID"]
-- ["s12IdentifiableP", "id"]
 - !private ["s12IdentifiableP", "image"]
-- ["s12IdentifiableP", "init"]
 - !private ["s12IdentifiableP", "link"]
+- !private ["s12IdentifiableP", "merch"]
 - !private ["s12IdentifiableP", "merches"]
+- !private ["s12IdentifiableP", "name"]
 - !private ["s12IdentifiableP", "price"]
-- !private ["s12IdentifiableP", "streamer"]
 - !private ["7SwiftUI5ImageV", "init"]
 - !private ["7SwiftUI5ImageV", "resizable"]
 - !private ["7SwiftUI5ImageV", "scaledToFit"]
 - !private ["7SwiftUI4ListV", "init"]
 - !private ["7SwiftUI4ListV", "navigationBarTitle"]
 - !private ["s25LosslessStringConvertibleP", "init"]
-- ["8OTVDraft5MerchV", "Double"]
-- ["8OTVDraft5MerchV", "ID"]
-- ["8OTVDraft5MerchV", "Int"]
-- ["8OTVDraft5MerchV", "String"]
-- ["8OTVDraft5MerchV", "_Default_ID"]
-- ["8OTVDraft5MerchV", "deinit"]
-- ["8OTVDraft5MerchV", "id"]
-- ["8OTVDraft5MerchV", "image"]
-- ["8OTVDraft5MerchV", "init"]
-- ["8OTVDraft5MerchV", "link"]
-- ["8OTVDraft5MerchV", "price"]
+- !private ["8OTVDraft5MerchV", "deinit"]
+- !private ["8OTVDraft5MerchV", "image"]
+- !private ["8OTVDraft5MerchV", "link"]
+- !private ["8OTVDraft5MerchV", "price"]
 - ["8OTVDraft13MerchItemViewV", "Body"]
 - !private ["8OTVDraft13MerchItemViewV", "Button"]
+- ["8OTVDraft13MerchItemViewV", "CGFloat"]
 - !private ["8OTVDraft13MerchItemViewV", "Image"]
 - ["8OTVDraft13MerchItemViewV", "Merch"]
 - !private ["8OTVDraft13MerchItemViewV", "NSURL"]
@@ -157,16 +142,18 @@ depends-member:
 - ["8OTVDraft13MerchItemViewV", "_makeView"]
 - ["8OTVDraft13MerchItemViewV", "_makeViewList"]
 - ["8OTVDraft13MerchItemViewV", "body"]
+- ["8OTVDraft13MerchItemViewV", "cornerRadius"]
 - ["8OTVDraft13MerchItemViewV", "deinit"]
 - ["8OTVDraft13MerchItemViewV", "init"]
 - ["8OTVDraft13MerchItemViewV", "merch"]
 - !private ["8OTVDraft13MerchItemViewV", "padding"]
+- ["8OTVDraft13MerchItemViewV", "shadowRadius"]
 - ["8OTVDraft12MerchRowViewV", "Body"]
 - !private ["8OTVDraft12MerchRowViewV", "ForEach"]
 - !private ["8OTVDraft12MerchRowViewV", "HStack"]
 - !private ["8OTVDraft12MerchRowViewV", "MerchItemView"]
+- ["8OTVDraft12MerchRowViewV", "OTVStreamer"]
 - !private ["8OTVDraft12MerchRowViewV", "ScrollView"]
-- ["8OTVDraft12MerchRowViewV", "StreamerMerch"]
 - !private ["8OTVDraft12MerchRowViewV", "Text"]
 - !private ["8OTVDraft12MerchRowViewV", "VStack"]
 - ["8OTVDraft12MerchRowViewV", "View"]
@@ -176,24 +163,27 @@ depends-member:
 - ["8OTVDraft12MerchRowViewV", "body"]
 - ["8OTVDraft12MerchRowViewV", "deinit"]
 - ["8OTVDraft12MerchRowViewV", "init"]
-- ["8OTVDraft12MerchRowViewV", "streamerAndMerch"]
+- ["8OTVDraft12MerchRowViewV", "streamer"]
+- ["8OTVDraft9MerchViewV", "$viewModel"]
 - ["8OTVDraft9MerchViewV", "Body"]
 - !private ["8OTVDraft9MerchViewV", "ForEach"]
 - !private ["8OTVDraft9MerchViewV", "List"]
 - !private ["8OTVDraft9MerchViewV", "MerchRowView"]
 - !private ["8OTVDraft9MerchViewV", "NavigationView"]
+- ["8OTVDraft9MerchViewV", "OTVViewModel"]
+- ["8OTVDraft9MerchViewV", "ObservedObject"]
 - !private ["8OTVDraft9MerchViewV", "StackNavigationViewStyle"]
-- ["8OTVDraft9MerchViewV", "StreamerMerch"]
 - !private ["8OTVDraft9MerchViewV", "Text"]
 - !private ["8OTVDraft9MerchViewV", "UITableView"]
 - ["8OTVDraft9MerchViewV", "View"]
 - ["8OTVDraft9MerchViewV", "_Default_Body"]
 - ["8OTVDraft9MerchViewV", "_makeView"]
 - ["8OTVDraft9MerchViewV", "_makeViewList"]
+- !private ["8OTVDraft9MerchViewV", "_viewModel"]
 - ["8OTVDraft9MerchViewV", "body"]
 - ["8OTVDraft9MerchViewV", "deinit"]
 - ["8OTVDraft9MerchViewV", "init"]
-- ["8OTVDraft9MerchViewV", "streamerMerchInfo"]
+- ["8OTVDraft9MerchViewV", "viewModel"]
 - !private ["8OTVDraft18MerchView_PreviewsV", "MerchView"]
 - ["8OTVDraft18MerchView_PreviewsV", "Previews"]
 - ["8OTVDraft18MerchView_PreviewsV", "View"]
@@ -221,6 +211,13 @@ depends-member:
 - !private ["7SwiftUI14NavigationViewV", "init"]
 - !private ["7SwiftUI14NavigationViewV", "navigationViewStyle"]
 - !private ["7SwiftUI19NavigationViewStyleP", "init"]
+- !private ["8OTVDraft11OTVStreamerV", "deinit"]
+- !private ["8OTVDraft11OTVStreamerV", "merch"]
+- !private ["8OTVDraft11OTVStreamerV", "name"]
+- ["8OTVDraft12OTVViewModelC", "deinit"]
+- !private ["8OTVDraft12OTVViewModelC", "streamers"]
+- !private ["7Combine16ObservableObjectP", "streamers"]
+- ["7SwiftUI14ObservedObjectV", "init"]
 - !private ["s9OptionSetP", "horizontal"]
 - !private ["7SwiftUI16PlainButtonStyleV", "init"]
 - !private ["7SwiftUI15PreviewProviderP", "MerchView"]
@@ -242,16 +239,9 @@ depends-member:
 - !private ["7SwiftUI4AxisO3SetV", "horizontal"]
 - !private ["s10SetAlgebraP", "horizontal"]
 - !private ["7SwiftUI24StackNavigationViewStyleV", "init"]
-- ["8OTVDraft13StreamerMerchV", "ID"]
-- ["8OTVDraft13StreamerMerchV", "Int"]
-- ["8OTVDraft13StreamerMerchV", "Merch"]
-- ["8OTVDraft13StreamerMerchV", "String"]
-- ["8OTVDraft13StreamerMerchV", "_Default_ID"]
-- ["8OTVDraft13StreamerMerchV", "deinit"]
-- ["8OTVDraft13StreamerMerchV", "id"]
-- ["8OTVDraft13StreamerMerchV", "init"]
-- ["8OTVDraft13StreamerMerchV", "merches"]
-- ["8OTVDraft13StreamerMerchV", "streamer"]
+- !private ["8OTVDraft8StreamerP", "merch"]
+- !private ["8OTVDraft8StreamerP", "name"]
+- !private ["8OTVDraft13StreamerMerchV", "merches"]
 - !private ["SS", "init"]
 - !private ["Sy", "init"]
 - !private ["7SwiftUI4TextV", "init"]
@@ -339,6 +329,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "MerchItemView"]
 - !private ["7SwiftUI4ViewP", "MerchRowView"]
 - !private ["7SwiftUI4ViewP", "NavigationView"]
+- ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "PlainButtonStyle"]
 - !private ["7SwiftUI4ViewP", "ScrollView"]
 - !private ["7SwiftUI4ViewP", "StackNavigationViewStyle"]
@@ -365,8 +356,9 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "resizable"]
 - !private ["7SwiftUI4ViewP", "scaledToFit"]
 - !private ["7SwiftUI4ViewP", "shadow"]
-- !private ["7SwiftUI4ViewP", "streamerAndMerch"]
-- !private ["7SwiftUI4ViewP", "streamerMerchInfo"]
+- !private ["7SwiftUI4ViewP", "shadowRadius"]
+- !private ["7SwiftUI4ViewP", "streamer"]
+- !private ["7SwiftUI4ViewP", "viewModel"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -407,6 +399,7 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
 - !private "Se"
+- "7SwiftUI15DynamicPropertyP"
 - !private "7SwiftUI18DynamicViewContentP"
 - !private "SE"
 - !private "SQ"
@@ -419,11 +412,11 @@ depends-nominal:
 - !private "7SwiftUI6HStackV"
 - !private "SH"
 - !private "7SwiftUI19HorizontalAlignmentV"
-- "s12IdentifiableP"
+- !private "s12IdentifiableP"
 - !private "7SwiftUI5ImageV"
 - !private "7SwiftUI4ListV"
 - !private "s25LosslessStringConvertibleP"
-- "8OTVDraft5MerchV"
+- !private "8OTVDraft5MerchV"
 - "8OTVDraft13MerchItemViewV"
 - "8OTVDraft12MerchRowViewV"
 - "8OTVDraft9MerchViewV"
@@ -434,6 +427,10 @@ depends-nominal:
 - !private "So8NSObjectP"
 - !private "7SwiftUI14NavigationViewV"
 - !private "7SwiftUI19NavigationViewStyleP"
+- !private "8OTVDraft11OTVStreamerV"
+- "8OTVDraft12OTVViewModelC"
+- !private "7Combine16ObservableObjectP"
+- "7SwiftUI14ObservedObjectV"
 - !private "s9OptionSetP"
 - !private "7SwiftUI16PlainButtonStyleV"
 - "7SwiftUI15PreviewProviderP"
@@ -447,7 +444,8 @@ depends-nominal:
 - !private "7SwiftUI4AxisO3SetV"
 - !private "s10SetAlgebraP"
 - !private "7SwiftUI24StackNavigationViewStyleV"
-- "8OTVDraft13StreamerMerchV"
+- !private "8OTVDraft8StreamerP"
+- !private "8OTVDraft13StreamerMerchV"
 - !private "SS"
 - !private "Sy"
 - !private "7SwiftUI4TextV"
@@ -522,4 +520,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8a8412ade626d713c6c1b8663386a26a"
+interface-hash: "6035ba84763bbfb49a868dbdb54521ff"

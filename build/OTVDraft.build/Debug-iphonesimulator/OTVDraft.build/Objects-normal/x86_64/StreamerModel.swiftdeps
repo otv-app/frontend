@@ -1,0 +1,116 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "OTVStreamer"
+- "Streamer"
+- "Merch"
+- "StreamerMerch"
+provides-nominal:
+- "8OTVDraft11OTVStreamerV"
+- "8OTVDraft8StreamerP"
+- "8OTVDraft5MerchV"
+- "8OTVDraft13StreamerMerchV"
+provides-member:
+- ["8OTVDraft11OTVStreamerV", ""]
+- ["8OTVDraft8StreamerP", ""]
+- ["8OTVDraft5MerchV", ""]
+- ["8OTVDraft13StreamerMerchV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Double"
+- "Identifiable"
+- "Int"
+- "Merch"
+- "OTVStreamer"
+- "Streamer"
+- "StreamerMerch"
+- "String"
+depends-member:
+- ["s12IdentifiableP", "ID"]
+- ["s12IdentifiableP", "Int"]
+- ["s12IdentifiableP", "String"]
+- ["s12IdentifiableP", ""]
+- ["s12IdentifiableP", "_Default_ID"]
+- ["s12IdentifiableP", "id"]
+- ["s12IdentifiableP", "name"]
+- ["s12IdentifiableP", "platform"]
+- ["s12IdentifiableP", "url"]
+- ["8OTVDraft5MerchV", "Double"]
+- ["8OTVDraft5MerchV", "ID"]
+- ["8OTVDraft5MerchV", "Int"]
+- ["8OTVDraft5MerchV", "String"]
+- ["8OTVDraft5MerchV", "_Default_ID"]
+- ["8OTVDraft5MerchV", "deinit"]
+- ["8OTVDraft5MerchV", "id"]
+- ["8OTVDraft5MerchV", "image"]
+- ["8OTVDraft5MerchV", "init"]
+- ["8OTVDraft5MerchV", "link"]
+- ["8OTVDraft5MerchV", "price"]
+- ["8OTVDraft11OTVStreamerV", "ID"]
+- ["8OTVDraft11OTVStreamerV", "Int"]
+- ["8OTVDraft11OTVStreamerV", "StreamerMerch"]
+- ["8OTVDraft11OTVStreamerV", "String"]
+- ["8OTVDraft11OTVStreamerV", "_Default_ID"]
+- ["8OTVDraft11OTVStreamerV", "deinit"]
+- ["8OTVDraft11OTVStreamerV", "id"]
+- ["8OTVDraft11OTVStreamerV", "init"]
+- ["8OTVDraft11OTVStreamerV", "merch"]
+- ["8OTVDraft11OTVStreamerV", "name"]
+- ["8OTVDraft11OTVStreamerV", "platform"]
+- ["8OTVDraft11OTVStreamerV", "url"]
+- ["8OTVDraft8StreamerP", "ID"]
+- ["8OTVDraft8StreamerP", "Int"]
+- ["8OTVDraft8StreamerP", "String"]
+- ["8OTVDraft8StreamerP", ""]
+- ["8OTVDraft8StreamerP", "_Default_ID"]
+- ["8OTVDraft8StreamerP", "id"]
+- ["8OTVDraft8StreamerP", "name"]
+- ["8OTVDraft8StreamerP", "platform"]
+- ["8OTVDraft8StreamerP", "url"]
+- ["8OTVDraft13StreamerMerchV", "ID"]
+- ["8OTVDraft13StreamerMerchV", "Int"]
+- ["8OTVDraft13StreamerMerchV", "Merch"]
+- ["8OTVDraft13StreamerMerchV", "_Default_ID"]
+- ["8OTVDraft13StreamerMerchV", "deinit"]
+- ["8OTVDraft13StreamerMerchV", "id"]
+- ["8OTVDraft13StreamerMerchV", "init"]
+- ["8OTVDraft13StreamerMerchV", "merches"]
+depends-nominal:
+- "s12IdentifiableP"
+- "8OTVDraft5MerchV"
+- "8OTVDraft11OTVStreamerV"
+- "8OTVDraft8StreamerP"
+- "8OTVDraft13StreamerMerchV"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "6e5ffda8ca362ff8c84ce5d8f09ccd8c"

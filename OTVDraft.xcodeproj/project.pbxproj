@@ -25,6 +25,7 @@
 		B24457E224AE443D00D8443A /* OTVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24457E124AE443D00D8443A /* OTVViewModel.swift */; };
 		B24457E424AE45C500D8443A /* OTVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24457E324AE45C500D8443A /* OTVModel.swift */; };
 		B24457E624AE5C0D00D8443A /* ImageModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24457E524AE5C0D00D8443A /* ImageModifiers.swift */; };
+		B244583C24AFA38C00D8443A /* StreamerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244583B24AFA38C00D8443A /* StreamerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,10 +66,11 @@
 		B24457D724ADEDC600D8443A /* TwitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterView.swift; sourceTree = "<group>"; };
 		B24457DB24ADEE0D00D8443A /* YoutubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeView.swift; sourceTree = "<group>"; };
 		B24457DD24ADEE1B00D8443A /* TwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchView.swift; sourceTree = "<group>"; };
-		B24457DF24ADEE2700D8443A /* MerchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchView.swift; sourceTree = SOURCE_ROOT; };
+		B24457DF24ADEE2700D8443A /* MerchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MerchView.swift; path = OTVDraft/View/MerchView.swift; sourceTree = SOURCE_ROOT; };
 		B24457E124AE443D00D8443A /* OTVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTVViewModel.swift; sourceTree = "<group>"; };
 		B24457E324AE45C500D8443A /* OTVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTVModel.swift; sourceTree = "<group>"; };
 		B24457E524AE5C0D00D8443A /* ImageModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifiers.swift; sourceTree = "<group>"; };
+		B244583B24AFA38C00D8443A /* StreamerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,19 +121,11 @@
 		B24457A024ADDC4600D8443A /* OTVDraft */ = {
 			isa = PBXGroup;
 			children = (
-				B24457DF24ADEE2700D8443A /* MerchView.swift */,
-				B24457DD24ADEE1B00D8443A /* TwitchView.swift */,
-				B24457DB24ADEE0D00D8443A /* YoutubeView.swift */,
+				B244583A24AF9CF700D8443A /* Model */,
+				B244583824AF9CE500D8443A /* Viewmodel */,
+				B244583624AF9C9E00D8443A /* View */,
 				B24457A124ADDC4600D8443A /* AppDelegate.swift */,
 				B24457A324ADDC4600D8443A /* SceneDelegate.swift */,
-				B24457A524ADDC4600D8443A /* OTVView.swift */,
-				B24457E124AE443D00D8443A /* OTVViewModel.swift */,
-				B24457E324AE45C500D8443A /* OTVModel.swift */,
-				B24457D524ADEDB800D8443A /* HomeView.swift */,
-				B24457D724ADEDC600D8443A /* TwitterView.swift */,
-				B24457D124ADDCF100D8443A /* CustomTabBarView.swift */,
-				B24457E524AE5C0D00D8443A /* ImageModifiers.swift */,
-				B24457D324ADE4EC00D8443A /* ViewRouter.swift */,
 				B24457A724ADDC4F00D8443A /* Assets.xcassets */,
 				B24457AC24ADDC4F00D8443A /* LaunchScreen.storyboard */,
 				B24457AF24ADDC4F00D8443A /* Info.plist */,
@@ -164,6 +158,47 @@
 				B24457C524ADDC4F00D8443A /* Info.plist */,
 			);
 			path = OTVDraftUITests;
+			sourceTree = "<group>";
+		};
+		B244583624AF9C9E00D8443A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B244583724AF9CD000D8443A /* util */,
+				B24457A524ADDC4600D8443A /* OTVView.swift */,
+				B24457DF24ADEE2700D8443A /* MerchView.swift */,
+				B24457DD24ADEE1B00D8443A /* TwitchView.swift */,
+				B24457DB24ADEE0D00D8443A /* YoutubeView.swift */,
+				B24457D524ADEDB800D8443A /* HomeView.swift */,
+				B24457D724ADEDC600D8443A /* TwitterView.swift */,
+				B24457D124ADDCF100D8443A /* CustomTabBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B244583724AF9CD000D8443A /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B24457E524AE5C0D00D8443A /* ImageModifiers.swift */,
+				B24457D324ADE4EC00D8443A /* ViewRouter.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		B244583824AF9CE500D8443A /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				B24457E124AE443D00D8443A /* OTVViewModel.swift */,
+			);
+			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		B244583A24AF9CF700D8443A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B24457E324AE45C500D8443A /* OTVModel.swift */,
+				B244583B24AFA38C00D8443A /* StreamerModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +342,7 @@
 				B24457A624ADDC4600D8443A /* OTVView.swift in Sources */,
 				B24457E624AE5C0D00D8443A /* ImageModifiers.swift in Sources */,
 				B24457D224ADDCF100D8443A /* CustomTabBarView.swift in Sources */,
+				B244583C24AFA38C00D8443A /* StreamerModel.swift in Sources */,
 				B24457E224AE443D00D8443A /* OTVViewModel.swift in Sources */,
 				B24457E024ADEE2700D8443A /* MerchView.swift in Sources */,
 				B24457D824ADEDC600D8443A /* TwitterView.swift in Sources */,

@@ -10,6 +10,7 @@ import Foundation
 import SwiftUI
 
 //a viewmodifer performing the neccesary modifications to a Content
+//takes in any some View and turns it into an icon
 struct IconView: ViewModifier {
     var geometry: GeometryProxy
     
@@ -32,6 +33,7 @@ extension Image {
         self.modifier(IconView(geometry: geometry))
     }
     
+    //lol imma do this later
     func toMerchImage() -> some View {
         self
     }

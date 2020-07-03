@@ -22,6 +22,7 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - !private "MerchView"
 - "OTVView"
+- "OTVViewModel"
 - "ObservedObject"
 - "PreviewProvider"
 - !private "Spacer"
@@ -89,6 +90,7 @@ depends-member:
 - !private ["8OTVDraft8HomeViewV", "init"]
 - !private ["8OTVDraft9MerchViewV", "deinit"]
 - !private ["8OTVDraft9MerchViewV", "init"]
+- ["8OTVDraft7OTVViewV", "$viewModel"]
 - ["8OTVDraft7OTVViewV", "$viewRouter"]
 - ["8OTVDraft7OTVViewV", "AnyView"]
 - ["8OTVDraft7OTVViewV", "Body"]
@@ -97,6 +99,7 @@ depends-member:
 - !private ["8OTVDraft7OTVViewV", "GeometryReader"]
 - !private ["8OTVDraft7OTVViewV", "HomeView"]
 - !private ["8OTVDraft7OTVViewV", "MerchView"]
+- ["8OTVDraft7OTVViewV", "OTVViewModel"]
 - ["8OTVDraft7OTVViewV", "ObservedObject"]
 - !private ["8OTVDraft7OTVViewV", "Spacer"]
 - !private ["8OTVDraft7OTVViewV", "TabBarPage"]
@@ -109,12 +112,15 @@ depends-member:
 - ["8OTVDraft7OTVViewV", "_Default_Body"]
 - ["8OTVDraft7OTVViewV", "_makeView"]
 - ["8OTVDraft7OTVViewV", "_makeViewList"]
+- !private ["8OTVDraft7OTVViewV", "_viewModel"]
 - !private ["8OTVDraft7OTVViewV", "_viewRouter"]
 - ["8OTVDraft7OTVViewV", "body"]
 - ["8OTVDraft7OTVViewV", "deinit"]
 - ["8OTVDraft7OTVViewV", "getPageView"]
 - ["8OTVDraft7OTVViewV", "init"]
+- ["8OTVDraft7OTVViewV", "viewModel"]
 - ["8OTVDraft7OTVViewV", "viewRouter"]
+- ["8OTVDraft12OTVViewModelC", "deinit"]
 - !private ["7Combine16ObservableObjectP", "currentView"]
 - !private ["7Combine16ObservableObjectP", "init"]
 - ["7SwiftUI14ObservedObjectV", "init"]
@@ -170,6 +176,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "getPageView"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "shadow"]
+- !private ["7SwiftUI4ViewP", "viewModel"]
 - !private ["7SwiftUI4ViewP", "viewRouter"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["8OTVDraft10ViewRouterC", "currentView"]
@@ -211,6 +218,7 @@ depends-nominal:
 - !private "8OTVDraft8HomeViewV"
 - !private "8OTVDraft9MerchViewV"
 - "8OTVDraft7OTVViewV"
+- "8OTVDraft12OTVViewModelC"
 - !private "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
 - !private "s9OptionSetP"
@@ -264,4 +272,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8108f073f76575993da7d51fc64b8f7b"
+interface-hash: "1de2e890669f21818f2b4afeb0b6ab6d"

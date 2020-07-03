@@ -22,6 +22,7 @@ depends-top-level:
 - !private "HStack"
 - !private "Image"
 - "IntegerLiteralType"
+- "ObservedObject"
 - "PreviewProvider"
 - !private "StringLiteralType"
 - !private "TabBarPage"
@@ -54,12 +55,14 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "purple"]
 - !private ["s23CustomStringConvertibleP", "red"]
 - !private ["s23CustomStringConvertibleP", "white"]
+- ["8OTVDraft16CustomTabBarViewV", "$viewRouter"]
 - ["8OTVDraft16CustomTabBarViewV", "Body"]
 - !private ["8OTVDraft16CustomTabBarViewV", "Circle"]
 - ["8OTVDraft16CustomTabBarViewV", "Color"]
 - !private ["8OTVDraft16CustomTabBarViewV", "GeometryReader"]
 - !private ["8OTVDraft16CustomTabBarViewV", "HStack"]
 - !private ["8OTVDraft16CustomTabBarViewV", "Image"]
+- ["8OTVDraft16CustomTabBarViewV", "ObservedObject"]
 - !private ["8OTVDraft16CustomTabBarViewV", "TabBarPage"]
 - ["8OTVDraft16CustomTabBarViewV", "View"]
 - ["8OTVDraft16CustomTabBarViewV", "ViewRouter"]
@@ -67,6 +70,7 @@ depends-member:
 - ["8OTVDraft16CustomTabBarViewV", "_Default_Body"]
 - ["8OTVDraft16CustomTabBarViewV", "_makeView"]
 - ["8OTVDraft16CustomTabBarViewV", "_makeViewList"]
+- !private ["8OTVDraft16CustomTabBarViewV", "_viewRouter"]
 - ["8OTVDraft16CustomTabBarViewV", "body"]
 - ["8OTVDraft16CustomTabBarViewV", "deinit"]
 - ["8OTVDraft16CustomTabBarViewV", "init"]
@@ -88,6 +92,7 @@ depends-member:
 - !private ["Se", "red"]
 - !private ["Se", "template"]
 - !private ["Se", "white"]
+- ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["SE", "blue"]
 - !private ["SE", "purple"]
 - !private ["SE", "red"]
@@ -138,6 +143,7 @@ depends-member:
 - !private ["7SwiftUI15InsettableShapeP", "init"]
 - !private ["7Combine16ObservableObjectP", "currentView"]
 - !private ["7Combine16ObservableObjectP", "init"]
+- ["7SwiftUI14ObservedObjectV", "init"]
 - !private ["Sq", "blue"]
 - !private ["Sq", "purple"]
 - !private ["Sq", "red"]
@@ -172,6 +178,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "GeometryReader"]
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "Image"]
+- ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "TabBarPage"]
 - !private ["7SwiftUI4ViewP", "ZStack"]
 - ["7SwiftUI4ViewP", ""]
@@ -195,6 +202,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "white"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["8OTVDraft10ViewRouterC", "currentView"]
+- ["8OTVDraft10ViewRouterC", "deinit"]
 - !private ["8OTVDraft10ViewRouterC", "init"]
 - !private ["7SwiftUI6ZStackV", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "blue"]
@@ -221,6 +229,7 @@ depends-nominal:
 - "8OTVDraft16CustomTabBarViewV"
 - "8OTVDraft25CustomTabBarView_PreviewsV"
 - !private "Se"
+- "7SwiftUI15DynamicPropertyP"
 - !private "SE"
 - "SQ"
 - !private "s23ExpressibleByNilLiteralP"
@@ -231,6 +240,7 @@ depends-nominal:
 - !private "7SwiftUI5ImageV"
 - !private "7SwiftUI15InsettableShapeP"
 - !private "7Combine16ObservableObjectP"
+- "7SwiftUI14ObservedObjectV"
 - !private "Sq"
 - "7SwiftUI15PreviewProviderP"
 - !private "7SwiftUI5ShapeP"
@@ -239,7 +249,7 @@ depends-nominal:
 - !private "7SwiftUI5ImageV21TemplateRenderingModeO"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
-- !private "8OTVDraft10ViewRouterC"
+- "8OTVDraft10ViewRouterC"
 - !private "7SwiftUI6ZStackV"
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
@@ -276,4 +286,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8b53611ef864f74ab720ecb264aae3d0"
+interface-hash: "6e9c958a20c60c838eb801f6f03508aa"
