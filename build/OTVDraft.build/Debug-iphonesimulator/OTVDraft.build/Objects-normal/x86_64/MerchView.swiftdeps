@@ -3,24 +3,31 @@ provides-top-level:
 - "MerchView"
 - "MerchRowView"
 - "MerchItemView"
+- "MerchView_Previews"
 provides-nominal:
 - "8OTVDraft9MerchViewV"
 - "8OTVDraft12MerchRowViewV"
 - "8OTVDraft13MerchItemViewV"
+- "8OTVDraft18MerchView_PreviewsV"
 provides-member:
 - ["8OTVDraft9MerchViewV", ""]
 - ["8OTVDraft12MerchRowViewV", ""]
 - ["8OTVDraft13MerchItemViewV", ""]
+- ["8OTVDraft18MerchView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "*"
 - !private "+"
+- !private "/"
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - !private "Button"
 - "CGFloat"
+- "CGSize"
 - !private "CastingPrecedence"
 - "FloatLiteralType"
 - !private "ForEach"
+- !private "GeometryReader"
 - !private "HStack"
 - !private "Image"
 - "IntegerLiteralType"
@@ -29,12 +36,14 @@ depends-top-level:
 - "MerchItemView"
 - "MerchRowView"
 - "MerchView"
+- "MerchView_Previews"
 - !private "NSURL"
 - !private "NavigationView"
 - "OTVStreamer"
 - "OTVViewModel"
 - "ObservedObject"
 - !private "PlainButtonStyle"
+- "PreviewProvider"
 - !private "ScrollView"
 - !private "StackNavigationViewStyle"
 - !private "String"
@@ -47,12 +56,16 @@ depends-top-level:
 - !private "VStack"
 - "View"
 depends-member:
+- !private ["7SwiftUI10AnimatableP", "height"]
+- !private ["7SwiftUI10AnimatableP", "width"]
 - !private ["SK", "init"]
 - !private ["7SwiftUI6ButtonV", "buttonStyle"]
 - !private ["7SwiftUI6ButtonV", "init"]
 - !private ["So15CALayerDelegateP", "appearance"]
 - !private ["So15CALayerDelegateP", "separatorStyle"]
 - !private ["So15CALayerDelegateP", "showsVerticalScrollIndicator"]
+- !private ["So6CGSizeV", "height"]
+- !private ["So6CGSizeV", "width"]
 - !private ["s7CVarArgP", "appearance"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "open"]
@@ -62,23 +75,32 @@ depends-member:
 - !private ["Sl", "init"]
 - !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "appearance"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "open"]
 - !private ["s28CustomDebugStringConvertibleP", "separatorStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "showsVerticalScrollIndicator"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "width"]
 - !private ["s23CustomStringConvertibleP", "appearance"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "open"]
 - !private ["s23CustomStringConvertibleP", "separatorStyle"]
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "showsVerticalScrollIndicator"]
+- !private ["Se", "height"]
 - !private ["Se", "init"]
+- !private ["Se", "width"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["7SwiftUI18DynamicViewContentP", "init"]
+- !private ["SE", "height"]
 - !private ["SE", "init"]
+- !private ["SE", "width"]
 - !private ["SQ", "appearance"]
+- !private ["SQ", "height"]
 - !private ["SQ", "horizontal"]
 - !private ["SQ", "init"]
 - !private ["SQ", "leading"]
@@ -89,12 +111,15 @@ depends-member:
 - !private ["SQ", "separatorStyle"]
 - !private ["SQ", "shared"]
 - !private ["SQ", "showsVerticalScrollIndicator"]
+- !private ["SQ", "width"]
 - !private ["s25ExpressibleByArrayLiteralP", "horizontal"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["7SwiftUI7ForEachV", "init"]
+- !private ["7SwiftUI13GeometryProxyV", "size"]
+- !private ["7SwiftUI14GeometryReaderV", "init"]
 - !private ["7SwiftUI6HStackV", "init"]
 - !private ["SH", "appearance"]
 - !private ["SH", "init"]
@@ -123,6 +148,7 @@ depends-member:
 - ["8OTVDraft13MerchItemViewV", "Body"]
 - !private ["8OTVDraft13MerchItemViewV", "Button"]
 - ["8OTVDraft13MerchItemViewV", "CGFloat"]
+- ["8OTVDraft13MerchItemViewV", "CGSize"]
 - !private ["8OTVDraft13MerchItemViewV", "Image"]
 - ["8OTVDraft13MerchItemViewV", "Merch"]
 - !private ["8OTVDraft13MerchItemViewV", "NSURL"]
@@ -137,13 +163,16 @@ depends-member:
 - ["8OTVDraft13MerchItemViewV", "_makeView"]
 - ["8OTVDraft13MerchItemViewV", "_makeViewList"]
 - ["8OTVDraft13MerchItemViewV", "body"]
+- ["8OTVDraft13MerchItemViewV", "buttonSizeMultiplier"]
 - ["8OTVDraft13MerchItemViewV", "cornerRadius"]
 - ["8OTVDraft13MerchItemViewV", "deinit"]
 - ["8OTVDraft13MerchItemViewV", "init"]
 - ["8OTVDraft13MerchItemViewV", "merch"]
 - !private ["8OTVDraft13MerchItemViewV", "padding"]
 - ["8OTVDraft13MerchItemViewV", "shadowRadius"]
+- ["8OTVDraft13MerchItemViewV", "size"]
 - ["8OTVDraft12MerchRowViewV", "Body"]
+- ["8OTVDraft12MerchRowViewV", "CGSize"]
 - !private ["8OTVDraft12MerchRowViewV", "ForEach"]
 - !private ["8OTVDraft12MerchRowViewV", "HStack"]
 - !private ["8OTVDraft12MerchRowViewV", "MerchItemView"]
@@ -158,10 +187,13 @@ depends-member:
 - ["8OTVDraft12MerchRowViewV", "body"]
 - ["8OTVDraft12MerchRowViewV", "deinit"]
 - ["8OTVDraft12MerchRowViewV", "init"]
+- ["8OTVDraft12MerchRowViewV", "size"]
 - ["8OTVDraft12MerchRowViewV", "streamer"]
 - ["8OTVDraft9MerchViewV", "$viewModel"]
 - ["8OTVDraft9MerchViewV", "Body"]
+- ["8OTVDraft9MerchViewV", "CGSize"]
 - !private ["8OTVDraft9MerchViewV", "ForEach"]
+- !private ["8OTVDraft9MerchViewV", "GeometryReader"]
 - !private ["8OTVDraft9MerchViewV", "List"]
 - !private ["8OTVDraft9MerchViewV", "MerchRowView"]
 - !private ["8OTVDraft9MerchViewV", "NavigationView"]
@@ -179,6 +211,17 @@ depends-member:
 - ["8OTVDraft9MerchViewV", "deinit"]
 - ["8OTVDraft9MerchViewV", "init"]
 - ["8OTVDraft9MerchViewV", "viewModel"]
+- !private ["8OTVDraft18MerchView_PreviewsV", "MerchView"]
+- !private ["8OTVDraft18MerchView_PreviewsV", "OTVViewModel"]
+- ["8OTVDraft18MerchView_PreviewsV", "Previews"]
+- ["8OTVDraft18MerchView_PreviewsV", "View"]
+- ["8OTVDraft18MerchView_PreviewsV", "_Default_Previews"]
+- ["8OTVDraft18MerchView_PreviewsV", "_platform"]
+- ["8OTVDraft18MerchView_PreviewsV", "_previews"]
+- ["8OTVDraft18MerchView_PreviewsV", "deinit"]
+- ["8OTVDraft18MerchView_PreviewsV", "init"]
+- ["8OTVDraft18MerchView_PreviewsV", "platform"]
+- ["8OTVDraft18MerchView_PreviewsV", "previews"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "appearance"]
 - !private ["So8NSCodingP", "separatorStyle"]
@@ -200,11 +243,22 @@ depends-member:
 - !private ["8OTVDraft11OTVStreamerV", "merch"]
 - !private ["8OTVDraft11OTVStreamerV", "name"]
 - ["8OTVDraft12OTVViewModelC", "deinit"]
+- !private ["8OTVDraft12OTVViewModelC", "init"]
 - !private ["8OTVDraft12OTVViewModelC", "streamers"]
+- !private ["7Combine16ObservableObjectP", "init"]
 - !private ["7Combine16ObservableObjectP", "streamers"]
 - ["7SwiftUI14ObservedObjectV", "init"]
 - !private ["s9OptionSetP", "horizontal"]
 - !private ["7SwiftUI16PlainButtonStyleV", "init"]
+- !private ["7SwiftUI15PreviewProviderP", "MerchView"]
+- !private ["7SwiftUI15PreviewProviderP", "OTVViewModel"]
+- ["7SwiftUI15PreviewProviderP", "Previews"]
+- ["7SwiftUI15PreviewProviderP", ""]
+- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI15PreviewProviderP", "_platform"]
+- ["7SwiftUI15PreviewProviderP", "_previews"]
+- ["7SwiftUI15PreviewProviderP", "platform"]
+- ["7SwiftUI15PreviewProviderP", "previews"]
 - !private ["7SwiftUI20PrimitiveButtonStyleP", "init"]
 - !private ["Sm", "init"]
 - !private ["SY", "horizontal"]
@@ -300,6 +354,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Button"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
+- !private ["7SwiftUI4ViewP", "GeometryReader"]
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "Image"]
 - !private ["7SwiftUI4ViewP", "List"]
@@ -321,7 +376,9 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "buttonSizeMultiplier"]
 - !private ["7SwiftUI4ViewP", "buttonStyle"]
+- !private ["7SwiftUI4ViewP", "callAsFunction"]
 - !private ["7SwiftUI4ViewP", "cornerRadius"]
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "init"]
@@ -334,10 +391,13 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "scaledToFit"]
 - !private ["7SwiftUI4ViewP", "shadow"]
 - !private ["7SwiftUI4ViewP", "shadowRadius"]
+- !private ["7SwiftUI4ViewP", "size"]
 - !private ["7SwiftUI4ViewP", "streamer"]
 - !private ["7SwiftUI4ViewP", "viewModel"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
@@ -353,14 +413,27 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "separatorStyle"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "showsVerticalScrollIndicator"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["7SwiftUI16_PreviewProviderP", "MerchView"]
+- !private ["7SwiftUI16_PreviewProviderP", "OTVViewModel"]
+- ["7SwiftUI16_PreviewProviderP", "Previews"]
+- ["7SwiftUI16_PreviewProviderP", ""]
+- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI16_PreviewProviderP", "_platform"]
+- ["7SwiftUI16_PreviewProviderP", "_previews"]
+- ["7SwiftUI16_PreviewProviderP", "platform"]
+- ["7SwiftUI16_PreviewProviderP", "previews"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "appearance"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "separatorStyle"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "showsVerticalScrollIndicator"]
 depends-nominal:
+- !private "7SwiftUI10AnimatableP"
 - !private "SK"
 - !private "7SwiftUI6ButtonV"
 - !private "So15CALayerDelegateP"
+- !private "So6CGSizeV"
 - !private "s7CVarArgP"
 - !private "Sl"
 - !private "SL"
@@ -378,6 +451,8 @@ depends-nominal:
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "7SwiftUI7ForEachV"
+- !private "7SwiftUI13GeometryProxyV"
+- !private "7SwiftUI14GeometryReaderV"
 - !private "7SwiftUI6HStackV"
 - !private "SH"
 - !private "7SwiftUI19HorizontalAlignmentV"
@@ -389,6 +464,7 @@ depends-nominal:
 - "8OTVDraft13MerchItemViewV"
 - "8OTVDraft12MerchRowViewV"
 - "8OTVDraft9MerchViewV"
+- "8OTVDraft18MerchView_PreviewsV"
 - !private "s10MirrorPathP"
 - !private "So8NSCodingP"
 - !private "So8NSObjectC"
@@ -401,6 +477,7 @@ depends-nominal:
 - "7SwiftUI14ObservedObjectV"
 - !private "s9OptionSetP"
 - !private "7SwiftUI16PlainButtonStyleV"
+- "7SwiftUI15PreviewProviderP"
 - !private "7SwiftUI20PrimitiveButtonStyleP"
 - !private "Sm"
 - !private "SY"
@@ -452,6 +529,7 @@ depends-nominal:
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
+- "7SwiftUI16_PreviewProviderP"
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
@@ -486,4 +564,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "92524c2bd847726f4a52bf926f1ca0b9"
+interface-hash: "45f6360703b5ff95b2cfeb2b9a02d806"

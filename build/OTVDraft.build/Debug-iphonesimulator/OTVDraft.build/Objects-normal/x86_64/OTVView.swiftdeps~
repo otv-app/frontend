@@ -1,20 +1,16 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "OTVView"
-- "ContentView_Previews"
 provides-nominal:
 - "8OTVDraft7OTVViewV"
-- "8OTVDraft20ContentView_PreviewsV"
 provides-member:
 - ["8OTVDraft7OTVViewV", ""]
-- ["8OTVDraft20ContentView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "/"
 - "AnyView"
 - "AssignmentPrecedence"
 - !private "Color"
-- "ContentView_Previews"
 - !private "CustomTabBarView"
 - "FloatLiteralType"
 - !private "GeometryReader"
@@ -24,7 +20,6 @@ depends-top-level:
 - "OTVView"
 - "OTVViewModel"
 - "ObservedObject"
-- "PreviewProvider"
 - !private "Spacer"
 - !private "TabBarPage"
 - !private "TwitchView"
@@ -41,17 +36,6 @@ depends-member:
 - !private ["So6CGSizeV", "width"]
 - !private ["7SwiftUI5ColorV", "black"]
 - !private ["7SwiftUI5ColorV", "shadow"]
-- !private ["8OTVDraft20ContentView_PreviewsV", "OTVView"]
-- ["8OTVDraft20ContentView_PreviewsV", "Previews"]
-- ["8OTVDraft20ContentView_PreviewsV", "View"]
-- !private ["8OTVDraft20ContentView_PreviewsV", "ViewRouter"]
-- ["8OTVDraft20ContentView_PreviewsV", "_Default_Previews"]
-- ["8OTVDraft20ContentView_PreviewsV", "_platform"]
-- ["8OTVDraft20ContentView_PreviewsV", "_previews"]
-- ["8OTVDraft20ContentView_PreviewsV", "deinit"]
-- ["8OTVDraft20ContentView_PreviewsV", "init"]
-- ["8OTVDraft20ContentView_PreviewsV", "platform"]
-- ["8OTVDraft20ContentView_PreviewsV", "previews"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s17CustomReflectableP", "height"]
@@ -122,18 +106,8 @@ depends-member:
 - ["8OTVDraft7OTVViewV", "viewRouter"]
 - ["8OTVDraft12OTVViewModelC", "deinit"]
 - !private ["7Combine16ObservableObjectP", "currentView"]
-- !private ["7Combine16ObservableObjectP", "init"]
 - ["7SwiftUI14ObservedObjectV", "init"]
 - !private ["s9OptionSetP", "bottom"]
-- !private ["7SwiftUI15PreviewProviderP", "OTVView"]
-- ["7SwiftUI15PreviewProviderP", "Previews"]
-- !private ["7SwiftUI15PreviewProviderP", "ViewRouter"]
-- ["7SwiftUI15PreviewProviderP", ""]
-- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
-- ["7SwiftUI15PreviewProviderP", "_platform"]
-- ["7SwiftUI15PreviewProviderP", "_previews"]
-- ["7SwiftUI15PreviewProviderP", "platform"]
-- ["7SwiftUI15PreviewProviderP", "previews"]
 - !private ["SY", "bottom"]
 - !private ["7SwiftUI4EdgeO3SetV", "bottom"]
 - !private ["s10SetAlgebraP", "bottom"]
@@ -181,28 +155,17 @@ depends-member:
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["8OTVDraft10ViewRouterC", "currentView"]
 - ["8OTVDraft10ViewRouterC", "deinit"]
-- !private ["8OTVDraft10ViewRouterC", "init"]
 - !private ["8OTVDraft11YoutubeViewV", "deinit"]
 - !private ["8OTVDraft11YoutubeViewV", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
-- !private ["7SwiftUI16_PreviewProviderP", "OTVView"]
-- ["7SwiftUI16_PreviewProviderP", "Previews"]
-- !private ["7SwiftUI16_PreviewProviderP", "ViewRouter"]
-- ["7SwiftUI16_PreviewProviderP", ""]
-- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
-- ["7SwiftUI16_PreviewProviderP", "_platform"]
-- ["7SwiftUI16_PreviewProviderP", "_previews"]
-- ["7SwiftUI16_PreviewProviderP", "platform"]
-- ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
 - !private "7SwiftUI10AnimatableP"
 - !private "7SwiftUI7AnyViewV"
 - !private "So6CGSizeV"
 - !private "7SwiftUI5ColorV"
-- "8OTVDraft20ContentView_PreviewsV"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
@@ -222,7 +185,6 @@ depends-nominal:
 - !private "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
 - !private "s9OptionSetP"
-- "7SwiftUI15PreviewProviderP"
 - !private "SY"
 - !private "7SwiftUI4EdgeO3SetV"
 - !private "s10SetAlgebraP"
@@ -238,7 +200,6 @@ depends-nominal:
 - !private "8OTVDraft11YoutubeViewV"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s21_ObjectiveCBridgeableP"
-- "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -272,4 +233,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1de2e890669f21818f2b4afeb0b6ab6d"
+interface-hash: "f097c747863c7cbf46b004e8dee2288f"

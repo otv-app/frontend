@@ -24,6 +24,7 @@ depends-top-level:
 - !private "CastingPrecedence"
 - "FloatLiteralType"
 - !private "ForEach"
+- !private "GeometryReader"
 - !private "HStack"
 - !private "Image"
 - "IntegerLiteralType"
@@ -100,6 +101,7 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["7SwiftUI7ForEachV", "init"]
+- !private ["7SwiftUI14GeometryReaderV", "init"]
 - !private ["7SwiftUI6HStackV", "init"]
 - !private ["SH", "appearance"]
 - !private ["SH", "init"]
@@ -167,6 +169,7 @@ depends-member:
 - ["8OTVDraft9MerchViewV", "$viewModel"]
 - ["8OTVDraft9MerchViewV", "Body"]
 - !private ["8OTVDraft9MerchViewV", "ForEach"]
+- !private ["8OTVDraft9MerchViewV", "GeometryReader"]
 - !private ["8OTVDraft9MerchViewV", "List"]
 - !private ["8OTVDraft9MerchViewV", "MerchRowView"]
 - !private ["8OTVDraft9MerchViewV", "NavigationView"]
@@ -185,6 +188,7 @@ depends-member:
 - ["8OTVDraft9MerchViewV", "init"]
 - ["8OTVDraft9MerchViewV", "viewModel"]
 - !private ["8OTVDraft18MerchView_PreviewsV", "MerchView"]
+- !private ["8OTVDraft18MerchView_PreviewsV", "OTVViewModel"]
 - ["8OTVDraft18MerchView_PreviewsV", "Previews"]
 - ["8OTVDraft18MerchView_PreviewsV", "View"]
 - ["8OTVDraft18MerchView_PreviewsV", "_Default_Previews"]
@@ -215,12 +219,15 @@ depends-member:
 - !private ["8OTVDraft11OTVStreamerV", "merch"]
 - !private ["8OTVDraft11OTVStreamerV", "name"]
 - ["8OTVDraft12OTVViewModelC", "deinit"]
+- !private ["8OTVDraft12OTVViewModelC", "init"]
 - !private ["8OTVDraft12OTVViewModelC", "streamers"]
+- !private ["7Combine16ObservableObjectP", "init"]
 - !private ["7Combine16ObservableObjectP", "streamers"]
 - ["7SwiftUI14ObservedObjectV", "init"]
 - !private ["s9OptionSetP", "horizontal"]
 - !private ["7SwiftUI16PlainButtonStyleV", "init"]
 - !private ["7SwiftUI15PreviewProviderP", "MerchView"]
+- !private ["7SwiftUI15PreviewProviderP", "OTVViewModel"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - ["7SwiftUI15PreviewProviderP", ""]
 - ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
@@ -323,6 +330,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Button"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
+- !private ["7SwiftUI4ViewP", "GeometryReader"]
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "Image"]
 - !private ["7SwiftUI4ViewP", "List"]
@@ -378,6 +386,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "showsVerticalScrollIndicator"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["7SwiftUI16_PreviewProviderP", "MerchView"]
+- !private ["7SwiftUI16_PreviewProviderP", "OTVViewModel"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - ["7SwiftUI16_PreviewProviderP", ""]
 - ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
@@ -409,6 +418,7 @@ depends-nominal:
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "7SwiftUI7ForEachV"
+- !private "7SwiftUI14GeometryReaderV"
 - !private "7SwiftUI6HStackV"
 - !private "SH"
 - !private "7SwiftUI19HorizontalAlignmentV"

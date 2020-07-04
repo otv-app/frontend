@@ -10,7 +10,9 @@ provides-dynamic-lookup:
 - "_model"
 - "createOTVModel"
 - "model"
+- "streamers"
 depends-top-level:
+- "Array"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - "OTVModel"
@@ -40,9 +42,11 @@ depends-member:
 - !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["8OTVDraft8OTVModelV", "init"]
+- !private ["8OTVDraft8OTVModelV", "streamers"]
 - ["8OTVDraft11OTVStreamerV", "deinit"]
 - !private ["8OTVDraft11OTVStreamerV", "init"]
 - !private ["8OTVDraft12OTVViewModelC", "$model"]
+- ["8OTVDraft12OTVViewModelC", "Array"]
 - ["8OTVDraft12OTVViewModelC", "OTVModel"]
 - ["8OTVDraft12OTVViewModelC", "OTVStreamer"]
 - ["8OTVDraft12OTVViewModelC", "OTVViewModel"]
@@ -56,6 +60,7 @@ depends-member:
 - ["8OTVDraft12OTVViewModelC", "init"]
 - !private ["8OTVDraft12OTVViewModelC", "model"]
 - ["8OTVDraft12OTVViewModelC", "objectWillChange"]
+- ["8OTVDraft12OTVViewModelC", "streamers"]
 - !private ["7Combine16ObservableObjectP", "OTVModel"]
 - ["7Combine16ObservableObjectP", "OTVViewModel"]
 - ["7Combine16ObservableObjectP", "ObjectWillChangePublisher"]
@@ -145,4 +150,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "cd0734a581047fe0eb3dd635aae96f01"
+interface-hash: "2cfa4541f96141c2edfd661858890048"

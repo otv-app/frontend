@@ -9,6 +9,7 @@
 import Foundation
 
 //view model is a class since I want to pass a reference to a viewmodel
+//pretty sure the viewmodel is where the api stuff takes place
 class OTVViewModel: ObservableObject {
     
     //private model which will call objectWillChange.send() when this model changes. objectWillChange.send() is a function

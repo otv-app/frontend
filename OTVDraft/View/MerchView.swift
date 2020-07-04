@@ -22,11 +22,20 @@ struct MerchView: View {
         //CHANGES: foreach only takes in an Array<T> where T: Identifiable since u can
         //iterate through identifiables. I pass a Streamer into the MerchRowView instead of
         //StreamerMerch since i moved name to Streamer so i need access to that
+        //Wrapped view with a geometryreader so I can pass in a refernce to device size.
+        GeometryReader { geometry in
+            self.body(for: geometry.size)
+        }
+    }
+    
+    //CHANGES: put body in helper function so that we don't need to explicitly state reference to
+    //self for every variable, apparently swiftui will fix this issue soon but idk
+    private func body(for size: CGSize) -> some View {
         NavigationView {
             List {
                 
                 ForEach(viewModel.streamers) { streamer in
-                    MerchRowView(streamer: streamer)
+                    MerchRowView(streamer: streamer, size: size)
                 }
                 
             }.navigationBarTitle(Text("Merch"))
@@ -34,7 +43,6 @@ struct MerchView: View {
                     UITableView.appearance().separatorStyle = .none
             }
         }.navigationViewStyle(StackNavigationViewStyle())
-        
     }
 }
 
@@ -43,6 +51,8 @@ struct MerchRowView: View {
     //CHANGE: renamed this variable from streamerAndMerch to just streamer of type OTVStreamer instead
     //of StreamerMerch
     var streamer: OTVStreamer
+    //CHANGE: added this variable to store size
+    var size: CGSize
     
     var body: some View {
         
@@ -53,7 +63,7 @@ struct MerchRowView: View {
                 
                 HStack {
                     ForEach(streamer.merch.merches) { item in
-                        MerchItemView(merch: item).padding(5)
+                        MerchItemView(merch: item, size: self.size).padding(5)
                     }
                 }
                 
@@ -65,28 +75,39 @@ struct MerchRowView: View {
 struct MerchItemView: View {
     
     var merch: Merch
+    //CHANGE: added this variable to store size
+    var size: CGSize
     
     var body: some View {
         VStack {
             Button(action: {
                 let url: NSURL = URL(string: self.merch.link)! as NSURL
-
+                
                 UIApplication.shared.open(url as URL)
             }) {
-                Image(merch.image)
+                Image(self.merch.image)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 200, height: 200)
-                    .cornerRadius(cornerRadius)
+                    .frame(width: size.width/2, height: size.height/3)
+                    .cornerRadius(self.cornerRadius)
             }.buttonStyle(PlainButtonStyle())
-
-            Text("$" + String(merch.price))
+            
+            Text("$" + String(self.merch.price))
         }
-        .frame(width: 250, height: 250)
-        .cornerRadius(cornerRadius)
-        .shadow(radius: shadowRadius)
+        .frame(width: size.width/2 * buttonSizeMultiplier, height: size.height/3 * buttonSizeMultiplier)
+        .cornerRadius(self.cornerRadius)
+        .shadow(radius: self.shadowRadius)
     }
     
+    // MARK: - Drawing Constants
     let cornerRadius: CGFloat = 20
     let shadowRadius: CGFloat = 10
+    let buttonSizeMultiplier: CGFloat = 1.25
+}
+
+
+struct MerchView_Previews: PreviewProvider {
+    static var previews: some View {
+        MerchView(OTVViewModel())
+    }
 }
