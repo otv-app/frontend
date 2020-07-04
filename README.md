@@ -51,3 +51,9 @@ MerchView
 - All *ForEach* functions now only take in an *Identifiable* since u can iterate over that
 - added *GeometryReader* to main body that passes a *CGSize* to *MerchRowView* and *MerchItemView*. Image and button frame size is now (width/2, height/3) and (width/2 * 1.25, height/3 * 1.25) respectively
 - an *OTVStreamer* is passed into *MerchRowView* instead of *StreamerMerch* as name variable was moved to a *Streamer*
+
+## Goals
+- [  ] URL to Images for Merch page
+- [  ] Design the Youtube page
+- [  ] Clean up code for custom tab bar
+- [  ] Change the home button
