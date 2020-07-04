@@ -2,9 +2,12 @@
 This project is a draft copy of the OfflineTV IOS app made by Saahil, Patrick, and Cheng. I will be documenting the frontend changes here to be implemented into the main project.
 
 ## Change log
-**July 2nd:**
+###### **July 2nd:**
+
 Completed custom tab bar using *@ObservedObject* instead of *@State*. Custom tab bar uses an *ObservableObject* ViewRouter to keep track of change in tabs. 
+
 **Changes to the code:**
+
 CustomTabBarView
 - made a util file ImageModifiers and grouped all the *@ViewModifier* in here, added a modifier helper function to an extended *Image*
 - changed states from ints to enums, external state control uses *@ObservedObject*/*@Published* instead of *@State*
@@ -12,9 +15,13 @@ CustomTabBarView
 MerchView
 - added *Identifiable* protocol to *Merch* and *StreamerMerch*
 
-**July 3rd:**
+
+###### **July 3rd:**
+
 Set up a basic MVVM structure, separated the model logic in the MerchView into a separate files and made a View Model
+
 **Changes to the code**
+
 StreamerModel
 - moved *Merch*, *StreamerMerch* struct to a new StreamerModel file, moved the name variable in *StreamerMerch* to a new *Streamer* protocol.
 - added a *OTVSTreamer* of *Streamer* protocol.
@@ -33,9 +40,13 @@ OTVView
 MerchView
 - holds an *ObservedObject* OTVViewModel since streamer data has been moved to the model.
 
-**July 4th**
+
+###### **July 4th**
+
 In progress...
+
 **Changes to the code**
+
 MerchView
 - All *ForEach* functions now only take in an *Identifiable* since u can iterate over that
 - added *GeometryReader* to main body that passes a *CGSize* to *MerchRowView* and *MerchItemView*. Image and button frame size is now (width/2, height/3) and (width/2 * 1.25, height/3 * 1.25) respectively
