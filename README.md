@@ -53,7 +53,8 @@ MerchView
 - an *OTVStreamer* is passed into *MerchRowView* instead of *StreamerMerch* as name variable was moved to a *Streamer*
 
 ## Goals
-- [  ] URL to Images for Merch page
-- [  ] Design the Youtube page
-- [  ] Clean up code for custom tab bar
-- [  ] Change the home button
+
+- [ ] URL to Images for Merch page
+- [ ] Design the Youtube page
+- [ ] Clean up code for custom tab bar
+- [ ] Change the home button
