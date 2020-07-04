@@ -40,13 +40,18 @@ struct OTVView: View {
     //swiftui is new and sucks so it doesn't allow control flow in @ViewBuilders so I needa
     //cast these views into AnyView
     func getPageView() -> AnyView {
-        let currentPage: TabBarPage = self.viewRouter.currentView
-        switch currentPage {
+        switch self.viewRouter.currentView {
             case TabBarPage.twitch: return AnyView(TwitchView())
-            case TabBarPage.youtube: return AnyView(YoutubeView())
+            case TabBarPage.youtube: return AnyView(YoutubeView(self.viewModel))
             case TabBarPage.home: return AnyView(HomeView())
             case TabBarPage.twitter: return AnyView(TwitterView())
             case TabBarPage.merch: return AnyView(MerchView(self.viewModel))
         }
+    }
+}
+
+struct OTVView_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }

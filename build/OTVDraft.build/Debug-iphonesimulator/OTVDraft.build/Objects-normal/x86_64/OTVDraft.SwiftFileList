@@ -1,10 +1,15 @@
 /Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/util/ViewRouter.swift
+/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/Youtube/YoutubeHomeView.swift
 /Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/TwitchView.swift
 /Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/AppDelegate.swift
 /Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/Model/OTVModel.swift
+/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/Youtube/YoutubeTabBar.swift
+/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/Youtube/YoutubeAllView.swift
+/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/Youtube/YoutubeStreamerView.swift
 /Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/SceneDelegate.swift
+/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/Model/URLImageModel.swift
 /Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/HomeView.swift
-/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/YoutubeView.swift
+/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/Youtube/YoutubeView.swift
 /Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/OTVView.swift
 /Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/util/ImageModifiers.swift
 /Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/CustomTabBarView.swift
@@ -12,3 +17,4 @@
 /Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/Viewmodel/OTVViewModel.swift
 /Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/MerchView.swift
 /Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/TwitterView.swift
+/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/util/URLImageView.swift

@@ -10,6 +10,7 @@ provides-member:
 - ["7SwiftUI5ImageV", "toMerchImage"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "*"
 - !private "/"
 - "CGFloat"
 - "Content"
@@ -18,20 +19,28 @@ depends-top-level:
 - "GeometryProxy"
 - "IconView"
 - "Image"
-- "IntegerLiteralType"
+- !private "IntegerLiteralType"
 - "View"
 - "ViewModifier"
+- !private "print"
 depends-member:
+- !private ["7SwiftUI10AnimatableP", "height"]
 - !private ["7SwiftUI10AnimatableP", "width"]
+- !private ["So6CGSizeV", "height"]
 - !private ["So6CGSizeV", "width"]
 - !private ["s12CaseIterableP", "fit"]
 - !private ["7SwiftUI11ContentModeO", "fit"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "width"]
+- !private ["Se", "height"]
 - !private ["Se", "width"]
+- !private ["SE", "height"]
 - !private ["SE", "width"]
 - !private ["SQ", "IconView"]
 - !private ["SQ", "fit"]
+- !private ["SQ", "height"]
 - !private ["SQ", "modifier"]
 - !private ["SQ", "width"]
 - !private ["7SwiftUI13GeometryProxyV", "size"]
@@ -48,9 +57,11 @@ depends-member:
 - ["8OTVDraft8IconViewV", "body"]
 - ["8OTVDraft8IconViewV", "deinit"]
 - ["8OTVDraft8IconViewV", "geometry"]
-- !private ["8OTVDraft8IconViewV", "iconFrameHeight"]
+- !private ["8OTVDraft8IconViewV", "iconFrameHeightMultiplier"]
 - ["8OTVDraft8IconViewV", "init"]
-- !private ["8OTVDraft8IconViewV", "numberOfIcons"]
+- ["8OTVDraft8IconViewV", "numberOfIcons"]
+- !private ["8OTVDraft8IconViewV", "print"]
+- ["7SwiftUI5ImageV", "CGFloat"]
 - ["7SwiftUI5ImageV", "GeometryProxy"]
 - !private ["7SwiftUI5ImageV", "IconView"]
 - ["7SwiftUI5ImageV", "View"]
@@ -72,10 +83,13 @@ depends-member:
 - ["7SwiftUI12ViewModifierP", "_makeViewList"]
 - ["7SwiftUI12ViewModifierP", "body"]
 - !private ["7SwiftUI12ViewModifierP", "geometry"]
-- !private ["7SwiftUI12ViewModifierP", "iconFrameHeight"]
+- !private ["7SwiftUI12ViewModifierP", "iconFrameHeightMultiplier"]
 - !private ["7SwiftUI12ViewModifierP", "init"]
 - !private ["7SwiftUI12ViewModifierP", "numberOfIcons"]
+- !private ["7SwiftUI12ViewModifierP", "print"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - !private ["7SwiftUI21_ViewModifier_ContentV", "aspectRatio"]
 depends-nominal:
@@ -130,4 +144,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c945eb3197011720e75b0a976bce7ccc"
+interface-hash: "08c8e97c731635162f9adae2ef07f97a"

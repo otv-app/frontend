@@ -13,24 +13,25 @@ import SwiftUI
 //takes in any some View and turns it into an icon
 struct IconView: ViewModifier {
     var geometry: GeometryProxy
+    var numberOfIcons: CGFloat
     
     func body(content: Content) -> some View {
         return content
             .aspectRatio(contentMode: ContentMode.fit)
             .padding(20)
             .scaledToFit()
-            .frame(width: geometry.size.width/self.numberOfIcons, height: self.iconFrameHeight)
+            .frame(width: geometry.size.width/self.numberOfIcons, height: geometry.size.height * iconFrameHeightMultiplier)
+        
     }
     
     // MARK: - Drawing Constants
-    private let numberOfIcons: CGFloat = 5
-    private let iconFrameHeight: CGFloat = 75
+    private let iconFrameHeightMultiplier: CGFloat = 1.2
 }
 
 //extension of image to call the ViewModifier directly
 extension Image {
-    func toIcon(geometry: GeometryProxy) -> some View {
-        self.modifier(IconView(geometry: geometry))
+    func toIcon(geometry: GeometryProxy, icons numberOfIcons: CGFloat) -> some View {
+        self.modifier(IconView(geometry: geometry, numberOfIcons: numberOfIcons))
     }
     
     //lol imma do this later

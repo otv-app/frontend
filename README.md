@@ -47,7 +47,7 @@ MerchView
 
 ###### **July 4th**
 
-In progress...
+Made merch image frames scale to device size, created a basic Youtube page design layout and added a *URLImageModel* that loads images from URL.
 
 **Changes to the code**
 
@@ -56,9 +56,28 @@ MerchView
 - added *GeometryReader* to main body that passes a *CGSize* to *MerchRowView* and *MerchItemView*. Image and button frame size is now (width/2, height/3) and (width/2 * 1.25, height/3 * 1.25) respectively
 - an *OTVStreamer* is passed into *MerchRowView* instead of *StreamerMerch* as name variable was moved to a *Streamer*
 
+ImageModifier
+- Added parameter *numberOfIcons* so icon spacing matches number of icons on a tab bar
+
+YoutubeView
+- Draft concept of the youtube page will be a custom tab bar of latest videos, latest videos by streamer, and all videos of a selected streamer.
+- YoutubeView will have a control flow switching between the three pages and a *YoutubeTabBar*
+
+YoutubeTabBar
+- Tab bar that switches between the three different *YoutubeView* pages
+
+URLImageModel
+- this is an *ObservableObject* that helps load images from URLs and stores it inside this model.
+- uses async main thread to load image
+
+URLImageView
+- displays the image from the *URLImageModel*, default image when it has not loaded.
+
 ## Goals today
 - [x] Add GeometryReader to MerchView
-- [ ] URL to Images for Merch page
-- [ ] Design the Youtube page
+- [x] URL to Images
+- [x] Design the Youtube page
 - [ ] Clean up code for custom tab bar
 - [ ] Change the home button
+- [ ] Make font size scale with device, currently text on IPad Pro is too small
+- [ ] Add a button overlay on Youtube tab bar icons so it covers whole tab

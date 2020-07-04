@@ -2,16 +2,19 @@
 provides-top-level:
 - "OTVStreamer"
 - "Streamer"
+- "YoutubeVideo"
 - "Merch"
 - "StreamerMerch"
 provides-nominal:
 - "8OTVDraft11OTVStreamerV"
 - "8OTVDraft8StreamerP"
+- "8OTVDraft12YoutubeVideoV"
 - "8OTVDraft5MerchV"
 - "8OTVDraft13StreamerMerchV"
 provides-member:
 - ["8OTVDraft11OTVStreamerV", ""]
 - ["8OTVDraft8StreamerP", ""]
+- ["8OTVDraft12YoutubeVideoV", ""]
 - ["8OTVDraft5MerchV", ""]
 - ["8OTVDraft13StreamerMerchV", ""]
 provides-dynamic-lookup:
@@ -24,6 +27,7 @@ depends-top-level:
 - "Streamer"
 - "StreamerMerch"
 - "String"
+- "YoutubeVideo"
 depends-member:
 - ["s12IdentifiableP", "ID"]
 - ["s12IdentifiableP", "Int"]
@@ -74,12 +78,25 @@ depends-member:
 - ["8OTVDraft13StreamerMerchV", "id"]
 - ["8OTVDraft13StreamerMerchV", "init"]
 - ["8OTVDraft13StreamerMerchV", "merches"]
+- ["8OTVDraft12YoutubeVideoV", "ID"]
+- ["8OTVDraft12YoutubeVideoV", "Int"]
+- ["8OTVDraft12YoutubeVideoV", "String"]
+- ["8OTVDraft12YoutubeVideoV", "_Default_ID"]
+- ["8OTVDraft12YoutubeVideoV", "deinit"]
+- ["8OTVDraft12YoutubeVideoV", "id"]
+- ["8OTVDraft12YoutubeVideoV", "init"]
+- ["8OTVDraft12YoutubeVideoV", "rawDate"]
+- ["8OTVDraft12YoutubeVideoV", "rawDuration"]
+- ["8OTVDraft12YoutubeVideoV", "thumbnailURL"]
+- ["8OTVDraft12YoutubeVideoV", "title"]
+- ["8OTVDraft12YoutubeVideoV", "views"]
 depends-nominal:
 - "s12IdentifiableP"
 - "8OTVDraft5MerchV"
 - "8OTVDraft11OTVStreamerV"
 - "8OTVDraft8StreamerP"
 - "8OTVDraft13StreamerMerchV"
+- "8OTVDraft12YoutubeVideoV"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -113,4 +130,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6e5ffda8ca362ff8c84ce5d8f09ccd8c"
+interface-hash: "cbcbe4012299d2b301c65edae45ff733"

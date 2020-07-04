@@ -105,7 +105,6 @@ struct MerchItemView: View {
     let buttonSizeMultiplier: CGFloat = 1.25
 }
 
-
 struct MerchView_Previews: PreviewProvider {
     static var previews: some View {
         MerchView(OTVViewModel())

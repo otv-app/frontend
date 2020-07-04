@@ -22,39 +22,39 @@ struct CustomTabBarView: View {
             HStack {
                 Image("youtube")
                     .renderingMode(.template)
-                    .resizable().toIcon(geometry: geometry)
+                    .resizable().toIcon(geometry: geometry, icons: 5)
                     .foregroundColor(self.viewRouter.currentView == .youtube ? .red : .white)
                     .onTapGesture {
                         self.viewRouter.currentView = TabBarPage.youtube
-                    }
+                }
                 Image("twitter")
                     .renderingMode(.template)
-                    .resizable().toIcon(geometry: geometry)
+                    .resizable().toIcon(geometry: geometry, icons: 5)
                     .foregroundColor(self.viewRouter.currentView == .twitter ? .blue : .white)
                     .onTapGesture {
-                    self.viewRouter.currentView = TabBarPage.twitter
+                        self.viewRouter.currentView = TabBarPage.twitter
                 }
                 ZStack {
                     Circle()
                         .foregroundColor(.blue)
                         .frame(width:75, height: 75)
-                    Image("home").resizable().toIcon(geometry: geometry).onTapGesture {
+                    Image("home").resizable().toIcon(geometry: geometry, icons: 5).onTapGesture {
                         self.viewRouter.currentView = TabBarPage.home
                     }
                 }
                 Image("tshirt")
                     .renderingMode(.template)
-                    .resizable().toIcon(geometry: geometry)
+                    .resizable().toIcon(geometry: geometry, icons: 5)
                     .foregroundColor(self.viewRouter.currentView == .merch ? self.merchFocusColor : .white)
                     .onTapGesture {
-                    self.viewRouter.currentView = TabBarPage.merch
+                        self.viewRouter.currentView = TabBarPage.merch
                 }
                 Image("twitch")
                     .renderingMode(.template)
-                    .resizable().toIcon(geometry: geometry)
+                    .resizable().toIcon(geometry: geometry, icons: 5)
                     .foregroundColor(self.viewRouter.currentView == .twitch ? .purple : .white)
                     .onTapGesture {
-                    self.viewRouter.currentView = TabBarPage.twitch
+                        self.viewRouter.currentView = TabBarPage.twitch
                 }
             }
         }

@@ -1,10 +1,13 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "OTVView"
+- "OTVView_Previews"
 provides-nominal:
 - "8OTVDraft7OTVViewV"
+- "8OTVDraft16OTVView_PreviewsV"
 provides-member:
 - ["8OTVDraft7OTVViewV", ""]
+- ["8OTVDraft16OTVView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "/"
@@ -19,9 +22,13 @@ depends-top-level:
 - !private "MerchView"
 - "OTVView"
 - "OTVViewModel"
+- "OTVView_Previews"
 - "ObservedObject"
+- "PreviewProvider"
 - !private "Spacer"
+- !private "StringLiteralType"
 - !private "TabBarPage"
+- !private "Text"
 - !private "TwitchView"
 - !private "TwitterView"
 - !private "VStack"
@@ -54,6 +61,7 @@ depends-member:
 - !private ["SQ", "bottom"]
 - !private ["SQ", "height"]
 - ["SQ", "home"]
+- !private ["SQ", "init"]
 - ["SQ", "merch"]
 - !private ["SQ", "shadow"]
 - ["SQ", "twitch"]
@@ -105,9 +113,27 @@ depends-member:
 - ["8OTVDraft7OTVViewV", "viewModel"]
 - ["8OTVDraft7OTVViewV", "viewRouter"]
 - ["8OTVDraft12OTVViewModelC", "deinit"]
+- ["8OTVDraft16OTVView_PreviewsV", "Previews"]
+- !private ["8OTVDraft16OTVView_PreviewsV", "Text"]
+- ["8OTVDraft16OTVView_PreviewsV", "View"]
+- ["8OTVDraft16OTVView_PreviewsV", "_Default_Previews"]
+- ["8OTVDraft16OTVView_PreviewsV", "_platform"]
+- ["8OTVDraft16OTVView_PreviewsV", "_previews"]
+- ["8OTVDraft16OTVView_PreviewsV", "deinit"]
+- ["8OTVDraft16OTVView_PreviewsV", "init"]
+- ["8OTVDraft16OTVView_PreviewsV", "platform"]
+- ["8OTVDraft16OTVView_PreviewsV", "previews"]
 - !private ["7Combine16ObservableObjectP", "currentView"]
 - ["7SwiftUI14ObservedObjectV", "init"]
 - !private ["s9OptionSetP", "bottom"]
+- ["7SwiftUI15PreviewProviderP", "Previews"]
+- !private ["7SwiftUI15PreviewProviderP", "Text"]
+- ["7SwiftUI15PreviewProviderP", ""]
+- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI15PreviewProviderP", "_platform"]
+- ["7SwiftUI15PreviewProviderP", "_previews"]
+- ["7SwiftUI15PreviewProviderP", "platform"]
+- ["7SwiftUI15PreviewProviderP", "previews"]
 - !private ["SY", "bottom"]
 - !private ["7SwiftUI4EdgeO3SetV", "bottom"]
 - !private ["s10SetAlgebraP", "bottom"]
@@ -119,6 +145,7 @@ depends-member:
 - ["8OTVDraft10TabBarPageO", "twitch"]
 - ["8OTVDraft10TabBarPageO", "twitter"]
 - ["8OTVDraft10TabBarPageO", "youtube"]
+- !private ["7SwiftUI4TextV", "init"]
 - !private ["8OTVDraft10TwitchViewV", "deinit"]
 - !private ["8OTVDraft10TwitchViewV", "init"]
 - !private ["8OTVDraft11TwitterViewV", "deinit"]
@@ -161,6 +188,14 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
+- ["7SwiftUI16_PreviewProviderP", "Previews"]
+- !private ["7SwiftUI16_PreviewProviderP", "Text"]
+- ["7SwiftUI16_PreviewProviderP", ""]
+- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI16_PreviewProviderP", "_platform"]
+- ["7SwiftUI16_PreviewProviderP", "_previews"]
+- ["7SwiftUI16_PreviewProviderP", "platform"]
+- ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
 - !private "7SwiftUI10AnimatableP"
 - !private "7SwiftUI7AnyViewV"
@@ -182,15 +217,18 @@ depends-nominal:
 - !private "8OTVDraft9MerchViewV"
 - "8OTVDraft7OTVViewV"
 - "8OTVDraft12OTVViewModelC"
+- "8OTVDraft16OTVView_PreviewsV"
 - !private "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
 - !private "s9OptionSetP"
+- "7SwiftUI15PreviewProviderP"
 - !private "SY"
 - !private "7SwiftUI4EdgeO3SetV"
 - !private "s10SetAlgebraP"
 - !private "7SwiftUI10ShapeStyleP"
 - !private "7SwiftUI6SpacerV"
 - "8OTVDraft10TabBarPageO"
+- !private "7SwiftUI4TextV"
 - !private "8OTVDraft10TwitchViewV"
 - !private "8OTVDraft11TwitterViewV"
 - !private "7SwiftUI6VStackV"
@@ -200,6 +238,7 @@ depends-nominal:
 - !private "8OTVDraft11YoutubeViewV"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s21_ObjectiveCBridgeableP"
+- "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -233,4 +272,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f097c747863c7cbf46b004e8dee2288f"
+interface-hash: "050cee5e9b54bfc5215b9355f2c89548"
