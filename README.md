@@ -52,8 +52,8 @@ MerchView
 - added *GeometryReader* to main body that passes a *CGSize* to *MerchRowView* and *MerchItemView*. Image and button frame size is now (width/2, height/3) and (width/2 * 1.25, height/3 * 1.25) respectively
 - an *OTVStreamer* is passed into *MerchRowView* instead of *StreamerMerch* as name variable was moved to a *Streamer*
 
-## Goals
-
+## Goals today
+- [x] Add GeometryReader to MerchView
 - [ ] URL to Images for Merch page
 - [ ] Design the Youtube page
 - [ ] Clean up code for custom tab bar
