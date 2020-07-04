@@ -9,13 +9,46 @@
 import SwiftUI
 
 struct YoutubeStreamerView: View {
+    @ObservedObject var viewModel: OTVViewModel
+    
+    init(_ viewModel: OTVViewModel) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
-        Text("Youtube Streamer")
+        GeometryReader { geometry in
+            self.body(for: geometry.size)
+        }
+    }
+    
+    private func body(for size: CGSize) -> some View {
+        NavigationView {
+            List {
+                ForEach(viewModel.getLatestVideos(latest: 10)) { video in
+                    YoutubeVidCard(size: size, youtubeVid: video)
+                }
+                
+            }.onAppear {
+                    UITableView.appearance().separatorStyle = .none
+            }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
-struct YoutubeStreamerView_Previews: PreviewProvider {
-    static var previews: some View {
-        YoutubeStreamerView()
+struct YoutubeVidCard: View {
+    var size: CGSize
+    var youtubeVid: YoutubeVideo
+    
+    var body: some View {
+        VStack {
+            URLImageView(urlString: youtubeVid.thumbnailURL, width: size.width/2, height: size.height/3)
+            Text(youtubeVid.title)
+            HStack {
+                Text(youtubeVid.channelName)
+                Text("\(youtubeVid.views)")
+                Text(youtubeVid.rawDuration)
+            }
+        }
+        .frame(width: size.width)
     }
 }

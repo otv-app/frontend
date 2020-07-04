@@ -9,9 +9,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "??"
 - "AssignmentPrecedence"
-- !private "FloatLiteralType"
+- "CGFloat"
 - !private "Image"
-- !private "IntegerLiteralType"
 - "ObservedObject"
 - "String"
 - "StringLiteralType"
@@ -48,6 +47,7 @@ depends-member:
 - !private ["8OTVDraft13URLImageModelC", "init"]
 - ["8OTVDraft12URLImageViewV", "$urlImageModel"]
 - ["8OTVDraft12URLImageViewV", "Body"]
+- ["8OTVDraft12URLImageViewV", "CGFloat"]
 - !private ["8OTVDraft12URLImageViewV", "Image"]
 - ["8OTVDraft12URLImageViewV", "ObservedObject"]
 - ["8OTVDraft12URLImageViewV", "String"]
@@ -62,8 +62,10 @@ depends-member:
 - ["8OTVDraft12URLImageViewV", "body"]
 - ["8OTVDraft12URLImageViewV", "defaultImage"]
 - ["8OTVDraft12URLImageViewV", "deinit"]
+- ["8OTVDraft12URLImageViewV", "height"]
 - ["8OTVDraft12URLImageViewV", "init"]
 - ["8OTVDraft12URLImageViewV", "urlImageModel"]
+- ["8OTVDraft12URLImageViewV", "width"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Image"]
 - ["7SwiftUI4ViewP", "ObservedObject"]
@@ -77,10 +79,12 @@ depends-member:
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "defaultImage"]
 - !private ["7SwiftUI4ViewP", "frame"]
+- !private ["7SwiftUI4ViewP", "height"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "resizable"]
 - !private ["7SwiftUI4ViewP", "scaledToFit"]
 - !private ["7SwiftUI4ViewP", "urlImageModel"]
+- !private ["7SwiftUI4ViewP", "width"]
 - ["s26_ExpressibleByImageLiteralP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
@@ -142,4 +146,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "fc96ebdc68652398fd7672aba1010c65"
+interface-hash: "7000ee0965e3b899296b87373b4b27da"

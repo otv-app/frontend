@@ -9,11 +9,13 @@ provides-dynamic-lookup:
 - "$model"
 - "_model"
 - "createOTVModel"
+- "getLatestVideos"
 - "model"
 - "streamers"
 depends-top-level:
 - "Array"
 - !private "FloatLiteralType"
+- "Int"
 - !private "IntegerLiteralType"
 - "OTVModel"
 - "OTVStreamer"
@@ -22,6 +24,7 @@ depends-top-level:
 - "Published"
 - !private "StreamerMerch"
 - !private "StringLiteralType"
+- "YoutubeVideo"
 depends-member:
 - !private ["Sa", "subscript"]
 - !private ["SK", "subscript"]
@@ -47,16 +50,19 @@ depends-member:
 - !private ["8OTVDraft11OTVStreamerV", "init"]
 - !private ["8OTVDraft12OTVViewModelC", "$model"]
 - ["8OTVDraft12OTVViewModelC", "Array"]
+- ["8OTVDraft12OTVViewModelC", "Int"]
 - ["8OTVDraft12OTVViewModelC", "OTVModel"]
 - ["8OTVDraft12OTVViewModelC", "OTVStreamer"]
 - ["8OTVDraft12OTVViewModelC", "OTVViewModel"]
 - ["8OTVDraft12OTVViewModelC", "ObjectWillChangePublisher"]
 - ["8OTVDraft12OTVViewModelC", "Published"]
 - !private ["8OTVDraft12OTVViewModelC", "StreamerMerch"]
+- ["8OTVDraft12OTVViewModelC", "YoutubeVideo"]
 - ["8OTVDraft12OTVViewModelC", "_Default_ObjectWillChangePublisher"]
 - !private ["8OTVDraft12OTVViewModelC", "_model"]
 - ["8OTVDraft12OTVViewModelC", "createOTVModel"]
 - ["8OTVDraft12OTVViewModelC", "deinit"]
+- ["8OTVDraft12OTVViewModelC", "getLatestVideos"]
 - ["8OTVDraft12OTVViewModelC", "init"]
 - !private ["8OTVDraft12OTVViewModelC", "model"]
 - ["8OTVDraft12OTVViewModelC", "objectWillChange"]
@@ -78,6 +84,7 @@ depends-member:
 - !private ["ST", "subscript"]
 - !private ["8OTVDraft8StreamerP", "init"]
 - !private ["8OTVDraft13StreamerMerchV", "init"]
+- !private ["8OTVDraft12YoutubeVideoV", "init"]
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
@@ -112,6 +119,7 @@ depends-nominal:
 - !private "ST"
 - !private "8OTVDraft8StreamerP"
 - !private "8OTVDraft13StreamerMerchV"
+- !private "8OTVDraft12YoutubeVideoV"
 - !private "s14_ArrayProtocolP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s19_HasContiguousBytesP"
@@ -150,4 +158,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2cfa4541f96141c2edfd661858890048"
+interface-hash: "089b926d0f266d765ff3b97a2f11605f"

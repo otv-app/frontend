@@ -62,6 +62,7 @@ ImageModifier
 YoutubeView
 - Draft concept of the youtube page will be a custom tab bar of latest videos, latest videos by streamer, and all videos of a selected streamer.
 - YoutubeView will have a control flow switching between the three pages and a *YoutubeTabBar*
+- Added a temporary title, *YoutubeTabBar* under, then a View according to which youtube tab.
 
 YoutubeTabBar
 - Tab bar that switches between the three different *YoutubeView* pages
@@ -72,12 +73,26 @@ URLImageModel
 
 URLImageView
 - displays the image from the *URLImageModel*, default image when it has not loaded.
+- Takes in an URL string, width, and height of the image
+
+YoutubeStreamerView
+- created one of the pages of the youtube tab. Should show the top 10 latest youtube videos of all streamers
+- holds a *OTVViewModel* and uses a *NavigationView* body
+
+StreamerModel
+- added a new struct *YoutubeVideo* that holds all the basic information of a Youtube video, including channel name.
+- added an *Array<YoutubeVideo>* to *OTVStreamer*
+
+OTVViewModel
+- updated past *OTVStreamer* objects to properly initialize with the new data struct
+- added an intent function getLatestVideos(numVid: Int) that takes in an Int and returns an *Array<YoutubeVideo>* of according count. The function temporary returns a hardcoded array but should filter and sort out a list of videos in the future. Not sure if the sorting process should happen in the model or view model.
+
+
 
 ## Goals today
-- [x] Add GeometryReader to MerchView
-- [x] URL to Images
-- [x] Design the Youtube page
-- [ ] Clean up code for custom tab bar
+- [ ] Clean up YoutubeStreamerView
 - [ ] Change the home button
 - [ ] Make font size scale with device, currently text on IPad Pro is too small
 - [ ] Add a button overlay on Youtube tab bar icons so it covers whole tab
+- [ ] Fix Tab bar
+- [ ] Try to abstract certain view layouts

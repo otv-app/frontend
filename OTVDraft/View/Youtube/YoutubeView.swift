@@ -19,6 +19,8 @@ struct YoutubeView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack {
+                Text("Youtube")
+                    .background(Color.red)
                 YoutubeTabBar(tab: self.$tab)
                     .frame(width: geometry.size.width, height: geometry.size.height/10)
                     .background(Color.red.shadow(radius: 2))
@@ -30,8 +32,8 @@ struct YoutubeView: View {
     
     private func getYoutubeTabView() -> AnyView {
         switch self.tab {
-            case YoutubeTab.home: return AnyView(YoutubeHomeView())
-            case YoutubeTab.byStreamer: return AnyView(YoutubeStreamerView())
+        case YoutubeTab.home: return AnyView(YoutubeHomeView(self.viewModel))
+        case YoutubeTab.byStreamer: return AnyView(YoutubeStreamerView(self.viewModel))
             case YoutubeTab.showAll: return AnyView(YoutubeAllView())
         }
     }

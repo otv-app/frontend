@@ -53,7 +53,6 @@ depends-member:
 - ["8OTVDraft11OTVStreamerV", "Int"]
 - ["8OTVDraft11OTVStreamerV", "StreamerMerch"]
 - ["8OTVDraft11OTVStreamerV", "String"]
-- ["8OTVDraft11OTVStreamerV", "YoutubeVideo"]
 - ["8OTVDraft11OTVStreamerV", "_Default_ID"]
 - ["8OTVDraft11OTVStreamerV", "deinit"]
 - ["8OTVDraft11OTVStreamerV", "id"]
@@ -62,7 +61,6 @@ depends-member:
 - ["8OTVDraft11OTVStreamerV", "name"]
 - ["8OTVDraft11OTVStreamerV", "platform"]
 - ["8OTVDraft11OTVStreamerV", "url"]
-- ["8OTVDraft11OTVStreamerV", "youtubeVideos"]
 - ["8OTVDraft8StreamerP", "ID"]
 - ["8OTVDraft8StreamerP", "Int"]
 - ["8OTVDraft8StreamerP", "String"]
@@ -132,4 +130,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "153286528769332463ff0acf1f3d6d38"
+interface-hash: "cbcbe4012299d2b301c65edae45ff733"

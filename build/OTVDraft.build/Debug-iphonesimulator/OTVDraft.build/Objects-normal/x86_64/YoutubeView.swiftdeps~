@@ -22,6 +22,8 @@ depends-top-level:
 - "PreviewProvider"
 - !private "Spacer"
 - "State"
+- !private "StringLiteralType"
+- !private "Text"
 - !private "VStack"
 - "View"
 - !private "YoutubeAllView"
@@ -51,9 +53,11 @@ depends-member:
 - ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
 - !private ["SE", "height"]
 - !private ["SE", "width"]
+- !private ["SQ", "background"]
 - ["SQ", "byStreamer"]
 - !private ["SQ", "height"]
 - ["SQ", "home"]
+- !private ["SQ", "init"]
 - !private ["SQ", "red"]
 - !private ["SQ", "shadow"]
 - ["SQ", "showAll"]
@@ -83,6 +87,8 @@ depends-member:
 - !private ["7SwiftUI6SpacerV", "init"]
 - ["7SwiftUI5StateV", "init"]
 - ["7SwiftUI5StateV", "wrappedValue"]
+- !private ["7SwiftUI4TextV", "background"]
+- !private ["7SwiftUI4TextV", "init"]
 - !private ["7SwiftUI6VStackV", "init"]
 - !private ["7SwiftUI4ViewP", "$tab"]
 - !private ["7SwiftUI4ViewP", "AnyView"]
@@ -92,6 +98,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "Spacer"]
 - ["7SwiftUI4ViewP", "State"]
+- !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "VStack"]
 - !private ["7SwiftUI4ViewP", "YoutubeAllView"]
 - !private ["7SwiftUI4ViewP", "YoutubeHomeView"]
@@ -134,6 +141,7 @@ depends-member:
 - ["8OTVDraft11YoutubeViewV", "ObservedObject"]
 - !private ["8OTVDraft11YoutubeViewV", "Spacer"]
 - ["8OTVDraft11YoutubeViewV", "State"]
+- !private ["8OTVDraft11YoutubeViewV", "Text"]
 - !private ["8OTVDraft11YoutubeViewV", "VStack"]
 - ["8OTVDraft11YoutubeViewV", "View"]
 - !private ["8OTVDraft11YoutubeViewV", "YoutubeAllView"]
@@ -198,6 +206,7 @@ depends-nominal:
 - !private "7SwiftUI10ShapeStyleP"
 - !private "7SwiftUI6SpacerV"
 - "7SwiftUI5StateV"
+- !private "7SwiftUI4TextV"
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"

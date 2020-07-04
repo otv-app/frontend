@@ -11,9 +11,13 @@ import SwiftUI
 struct URLImageView: View {
     //this view is redrawn when objectWillChange.send() is called, basically when the image is done loading.
     @ObservedObject var urlImageModel: URLImageModel
+    let width: CGFloat
+    let height: CGFloat
     
-    init (urlString: String) {
+    init (urlString: String, width: CGFloat, height: CGFloat) {
         urlImageModel = URLImageModel(urlString: urlString)
+        self.width = width
+        self.height = height
     }
     
     //image is the default one unless urlImageModel.image is not nil
@@ -21,7 +25,7 @@ struct URLImageView: View {
         Image(uiImage: urlImageModel.image ?? URLImageView.defaultImage!)
             .resizable()
             .scaledToFit()
-            .frame(width: 100, height: 100)
+            .frame(width: width, height: height)
     }
     
     //i need to find a better default image than this lol

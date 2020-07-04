@@ -26,12 +26,19 @@ class OTVViewModel: ObservableObject {
             .init(id: 3, merches: [.init(id: 0, price: 0.99, image: "gasPoki", link: "https://www.google.com/"), .init(id: 1, price: 2.99, image: "uwuPoki", link: "https://www.google.com/")]),
             .init(id: 4, merches: [.init(id: 0, price: 10.99, image: "toast", link: "https://disguisedtoast.com/")])
         ]
+        
+        let videos: [YoutubeVideo] = [
+            .init(id: "x2_nbkP6AU8", title: "BIG SCHNOOZER", channelName: "xqcow", views: 9000, thumbnailURL: "https://img.youtube.com/vi/x2_nbkP6AU8/0.jpg", rawDuration: "duration", rawDate: "date"),
+            .init(id: "CfR0wln_p8s", title: "Mr. Cow reacts to Daily Dose of Internet", channelName: "xqcow", views: 10000, thumbnailURL: "https://img.youtube.com/vi/CfR0wln_p8s/0.jpg", rawDuration: "duration", rawDate: "date")
+        ]
+        
+        
         let streamers: [OTVStreamer] = [
-            .init(id: 0, name: "OfflineTV", platform: "Youtube", url: "youtube.com/otv", merch: streamerMerchInfo[0]),
-            .init(id: 1, name: "LilyPichu", platform: "Twitch", url: "twitch.tv/lily", merch: streamerMerchInfo[1]),
-            .init(id: 2, name: "Predmyster", platform: "Rehab", url: "twitch.tv/pred", merch: streamerMerchInfo[2]),
-            .init(id: 3, name: "Pokimane", platform: "Twitch", url: "twitch.tv/pokimane", merch: streamerMerchInfo[3]),
-            .init(id: 4, name: "DisguisedToast", platform: "Youtube", url: "youtube.com/toast", merch: streamerMerchInfo[4])
+            .init(id: 0, name: "OfflineTV", platform: "Youtube", url: "youtube.com/otv", merch: streamerMerchInfo[0], youtubeVideos: videos),
+            .init(id: 1, name: "LilyPichu", platform: "Twitch", url: "twitch.tv/lily", merch: streamerMerchInfo[1], youtubeVideos: videos),
+            .init(id: 2, name: "Predmyster", platform: "Rehab", url: "twitch.tv/pred", merch: streamerMerchInfo[2], youtubeVideos: videos),
+            .init(id: 3, name: "Pokimane", platform: "Twitch", url: "twitch.tv/pokimane", merch: streamerMerchInfo[3], youtubeVideos: videos),
+            .init(id: 4, name: "DisguisedToast", platform: "Youtube", url: "youtube.com/toast", merch: streamerMerchInfo[4], youtubeVideos: videos)
         ]
         return OTVModel<OTVStreamer>(streamers: streamers)
     }
@@ -43,4 +50,13 @@ class OTVViewModel: ObservableObject {
     
     // MARK: - Intents
     //some getter functions prob
+    
+    //function gets latest x videos from all streamers
+    //if we want to implement filters in the future, we should use a calculated streamers array that filters and checks for latest videos
+    //for now its hard coded
+    func getLatestVideos(latest numVid: Int) -> Array<YoutubeVideo>{
+        [ .init(id: "x2_nbkP6AU8", title: "BIG SCHNOOZER", channelName: "xqcow", views: 9000, thumbnailURL: "https://img.youtube.com/vi/x2_nbkP6AU8/0.jpg", rawDuration: "duration", rawDate: "date"),
+          .init(id: "CfR0wln_p8s", title: "Mr. Cow reacts to Daily Dose of Internet", channelName: "xqcow", views: 10000, thumbnailURL: "https://img.youtube.com/vi/CfR0wln_p8s/0.jpg", rawDuration: "duration", rawDate: "date")
+        ]
+    }
 }

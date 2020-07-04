@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct YoutubeHomeView: View {
-    var body: some View {
-        URLImageView(urlString: "http://img.youtube.com/vi/AziAmG7o_zU/0.jpg")
+    @ObservedObject var viewModel: OTVViewModel
+    
+    init(_ viewModel: OTVViewModel) {
+        self.viewModel = viewModel
     }
-}
-
-struct YoutubeHomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        YoutubeHomeView()
+    
+    var body: some View {
+        Text("Youtube Home")
     }
 }

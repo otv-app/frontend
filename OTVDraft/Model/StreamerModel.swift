@@ -18,7 +18,7 @@ struct OTVStreamer: Streamer {
     let platform: String
     let url: String
     let merch: StreamerMerch
-    //var youtubeVideos: [YoutubeVideo]
+    var youtubeVideos: [YoutubeVideo]
 }
 
 //protocol for a streamer
@@ -32,6 +32,7 @@ protocol Streamer: Identifiable {
 struct YoutubeVideo: Identifiable {
     let id: String
     var title: String
+    var channelName: String
     var views: Int
     var thumbnailURL: String
     var rawDuration: String
