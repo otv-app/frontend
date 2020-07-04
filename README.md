@@ -12,6 +12,7 @@ CustomTabBarView
 - made a util file ImageModifiers and grouped all the *@ViewModifier* in here, added a modifier helper function to an extended *Image*
 - changed states from ints to enums, external state control uses *@ObservedObject*/*@Published* instead of *@State*
 - Instead of overlaying a button on icons, directly added a tap gesture to the image itself
+
 MerchView
 - added *Identifiable* protocol to *Merch* and *StreamerMerch*
 
@@ -25,14 +26,17 @@ Set up a basic MVVM structure, separated the model logic in the MerchView into a
 StreamerModel
 - moved *Merch*, *StreamerMerch* struct to a new StreamerModel file, moved the name variable in *StreamerMerch* to a new *Streamer* protocol.
 - added a *OTVSTreamer* of *Streamer* protocol.
+
 OTVModel
 - created a temporary model struct that stores an array of type T where T is a *Streamer*, currently the OTV streamers are of type *OTVStreamer* in case we want to implement other streamers in the future
+
 OTVViewModel
 - this view model has a *ObservableObject* protocol so it can track changes to the model as its passed in the view.
 - should initialize the model here as *OTVModel<OTVStreamer>* and prob api calls 
 - model is *@Published* so view can be redrawn when tab changes or model changes
 - Intent functions should go here though it would probably be only getter methods for now
 - holds a copy of the *Array<Streamer>* from the model.
+
 OTVView
 - Custom tab bar and control flow for different tabbed views go here.
 - since *@ViewBuilder* can't have control flow for now, I have casted the views to *AnyView*
