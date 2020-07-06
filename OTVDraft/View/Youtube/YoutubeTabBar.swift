@@ -11,50 +11,42 @@ import SwiftUI
 struct YoutubeTabBar: View {
     //keep track of current tab page
     @Binding var tab: YoutubeTab
+    var geometry: GeometryProxy
     
     var body: some View {
-        GeometryReader { geometry in
-            ZStack {
-                Color.red.edgesIgnoringSafeArea(.bottom)
-                .frame(width: geometry.size.width, height: geometry.size.height/10)
-                HStack {
-                    VStack {
-                        Image("home")
-                            .renderingMode(.template)
-                            .resizable().toIcon(geometrty: geometry, icons: 3)
-                            .foregroundColor(self.tab == YoutubeTab.home ? .white : .black)
-                            .onTapGesture {
-                                self.tab = YoutubeTab.home
-                        }
-                        //the offset here should be scaled to size
-                        Rectangle().size(width: geometry.size.width/3, height: 5).offset(x: 0, y: -geometry.size.height/4).foregroundColor(self.tab == YoutubeTab.home ? .white : .red)
-                    }
-                    VStack {
-                        Image("twitter")
-                            .renderingMode(.template)
-                            .resizable().toIcon(geometry: geometry, icons: 3)
-                            .foregroundColor(self.tab == YoutubeTab.byStreamer ? .white : .black)
-                            .onTapGesture {
-                                self.tab = YoutubeTab.byStreamer
-                        }
-                        //the offset here should be scaled to size
-                        Rectangle().size(width: geometry.size.width/3, height: 5).offset(x: 0, y: -geometry.size.height/4).foregroundColor(self.tab == YoutubeTab.byStreamer ? .white : .red)
-                    }
-                    VStack {
-                        Image("youtube")
-                            .renderingMode(.template)
-                            .resizable().toIcon(geometry: geometry, icons: 3)
-                            .foregroundColor(self.tab == YoutubeTab.showAll ? .white : .black)
-                            .onTapGesture {
-                                self.tab = YoutubeTab.showAll
-                        }
-                        //the offset here should be scaled to size
-                        Rectangle().size(width: geometry.size.width/3, height: 5).offset(x: 0, y: -geometry.size.height/4).foregroundColor(self.tab == YoutubeTab.showAll ? .white : .red)
-                    }
+        ZStack {
+            Color.red
+                .frame(width: geometry.size.width, height: geometry.size.height/5)
+            VStack (spacing: 0) {
+                Text("Youtube")
+                    .frame(width: geometry.size.width, height: geometry.size.height/10)
+                HStack (spacing: 0) {
+                    YoutubeIcon(iconImageString: "home", tab: YoutubeTab.home)
+                    YoutubeIcon(iconImageString: "twitter", tab: YoutubeTab.byStreamer)
+                    YoutubeIcon(iconImageString: "youtube", tab: YoutubeTab.showAll)
                 }
             }
         }
     }
+    
+    private func YoutubeIcon(iconImageString: String, tab: YoutubeTab) -> some View {
+        VStack (spacing: 0) {
+            Image(iconImageString)
+                .renderingMode(.template)
+                .resizable().toIcon(width: geometry.size.width/numberOfIcons, height: geometry.size.height/10)
+                .foregroundColor(self.tab == tab ? .white : .black)
+                .onTapGesture {
+                    self.tab = tab
+            }
+            Rectangle().size(width: geometry.size.width/numberOfIcons, height: youtubeIconBarHeight)
+                .foregroundColor(self.tab == tab ? .white : .red)
+        }
+        .frame(width: geometry.size.width/numberOfIcons, height: geometry.size.height/10 + youtubeIconBarHeight)
+    }
+    
+    // MARK: - Drawing Constants
+    let numberOfIcons: CGFloat = 3
+    let youtubeIconBarHeight: CGFloat = 3
 }
 
 public enum YoutubeTab {

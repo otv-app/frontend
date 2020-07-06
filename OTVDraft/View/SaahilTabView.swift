@@ -5,75 +5,98 @@
 //  Created by Saahil Kumar on 6/13/20.
 //  Copyright © 2020 Saahil Kumar. All rights reserved.
 //
+
 import SwiftUI
 
 struct SaahilTabView: View {
-    //@ObservedObject var viewRouter: ViewRouter
+    @ObservedObject var viewRouter: ViewRouter
+    var size: CGSize
     
-    init(_ viewRouter: ViewRouter) {
+    init(_ viewRouter: ViewRouter, size: CGSize) {
         self.viewRouter = viewRouter
+        self.size = size
     }
     
     var body : some View {
-        GeometryReader { geometry in
-            ZStack {
-                Color.black.edgesIgnoringSafeArea(.bottom)
-                    .frame(height: geometry.size.height/10)
+        ZStack {
+            Color.black.edgesIgnoringSafeArea(.bottom)
+                .frame(height: size.height/10)
+            
+            HStack {
                 
-                
-                HStack {
+                Button(action: {
+                    
+                }) {
                     Image("twitch")
-                            .renderingMode(.template)
-                            .resizable().toIcon(geometry: geometry, icons: 5)
-                            .foregroundColor(self.viewRouter.currentView == .youtube ? .red : .white)
+                        .renderingMode(.template)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: size.width/3, height: size.height/10)
+                        .foregroundColor(self.viewRouter.currentView == .twitch ? .purple : .white)
+                }
+                
+                Spacer()
+                
+                Button(action: {
                     
-                    Spacer()
-                    
-                    Button(action: {
-                        
-                    }) {
-                        Image("youtube")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: CGFloat( self.getTabSize()), height: CGFloat(self.getTabSize()))
-                    }
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        
-                    }) {
-                        Image("home")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: CGFloat( self.getTabSize()), height: CGFloat(self.getTabSize()))
-                    }
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        
-                    }) {
-                        Image("twitter")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: CGFloat( self.getTabSize()), height: CGFloat(self.getTabSize()))
-                    }
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        
-                    }) {
-                        Image("tshirt")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: CGFloat( self.getTabSize()), height: CGFloat(self.getTabSize()))
-                    }
+                }) {
+                    Image("youtube")
+                        .renderingMode(.template)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: size.width/3, height: size.height/10)
+                        .foregroundColor(self.viewRouter.currentView == .youtube ? .red : .white)
                     
                 }
-                .padding(.horizontal, 35)
+                
+                Spacer()
+                
+                Button(action: {
+                    
+                }) {
+                    Image("home")
+                        .renderingMode(.template)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: size.width/3, height: size.height/10)
+                        .foregroundColor(self.viewRouter.currentView == .home ? .yellow : .white)
+                }
+                
+                
+                Spacer()
+                
+                Button(action: {
+                    
+                }) {
+                    Image("twitter")
+                        .renderingMode(.template)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: size.width/3, height: size.height/10)
+                        .foregroundColor(self.viewRouter.currentView == .twitter ? .blue : .white)
+                }
+                
+                
+                Spacer()
+                
+                Button(action: {
+                    
+                }) {
+                    Image("tshirt")
+                        .renderingMode(.template)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: size.width/3, height: size.height/10)
+                        .foregroundColor(self.viewRouter.currentView == .merch ? self.merchFocusColor : .white)
+                    
+                }
+                
             }
+            .padding(.horizontal, 35)
         }
     }
+    
+    // MARK: - Drawing Constants
+    let merchFocusColor: Color = Color(red: 255/55, green: 113/255, blue: 181/255)
 }
+

@@ -10,10 +10,8 @@ provides-member:
 - ["8OTVDraft16OTVView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "/"
 - "AnyView"
 - "AssignmentPrecedence"
-- !private "Color"
 - !private "CustomTabBarView"
 - "FloatLiteralType"
 - !private "GeometryReader"
@@ -36,45 +34,19 @@ depends-top-level:
 - "ViewRouter"
 - !private "YoutubeView"
 depends-member:
-- !private ["7SwiftUI10AnimatableP", "height"]
-- !private ["7SwiftUI10AnimatableP", "width"]
 - !private ["7SwiftUI7AnyViewV", "init"]
-- !private ["So6CGSizeV", "height"]
-- !private ["So6CGSizeV", "width"]
-- !private ["7SwiftUI5ColorV", "black"]
-- !private ["7SwiftUI5ColorV", "shadow"]
-- !private ["s28CustomDebugStringConvertibleP", "height"]
-- !private ["s28CustomDebugStringConvertibleP", "width"]
-- !private ["s17CustomReflectableP", "height"]
-- !private ["s17CustomReflectableP", "width"]
-- !private ["s23CustomStringConvertibleP", "black"]
-- !private ["s23CustomStringConvertibleP", "shadow"]
 - !private ["8OTVDraft16CustomTabBarViewV", "deinit"]
-- !private ["8OTVDraft16CustomTabBarViewV", "frame"]
 - !private ["8OTVDraft16CustomTabBarViewV", "init"]
-- !private ["Se", "height"]
-- !private ["Se", "width"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
-- !private ["SE", "height"]
-- !private ["SE", "width"]
-- !private ["SQ", "black"]
-- !private ["SQ", "bottom"]
-- !private ["SQ", "height"]
 - ["SQ", "home"]
 - !private ["SQ", "init"]
 - ["SQ", "merch"]
-- !private ["SQ", "shadow"]
 - ["SQ", "twitch"]
 - ["SQ", "twitter"]
-- !private ["SQ", "width"]
 - ["SQ", "youtube"]
-- !private ["s25ExpressibleByArrayLiteralP", "bottom"]
-- !private ["7SwiftUI13GeometryProxyV", "size"]
 - !private ["7SwiftUI14GeometryReaderV", "init"]
-- !private ["SH", "black"]
 - ["SH", "home"]
 - ["SH", "merch"]
-- !private ["SH", "shadow"]
 - ["SH", "twitch"]
 - ["SH", "twitter"]
 - ["SH", "youtube"]
@@ -86,7 +58,6 @@ depends-member:
 - ["8OTVDraft7OTVViewV", "$viewRouter"]
 - ["8OTVDraft7OTVViewV", "AnyView"]
 - ["8OTVDraft7OTVViewV", "Body"]
-- !private ["8OTVDraft7OTVViewV", "Color"]
 - !private ["8OTVDraft7OTVViewV", "CustomTabBarView"]
 - !private ["8OTVDraft7OTVViewV", "GeometryReader"]
 - !private ["8OTVDraft7OTVViewV", "HomeView"]
@@ -125,7 +96,6 @@ depends-member:
 - ["8OTVDraft16OTVView_PreviewsV", "previews"]
 - !private ["7Combine16ObservableObjectP", "currentView"]
 - ["7SwiftUI14ObservedObjectV", "init"]
-- !private ["s9OptionSetP", "bottom"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - !private ["7SwiftUI15PreviewProviderP", "Text"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -134,11 +104,6 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
-- !private ["SY", "bottom"]
-- !private ["7SwiftUI4EdgeO3SetV", "bottom"]
-- !private ["s10SetAlgebraP", "bottom"]
-- !private ["7SwiftUI10ShapeStyleP", "black"]
-- !private ["7SwiftUI10ShapeStyleP", "shadow"]
 - !private ["7SwiftUI6SpacerV", "init"]
 - ["8OTVDraft10TabBarPageO", "home"]
 - ["8OTVDraft10TabBarPageO", "merch"]
@@ -150,11 +115,9 @@ depends-member:
 - !private ["8OTVDraft10TwitchViewV", "init"]
 - !private ["8OTVDraft11TwitterViewV", "deinit"]
 - !private ["8OTVDraft11TwitterViewV", "init"]
-- !private ["7SwiftUI6VStackV", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI6VStackV", "init"]
 - !private ["7SwiftUI4ViewP", "AnyView"]
 - ["7SwiftUI4ViewP", "Body"]
-- !private ["7SwiftUI4ViewP", "Color"]
 - !private ["7SwiftUI4ViewP", "CustomTabBarView"]
 - !private ["7SwiftUI4ViewP", "GeometryReader"]
 - !private ["7SwiftUI4ViewP", "HomeView"]
@@ -169,14 +132,9 @@ depends-member:
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
-- !private ["7SwiftUI4ViewP", "background"]
-- !private ["7SwiftUI4ViewP", "black"]
 - ["7SwiftUI4ViewP", "body"]
-- !private ["7SwiftUI4ViewP", "edgesIgnoringSafeArea"]
-- !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "getPageView"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "shadow"]
 - !private ["7SwiftUI4ViewP", "viewModel"]
 - !private ["7SwiftUI4ViewP", "viewRouter"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
@@ -184,10 +142,6 @@ depends-member:
 - ["8OTVDraft10ViewRouterC", "deinit"]
 - !private ["8OTVDraft11YoutubeViewV", "deinit"]
 - !private ["8OTVDraft11YoutubeViewV", "init"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "height"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "width"]
-- !private ["s21_ObjectiveCBridgeableP", "height"]
-- !private ["s21_ObjectiveCBridgeableP", "width"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "Text"]
 - ["7SwiftUI16_PreviewProviderP", ""]
@@ -197,20 +151,10 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
-- !private "7SwiftUI10AnimatableP"
 - !private "7SwiftUI7AnyViewV"
-- !private "So6CGSizeV"
-- !private "7SwiftUI5ColorV"
-- !private "s28CustomDebugStringConvertibleP"
-- !private "s17CustomReflectableP"
-- !private "s23CustomStringConvertibleP"
 - !private "8OTVDraft16CustomTabBarViewV"
-- !private "Se"
 - "7SwiftUI15DynamicPropertyP"
-- !private "SE"
 - "SQ"
-- !private "s25ExpressibleByArrayLiteralP"
-- !private "7SwiftUI13GeometryProxyV"
 - !private "7SwiftUI14GeometryReaderV"
 - "SH"
 - !private "8OTVDraft8HomeViewV"
@@ -220,12 +164,7 @@ depends-nominal:
 - "8OTVDraft16OTVView_PreviewsV"
 - !private "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
-- !private "s9OptionSetP"
 - "7SwiftUI15PreviewProviderP"
-- !private "SY"
-- !private "7SwiftUI4EdgeO3SetV"
-- !private "s10SetAlgebraP"
-- !private "7SwiftUI10ShapeStyleP"
 - !private "7SwiftUI6SpacerV"
 - "8OTVDraft10TabBarPageO"
 - !private "7SwiftUI4TextV"
@@ -236,8 +175,6 @@ depends-nominal:
 - !private "7SwiftUI11ViewBuilderV"
 - "8OTVDraft10ViewRouterC"
 - !private "8OTVDraft11YoutubeViewV"
-- !private "s30_CustomPlaygroundQuickLookableP"
-- !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:

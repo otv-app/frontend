@@ -25,15 +25,11 @@ struct OTVView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            VStack {
-                Spacer()
+            VStack (spacing: 0) {
                 self.getPageView()
                 Spacer()
-                CustomTabBarView(self.viewRouter)
-                .frame(width: geometry.size.width, height: geometry.size.height/10)
-                .background(Color.black.shadow(radius: 2))
+                CustomTabBarView(self.viewRouter, geometry: geometry)
             }
-            .edgesIgnoringSafeArea(.bottom)
         }
     }
     

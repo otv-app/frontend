@@ -1,29 +1,25 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "CustomTabBarView"
-- "CustomTabBarView_Previews"
 provides-nominal:
 - "8OTVDraft16CustomTabBarViewV"
-- "8OTVDraft25CustomTabBarView_PreviewsV"
 provides-member:
 - ["8OTVDraft16CustomTabBarViewV", ""]
-- ["8OTVDraft25CustomTabBarView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "/"
 - !private "=="
 - "AssignmentPrecedence"
-- !private "Circle"
+- "CGFloat"
 - "Color"
 - "CustomTabBarView"
-- "CustomTabBarView_Previews"
 - "FloatLiteralType"
-- !private "GeometryReader"
+- "GeometryProxy"
 - !private "HStack"
 - !private "Image"
 - "IntegerLiteralType"
 - "ObservedObject"
-- "PreviewProvider"
+- !private "Spacer"
 - !private "StringLiteralType"
 - !private "TabBarPage"
 - !private "TernaryPrecedence"
@@ -31,38 +27,47 @@ depends-top-level:
 - "ViewRouter"
 - !private "ZStack"
 depends-member:
-- !private ["7SwiftUI10AnimatableP", "foregroundColor"]
-- !private ["7SwiftUI10AnimatableP", "init"]
-- !private ["7SwiftUI6CircleV", "foregroundColor"]
-- !private ["7SwiftUI6CircleV", "init"]
+- !private ["7SwiftUI10AnimatableP", "height"]
+- !private ["7SwiftUI10AnimatableP", "width"]
+- !private ["So6CGSizeV", "height"]
+- !private ["So6CGSizeV", "width"]
+- !private ["7SwiftUI5ColorV", "black"]
 - !private ["7SwiftUI5ColorV", "blue"]
+- !private ["7SwiftUI5ColorV", "edgesIgnoringSafeArea"]
 - ["7SwiftUI5ColorV", "init"]
 - !private ["7SwiftUI5ColorV", "purple"]
 - !private ["7SwiftUI5ColorV", "red"]
 - !private ["7SwiftUI5ColorV", "white"]
 - !private ["s28CustomDebugStringConvertibleP", "blue"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "purple"]
 - !private ["s28CustomDebugStringConvertibleP", "red"]
 - !private ["s28CustomDebugStringConvertibleP", "template"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s17CustomReflectableP", "blue"]
+- !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "purple"]
 - !private ["s17CustomReflectableP", "red"]
 - !private ["s17CustomReflectableP", "template"]
 - !private ["s17CustomReflectableP", "white"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "black"]
 - !private ["s23CustomStringConvertibleP", "blue"]
+- !private ["s23CustomStringConvertibleP", "edgesIgnoringSafeArea"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "purple"]
 - !private ["s23CustomStringConvertibleP", "red"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - ["8OTVDraft16CustomTabBarViewV", "$viewRouter"]
 - ["8OTVDraft16CustomTabBarViewV", "Body"]
-- !private ["8OTVDraft16CustomTabBarViewV", "Circle"]
+- ["8OTVDraft16CustomTabBarViewV", "CGFloat"]
 - ["8OTVDraft16CustomTabBarViewV", "Color"]
-- !private ["8OTVDraft16CustomTabBarViewV", "GeometryReader"]
+- ["8OTVDraft16CustomTabBarViewV", "GeometryProxy"]
 - !private ["8OTVDraft16CustomTabBarViewV", "HStack"]
 - !private ["8OTVDraft16CustomTabBarViewV", "Image"]
 - ["8OTVDraft16CustomTabBarViewV", "ObservedObject"]
+- !private ["8OTVDraft16CustomTabBarViewV", "Spacer"]
 - !private ["8OTVDraft16CustomTabBarViewV", "TabBarPage"]
 - ["8OTVDraft16CustomTabBarViewV", "View"]
 - ["8OTVDraft16CustomTabBarViewV", "ViewRouter"]
@@ -73,32 +78,31 @@ depends-member:
 - !private ["8OTVDraft16CustomTabBarViewV", "_viewRouter"]
 - ["8OTVDraft16CustomTabBarViewV", "body"]
 - ["8OTVDraft16CustomTabBarViewV", "deinit"]
+- ["8OTVDraft16CustomTabBarViewV", "geometry"]
 - ["8OTVDraft16CustomTabBarViewV", "init"]
 - ["8OTVDraft16CustomTabBarViewV", "merchFocusColor"]
+- ["8OTVDraft16CustomTabBarViewV", "numberOfIcons"]
 - ["8OTVDraft16CustomTabBarViewV", "viewRouter"]
-- !private ["8OTVDraft25CustomTabBarView_PreviewsV", "CustomTabBarView"]
-- ["8OTVDraft25CustomTabBarView_PreviewsV", "Previews"]
-- ["8OTVDraft25CustomTabBarView_PreviewsV", "View"]
-- !private ["8OTVDraft25CustomTabBarView_PreviewsV", "ViewRouter"]
-- ["8OTVDraft25CustomTabBarView_PreviewsV", "_Default_Previews"]
-- ["8OTVDraft25CustomTabBarView_PreviewsV", "_platform"]
-- ["8OTVDraft25CustomTabBarView_PreviewsV", "_previews"]
-- ["8OTVDraft25CustomTabBarView_PreviewsV", "deinit"]
-- ["8OTVDraft25CustomTabBarView_PreviewsV", "init"]
-- ["8OTVDraft25CustomTabBarView_PreviewsV", "platform"]
-- ["8OTVDraft25CustomTabBarView_PreviewsV", "previews"]
 - !private ["Se", "blue"]
+- !private ["Se", "height"]
 - !private ["Se", "purple"]
 - !private ["Se", "red"]
 - !private ["Se", "template"]
 - !private ["Se", "white"]
+- !private ["Se", "width"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["SE", "blue"]
+- !private ["SE", "height"]
 - !private ["SE", "purple"]
 - !private ["SE", "red"]
 - !private ["SE", "template"]
 - !private ["SE", "white"]
+- !private ["SE", "width"]
+- !private ["SQ", "black"]
 - !private ["SQ", "blue"]
+- !private ["SQ", "bottom"]
+- !private ["SQ", "edgesIgnoringSafeArea"]
+- !private ["SQ", "height"]
 - !private ["SQ", "home"]
 - ["SQ", "init"]
 - !private ["SQ", "merch"]
@@ -111,20 +115,24 @@ depends-member:
 - !private ["SQ", "twitch"]
 - !private ["SQ", "twitter"]
 - !private ["SQ", "white"]
+- !private ["SQ", "width"]
 - !private ["SQ", "youtube"]
+- !private ["s25ExpressibleByArrayLiteralP", "bottom"]
 - !private ["s23ExpressibleByNilLiteralP", "blue"]
 - !private ["s23ExpressibleByNilLiteralP", "purple"]
 - !private ["s23ExpressibleByNilLiteralP", "red"]
 - !private ["s23ExpressibleByNilLiteralP", "template"]
 - !private ["s23ExpressibleByNilLiteralP", "white"]
-- !private ["7SwiftUI14GeometryReaderV", "init"]
+- !private ["7SwiftUI13GeometryProxyV", "size"]
 - !private ["7SwiftUI7GestureP", "blue"]
 - !private ["7SwiftUI7GestureP", "purple"]
 - !private ["7SwiftUI7GestureP", "red"]
 - !private ["7SwiftUI7GestureP", "template"]
 - !private ["7SwiftUI7GestureP", "white"]
 - !private ["7SwiftUI6HStackV", "init"]
+- !private ["SH", "black"]
 - !private ["SH", "blue"]
+- !private ["SH", "edgesIgnoringSafeArea"]
 - !private ["SH", "home"]
 - ["SH", "init"]
 - !private ["SH", "merch"]
@@ -139,32 +147,25 @@ depends-member:
 - !private ["7SwiftUI5ImageV", "renderingMode"]
 - !private ["7SwiftUI5ImageV", "resizable"]
 - !private ["7SwiftUI5ImageV", "toIcon"]
-- !private ["7SwiftUI15InsettableShapeP", "foregroundColor"]
-- !private ["7SwiftUI15InsettableShapeP", "init"]
 - !private ["7Combine16ObservableObjectP", "currentView"]
-- !private ["7Combine16ObservableObjectP", "init"]
 - ["7SwiftUI14ObservedObjectV", "init"]
+- !private ["s9OptionSetP", "bottom"]
 - !private ["Sq", "blue"]
 - !private ["Sq", "purple"]
 - !private ["Sq", "red"]
 - !private ["Sq", "template"]
 - !private ["Sq", "white"]
-- !private ["7SwiftUI15PreviewProviderP", "CustomTabBarView"]
-- ["7SwiftUI15PreviewProviderP", "Previews"]
-- !private ["7SwiftUI15PreviewProviderP", "ViewRouter"]
-- ["7SwiftUI15PreviewProviderP", ""]
-- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
-- ["7SwiftUI15PreviewProviderP", "_platform"]
-- ["7SwiftUI15PreviewProviderP", "_previews"]
-- ["7SwiftUI15PreviewProviderP", "platform"]
-- ["7SwiftUI15PreviewProviderP", "previews"]
-- !private ["7SwiftUI5ShapeP", "foregroundColor"]
-- !private ["7SwiftUI5ShapeP", "init"]
+- !private ["SY", "bottom"]
+- !private ["7SwiftUI4EdgeO3SetV", "bottom"]
+- !private ["s10SetAlgebraP", "bottom"]
+- !private ["7SwiftUI10ShapeStyleP", "black"]
 - !private ["7SwiftUI10ShapeStyleP", "blue"]
+- !private ["7SwiftUI10ShapeStyleP", "edgesIgnoringSafeArea"]
 - ["7SwiftUI10ShapeStyleP", "init"]
 - !private ["7SwiftUI10ShapeStyleP", "purple"]
 - !private ["7SwiftUI10ShapeStyleP", "red"]
 - !private ["7SwiftUI10ShapeStyleP", "white"]
+- !private ["7SwiftUI6SpacerV", "init"]
 - !private ["8OTVDraft10TabBarPageO", "deinit"]
 - !private ["8OTVDraft10TabBarPageO", "home"]
 - !private ["8OTVDraft10TabBarPageO", "merch"]
@@ -173,24 +174,27 @@ depends-member:
 - !private ["8OTVDraft10TabBarPageO", "youtube"]
 - !private ["7SwiftUI5ImageV21TemplateRenderingModeO", "template"]
 - ["7SwiftUI4ViewP", "Body"]
-- !private ["7SwiftUI4ViewP", "Circle"]
 - ["7SwiftUI4ViewP", "Color"]
-- !private ["7SwiftUI4ViewP", "GeometryReader"]
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "Image"]
 - ["7SwiftUI4ViewP", "ObservedObject"]
+- !private ["7SwiftUI4ViewP", "Spacer"]
 - !private ["7SwiftUI4ViewP", "TabBarPage"]
 - !private ["7SwiftUI4ViewP", "ZStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
+- !private ["7SwiftUI4ViewP", "black"]
 - !private ["7SwiftUI4ViewP", "blue"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI4ViewP", "foregroundColor"]
 - !private ["7SwiftUI4ViewP", "frame"]
+- !private ["7SwiftUI4ViewP", "geometry"]
 - ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "merchFocusColor"]
+- !private ["7SwiftUI4ViewP", "numberOfIcons"]
 - !private ["7SwiftUI4ViewP", "onTapGesture"]
 - !private ["7SwiftUI4ViewP", "purple"]
 - !private ["7SwiftUI4ViewP", "red"]
@@ -203,56 +207,52 @@ depends-member:
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["8OTVDraft10ViewRouterC", "currentView"]
 - ["8OTVDraft10ViewRouterC", "deinit"]
-- !private ["8OTVDraft10ViewRouterC", "init"]
 - !private ["7SwiftUI6ZStackV", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "height"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - !private ["s21_ObjectiveCBridgeableP", "blue"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "purple"]
 - !private ["s21_ObjectiveCBridgeableP", "red"]
 - !private ["s21_ObjectiveCBridgeableP", "template"]
 - !private ["s21_ObjectiveCBridgeableP", "white"]
-- !private ["7SwiftUI16_PreviewProviderP", "CustomTabBarView"]
-- ["7SwiftUI16_PreviewProviderP", "Previews"]
-- !private ["7SwiftUI16_PreviewProviderP", "ViewRouter"]
-- ["7SwiftUI16_PreviewProviderP", ""]
-- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
-- ["7SwiftUI16_PreviewProviderP", "_platform"]
-- ["7SwiftUI16_PreviewProviderP", "_previews"]
-- ["7SwiftUI16_PreviewProviderP", "platform"]
-- ["7SwiftUI16_PreviewProviderP", "previews"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
 depends-nominal:
 - !private "7SwiftUI10AnimatableP"
-- !private "7SwiftUI6CircleV"
+- !private "So6CGSizeV"
 - "7SwiftUI5ColorV"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "8OTVDraft16CustomTabBarViewV"
-- "8OTVDraft25CustomTabBarView_PreviewsV"
 - !private "Se"
 - "7SwiftUI15DynamicPropertyP"
 - !private "SE"
 - "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- !private "7SwiftUI14GeometryReaderV"
+- !private "7SwiftUI13GeometryProxyV"
 - !private "7SwiftUI7GestureP"
 - !private "7SwiftUI6HStackV"
 - "SH"
 - !private "7SwiftUI5ImageV"
-- !private "7SwiftUI15InsettableShapeP"
 - !private "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
+- !private "s9OptionSetP"
 - !private "Sq"
-- "7SwiftUI15PreviewProviderP"
-- !private "7SwiftUI5ShapeP"
+- !private "SY"
+- !private "7SwiftUI4EdgeO3SetV"
+- !private "s10SetAlgebraP"
 - "7SwiftUI10ShapeStyleP"
+- !private "7SwiftUI6SpacerV"
 - !private "8OTVDraft10TabBarPageO"
 - !private "7SwiftUI5ImageV21TemplateRenderingModeO"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
 - "8OTVDraft10ViewRouterC"
 - !private "7SwiftUI6ZStackV"
+- !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s21_ObjectiveCBridgeableP"
-- "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -286,4 +286,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6e9c958a20c60c838eb801f6f03508aa"
+interface-hash: "9fa9458efb727d318f665200853b2873"

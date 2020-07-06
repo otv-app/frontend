@@ -33,6 +33,7 @@
 		B244584724B0E12800D8443A /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244584624B0E12800D8443A /* URLImageView.swift */; };
 		B244584924B0E43900D8443A /* URLImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244584824B0E43900D8443A /* URLImageModel.swift */; };
 		B244584B24B24A0100D8443A /* SaahilTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244584A24B24A0100D8443A /* SaahilTabView.swift */; };
+		B29DEC2624B37DA000ABA441 /* SaahilTabViewOriginal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29DEC2524B37DA000ABA441 /* SaahilTabViewOriginal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		B244584624B0E12800D8443A /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
 		B244584824B0E43900D8443A /* URLImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageModel.swift; sourceTree = "<group>"; };
 		B244584A24B24A0100D8443A /* SaahilTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaahilTabView.swift; sourceTree = "<group>"; };
+		B29DEC2524B37DA000ABA441 /* SaahilTabViewOriginal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaahilTabViewOriginal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				B24457D724ADEDC600D8443A /* TwitterView.swift */,
 				B24457D124ADDCF100D8443A /* CustomTabBarView.swift */,
 				B244584A24B24A0100D8443A /* SaahilTabView.swift */,
+				B29DEC2524B37DA000ABA441 /* SaahilTabViewOriginal.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				B24457E424AE45C500D8443A /* OTVModel.swift in Sources */,
 				B244583F24B0C04100D8443A /* YoutubeTabBar.swift in Sources */,
 				B244584524B0D9E000D8443A /* YoutubeAllView.swift in Sources */,
+				B29DEC2624B37DA000ABA441 /* SaahilTabViewOriginal.swift in Sources */,
 				B244584324B0D9D300D8443A /* YoutubeStreamerView.swift in Sources */,
 				B24457A424ADDC4600D8443A /* SceneDelegate.swift in Sources */,
 				B244584924B0E43900D8443A /* URLImageModel.swift in Sources */,

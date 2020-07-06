@@ -88,20 +88,38 @@ OTVViewModel
 - added an intent function getLatestVideos(numVid: Int) that takes in an Int and returns an *Array<YoutubeVideo>* of according count. The function temporary returns a hardcoded array but should filter and sort out a list of videos in the future. Not sure if the sorting process should happen in the model or view model.
 
 
-###### **July 5th**
+###### **July 6th**
 
-In progress...
+Fixed some tab bar layout bug as GeometryReader was causing views to fill whole container.
 
 **Changes to code**
 
 YoutubeStreamerView
 - added a bogus navigation title to hide navigation bar.
 
+ImageModifiers
+- changed *IconView* to take in a width and height instead of a *GeometryProxy* 
+- changed toIcon function to take in a width and height instead of a *GeometryProxy*
+- removed numberOfIcons
+- I changed the *IconView* to take in an individual width and height instead of a *GeometryProxy* because the proxy was taking in the size of the a tab bar so it doesn't make sense if *IconView* isn't used on a tab bar. NumberOfIcons variable is also removed for that reason.
+
+YoutubeTabBar
+- removed *GeometryReader* and instead passed in a *GeometryProxy* from parent View so inner View does not become inflexible.
+- Moved frame from parent view to this view
+- Added a private function to create icon frames 
+- Added a title to tab bar
+
+CustomTabBarView
+- removed *GeometryReader* and instead passed in a *GeometryProxy* from parent View so inner View does not become inflexible.
+- Moved frame from parent view to this view
+
+YoutubeView
+- removed the title from the view and moved to Youtube tab bar
+
 
 ## Goals today
-- [ ] Clean up YoutubeStreamerView
+- [ ] Use Saahil's YoutubeStreamerView for YoutubeHomeView
 - [ ] Change the home button
 - [ ] Make font size scale with device, currently text on IPad Pro is too small
 - [ ] Add a button overlay on Youtube tab bar icons so it covers whole tab
-- [ ] Fix Tab bar
 - [ ] Try to abstract certain view layouts
