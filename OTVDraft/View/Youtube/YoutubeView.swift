@@ -18,14 +18,15 @@ struct YoutubeView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            VStack {
+            VStack (spacing: 0) {
                 Text("Youtube")
-                    .background(Color.red)
-                YoutubeTabBar(tab: self.$tab)
                     .frame(width: geometry.size.width, height: geometry.size.height/10)
-                    .background(Color.red.shadow(radius: 2))
-                Spacer()
-                self.getYoutubeTabView()
+                    .background(Color.red)
+                //SaahilTabView(ViewRouter())
+                    //.frame(width: geometry.size.width, height: geometry.size.height/10)
+                    //.background(Color.red.shadow(radius: 2))
+                //self.getYoutubeTabView()
+                YoutubeStreamerView(self.viewModel)
             }
         }
     }

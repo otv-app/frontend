@@ -88,6 +88,15 @@ OTVViewModel
 - added an intent function getLatestVideos(numVid: Int) that takes in an Int and returns an *Array<YoutubeVideo>* of according count. The function temporary returns a hardcoded array but should filter and sort out a list of videos in the future. Not sure if the sorting process should happen in the model or view model.
 
 
+###### **July 5th**
+
+In progress...
+
+**Changes to code**
+
+YoutubeStreamerView
+- added a bogus navigation title to hide navigation bar.
+
 
 ## Goals today
 - [ ] Clean up YoutubeStreamerView

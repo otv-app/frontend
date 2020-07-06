@@ -32,6 +32,7 @@
 		B244584524B0D9E000D8443A /* YoutubeAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244584424B0D9E000D8443A /* YoutubeAllView.swift */; };
 		B244584724B0E12800D8443A /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244584624B0E12800D8443A /* URLImageView.swift */; };
 		B244584924B0E43900D8443A /* URLImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244584824B0E43900D8443A /* URLImageModel.swift */; };
+		B244584B24B24A0100D8443A /* SaahilTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244584A24B24A0100D8443A /* SaahilTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		B244584424B0D9E000D8443A /* YoutubeAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeAllView.swift; sourceTree = "<group>"; };
 		B244584624B0E12800D8443A /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
 		B244584824B0E43900D8443A /* URLImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageModel.swift; sourceTree = "<group>"; };
+		B244584A24B24A0100D8443A /* SaahilTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaahilTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				B24457D524ADEDB800D8443A /* HomeView.swift */,
 				B24457D724ADEDC600D8443A /* TwitterView.swift */,
 				B24457D124ADDCF100D8443A /* CustomTabBarView.swift */,
+				B244584A24B24A0100D8443A /* SaahilTabView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				B244583C24AFA38C00D8443A /* StreamerModel.swift in Sources */,
 				B24457E224AE443D00D8443A /* OTVViewModel.swift in Sources */,
 				B24457E024ADEE2700D8443A /* MerchView.swift in Sources */,
+				B244584B24B24A0100D8443A /* SaahilTabView.swift in Sources */,
 				B24457D824ADEDC600D8443A /* TwitterView.swift in Sources */,
 				B244584724B0E12800D8443A /* URLImageView.swift in Sources */,
 			);

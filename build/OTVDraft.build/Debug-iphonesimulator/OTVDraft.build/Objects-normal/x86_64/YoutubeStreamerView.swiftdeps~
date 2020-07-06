@@ -2,16 +2,20 @@
 provides-top-level:
 - "YoutubeStreamerView"
 - "YoutubeVidCard"
+- "YoutubeStreamerView_Previews"
 provides-nominal:
 - "8OTVDraft19YoutubeStreamerViewV"
 - "8OTVDraft14YoutubeVidCardV"
+- "8OTVDraft28YoutubeStreamerView_PreviewsV"
 provides-member:
 - ["8OTVDraft19YoutubeStreamerViewV", ""]
 - ["8OTVDraft14YoutubeVidCardV", ""]
+- ["8OTVDraft28YoutubeStreamerView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "/"
 - "AssignmentPrecedence"
+- !private "BooleanLiteralType"
 - "CGSize"
 - "FloatLiteralType"
 - !private "ForEach"
@@ -22,14 +26,16 @@ depends-top-level:
 - !private "NavigationView"
 - "OTVViewModel"
 - "ObservedObject"
+- "PreviewProvider"
 - !private "StackNavigationViewStyle"
-- "StringLiteralType"
+- !private "StringLiteralType"
 - !private "Text"
 - !private "UITableView"
 - !private "URLImageView"
 - !private "VStack"
 - "View"
 - "YoutubeStreamerView"
+- "YoutubeStreamerView_Previews"
 - "YoutubeVidCard"
 - "YoutubeVideo"
 depends-member:
@@ -37,22 +43,27 @@ depends-member:
 - !private ["7SwiftUI10AnimatableP", "width"]
 - !private ["So15CALayerDelegateP", "appearance"]
 - !private ["So15CALayerDelegateP", "separatorStyle"]
+- !private ["So15CALayerDelegateP", "showsVerticalScrollIndicator"]
 - !private ["So6CGSizeV", "height"]
 - !private ["So6CGSizeV", "width"]
 - !private ["s7CVarArgP", "appearance"]
 - !private ["s7CVarArgP", "separatorStyle"]
+- !private ["s7CVarArgP", "showsVerticalScrollIndicator"]
 - !private ["s28CustomDebugStringConvertibleP", "appearance"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "separatorStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "showsVerticalScrollIndicator"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "width"]
 - !private ["s23CustomStringConvertibleP", "appearance"]
 - !private ["s23CustomStringConvertibleP", "separatorStyle"]
+- !private ["s23CustomStringConvertibleP", "showsVerticalScrollIndicator"]
 - !private ["Se", "height"]
 - !private ["Se", "width"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["7SwiftUI18DynamicViewContentP", "init"]
+- !private ["7SwiftUI18DynamicViewContentP", "navigationBarTitle"]
 - !private ["SE", "height"]
 - !private ["SE", "width"]
 - !private ["SQ", "appearance"]
@@ -60,14 +71,17 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "none"]
 - !private ["SQ", "separatorStyle"]
+- !private ["SQ", "showsVerticalScrollIndicator"]
 - !private ["SQ", "width"]
 - !private ["7SwiftUI7ForEachV", "init"]
+- !private ["7SwiftUI7ForEachV", "navigationBarTitle"]
 - !private ["7SwiftUI13GeometryProxyV", "size"]
 - !private ["7SwiftUI14GeometryReaderV", "init"]
 - !private ["7SwiftUI6HStackV", "init"]
 - !private ["SH", "appearance"]
 - !private ["SH", "none"]
 - !private ["SH", "separatorStyle"]
+- !private ["SH", "showsVerticalScrollIndicator"]
 - !private ["s12IdentifiableP", "channelName"]
 - !private ["s12IdentifiableP", "rawDuration"]
 - !private ["s12IdentifiableP", "thumbnailURL"]
@@ -77,17 +91,31 @@ depends-member:
 - !private ["7SwiftUI4ListV", "onAppear"]
 - !private ["So8NSCodingP", "appearance"]
 - !private ["So8NSCodingP", "separatorStyle"]
+- !private ["So8NSCodingP", "showsVerticalScrollIndicator"]
 - !private ["So8NSObjectC", "appearance"]
 - !private ["So8NSObjectC", "separatorStyle"]
+- !private ["So8NSObjectC", "showsVerticalScrollIndicator"]
 - !private ["So8NSObjectP", "appearance"]
 - !private ["So8NSObjectP", "separatorStyle"]
+- !private ["So8NSObjectP", "showsVerticalScrollIndicator"]
 - !private ["7SwiftUI14NavigationViewV", "init"]
 - !private ["7SwiftUI14NavigationViewV", "navigationViewStyle"]
 - !private ["7SwiftUI19NavigationViewStyleP", "init"]
 - ["8OTVDraft12OTVViewModelC", "deinit"]
 - !private ["8OTVDraft12OTVViewModelC", "getLatestVideos"]
+- !private ["8OTVDraft12OTVViewModelC", "init"]
 - !private ["7Combine16ObservableObjectP", "getLatestVideos"]
+- !private ["7Combine16ObservableObjectP", "init"]
 - ["7SwiftUI14ObservedObjectV", "init"]
+- !private ["7SwiftUI15PreviewProviderP", "OTVViewModel"]
+- ["7SwiftUI15PreviewProviderP", "Previews"]
+- !private ["7SwiftUI15PreviewProviderP", "YoutubeStreamerView"]
+- ["7SwiftUI15PreviewProviderP", ""]
+- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI15PreviewProviderP", "_platform"]
+- ["7SwiftUI15PreviewProviderP", "_previews"]
+- ["7SwiftUI15PreviewProviderP", "platform"]
+- ["7SwiftUI15PreviewProviderP", "previews"]
 - !private ["SY", "none"]
 - !private ["So29UITableViewCellSeparatorStyleV", "none"]
 - !private ["7SwiftUI24StackNavigationViewStyleV", "init"]
@@ -98,44 +126,64 @@ depends-member:
 - !private ["7SwiftUI4TextV", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "appearance"]
 - !private ["So29UIAccessibilityIdentificationP", "separatorStyle"]
+- !private ["So29UIAccessibilityIdentificationP", "showsVerticalScrollIndicator"]
 - !private ["So12UIAppearanceP", "appearance"]
 - !private ["So12UIAppearanceP", "separatorStyle"]
+- !private ["So12UIAppearanceP", "showsVerticalScrollIndicator"]
 - !private ["So21UIAppearanceContainerP", "appearance"]
 - !private ["So21UIAppearanceContainerP", "separatorStyle"]
+- !private ["So21UIAppearanceContainerP", "showsVerticalScrollIndicator"]
 - !private ["So17UICoordinateSpaceP", "appearance"]
 - !private ["So17UICoordinateSpaceP", "separatorStyle"]
+- !private ["So17UICoordinateSpaceP", "showsVerticalScrollIndicator"]
 - !private ["So23UIDataSourceTranslatingP", "appearance"]
 - !private ["So23UIDataSourceTranslatingP", "separatorStyle"]
+- !private ["So23UIDataSourceTranslatingP", "showsVerticalScrollIndicator"]
 - !private ["So13UIDynamicItemP", "appearance"]
 - !private ["So13UIDynamicItemP", "separatorStyle"]
+- !private ["So13UIDynamicItemP", "showsVerticalScrollIndicator"]
 - !private ["So18UIFocusEnvironmentP", "appearance"]
 - !private ["So18UIFocusEnvironmentP", "separatorStyle"]
+- !private ["So18UIFocusEnvironmentP", "showsVerticalScrollIndicator"]
 - !private ["So11UIFocusItemP", "appearance"]
 - !private ["So11UIFocusItemP", "separatorStyle"]
+- !private ["So11UIFocusItemP", "showsVerticalScrollIndicator"]
 - !private ["So20UIFocusItemContainerP", "appearance"]
 - !private ["So20UIFocusItemContainerP", "separatorStyle"]
+- !private ["So20UIFocusItemContainerP", "showsVerticalScrollIndicator"]
 - !private ["So30UIFocusItemScrollableContainerP", "appearance"]
 - !private ["So30UIFocusItemScrollableContainerP", "separatorStyle"]
+- !private ["So30UIFocusItemScrollableContainerP", "showsVerticalScrollIndicator"]
 - !private ["So24UILargeContentViewerItemP", "appearance"]
 - !private ["So24UILargeContentViewerItemP", "separatorStyle"]
+- !private ["So24UILargeContentViewerItemP", "showsVerticalScrollIndicator"]
 - !private ["So30UIPasteConfigurationSupportingP", "appearance"]
 - !private ["So30UIPasteConfigurationSupportingP", "separatorStyle"]
+- !private ["So30UIPasteConfigurationSupportingP", "showsVerticalScrollIndicator"]
 - !private ["So11UIResponderC", "appearance"]
 - !private ["So11UIResponderC", "separatorStyle"]
+- !private ["So11UIResponderC", "showsVerticalScrollIndicator"]
 - !private ["So30UIResponderStandardEditActionsP", "appearance"]
 - !private ["So30UIResponderStandardEditActionsP", "separatorStyle"]
+- !private ["So30UIResponderStandardEditActionsP", "showsVerticalScrollIndicator"]
 - !private ["So12UIScrollViewC", "appearance"]
 - !private ["So12UIScrollViewC", "separatorStyle"]
+- !private ["So12UIScrollViewC", "showsVerticalScrollIndicator"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "appearance"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "separatorStyle"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "showsVerticalScrollIndicator"]
 - !private ["So11UITableViewC", "appearance"]
 - !private ["So11UITableViewC", "separatorStyle"]
+- !private ["So11UITableViewC", "showsVerticalScrollIndicator"]
 - !private ["So18UITraitEnvironmentP", "appearance"]
 - !private ["So18UITraitEnvironmentP", "separatorStyle"]
+- !private ["So18UITraitEnvironmentP", "showsVerticalScrollIndicator"]
 - !private ["So23UIUserActivityRestoringP", "appearance"]
 - !private ["So23UIUserActivityRestoringP", "separatorStyle"]
+- !private ["So23UIUserActivityRestoringP", "showsVerticalScrollIndicator"]
 - !private ["So6UIViewC", "appearance"]
 - !private ["So6UIViewC", "separatorStyle"]
+- !private ["So6UIViewC", "showsVerticalScrollIndicator"]
 - !private ["8OTVDraft12URLImageViewV", "deinit"]
 - !private ["8OTVDraft12URLImageViewV", "init"]
 - !private ["7SwiftUI6VStackV", "frame"]
@@ -161,6 +209,8 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "callAsFunction"]
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "navigationBarHidden"]
+- !private ["7SwiftUI4ViewP", "navigationBarTitle"]
 - !private ["7SwiftUI4ViewP", "navigationViewStyle"]
 - !private ["7SwiftUI4ViewP", "onAppear"]
 - !private ["7SwiftUI4ViewP", "size"]
@@ -188,6 +238,17 @@ depends-member:
 - ["8OTVDraft19YoutubeStreamerViewV", "deinit"]
 - ["8OTVDraft19YoutubeStreamerViewV", "init"]
 - ["8OTVDraft19YoutubeStreamerViewV", "viewModel"]
+- !private ["8OTVDraft28YoutubeStreamerView_PreviewsV", "OTVViewModel"]
+- ["8OTVDraft28YoutubeStreamerView_PreviewsV", "Previews"]
+- ["8OTVDraft28YoutubeStreamerView_PreviewsV", "View"]
+- !private ["8OTVDraft28YoutubeStreamerView_PreviewsV", "YoutubeStreamerView"]
+- ["8OTVDraft28YoutubeStreamerView_PreviewsV", "_Default_Previews"]
+- ["8OTVDraft28YoutubeStreamerView_PreviewsV", "_platform"]
+- ["8OTVDraft28YoutubeStreamerView_PreviewsV", "_previews"]
+- ["8OTVDraft28YoutubeStreamerView_PreviewsV", "deinit"]
+- ["8OTVDraft28YoutubeStreamerView_PreviewsV", "init"]
+- ["8OTVDraft28YoutubeStreamerView_PreviewsV", "platform"]
+- ["8OTVDraft28YoutubeStreamerView_PreviewsV", "previews"]
 - ["8OTVDraft14YoutubeVidCardV", "Body"]
 - ["8OTVDraft14YoutubeVidCardV", "CGSize"]
 - !private ["8OTVDraft14YoutubeVidCardV", "HStack"]
@@ -214,12 +275,24 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "appearance"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "separatorStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "showsVerticalScrollIndicator"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "appearance"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "separatorStyle"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "showsVerticalScrollIndicator"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["7SwiftUI16_PreviewProviderP", "OTVViewModel"]
+- ["7SwiftUI16_PreviewProviderP", "Previews"]
+- !private ["7SwiftUI16_PreviewProviderP", "YoutubeStreamerView"]
+- ["7SwiftUI16_PreviewProviderP", ""]
+- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI16_PreviewProviderP", "_platform"]
+- ["7SwiftUI16_PreviewProviderP", "_previews"]
+- ["7SwiftUI16_PreviewProviderP", "platform"]
+- ["7SwiftUI16_PreviewProviderP", "previews"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "appearance"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "separatorStyle"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "showsVerticalScrollIndicator"]
 depends-nominal:
 - !private "7SwiftUI10AnimatableP"
 - !private "So15CALayerDelegateP"
@@ -248,6 +321,7 @@ depends-nominal:
 - "8OTVDraft12OTVViewModelC"
 - !private "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
+- "7SwiftUI15PreviewProviderP"
 - !private "SY"
 - !private "So29UITableViewCellSeparatorStyleV"
 - !private "7SwiftUI24StackNavigationViewStyleV"
@@ -279,12 +353,14 @@ depends-nominal:
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
 - "8OTVDraft19YoutubeStreamerViewV"
+- "8OTVDraft28YoutubeStreamerView_PreviewsV"
 - "8OTVDraft14YoutubeVidCardV"
 - !private "8OTVDraft12YoutubeVideoV"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
+- "7SwiftUI16_PreviewProviderP"
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
@@ -319,4 +395,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b1f8e9caadee045a1f43a7e7b4148718"
+interface-hash: "8757063984b3aaf72b5c2c09e427db5a"
