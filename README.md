@@ -94,9 +94,6 @@ Fixed some tab bar layout bug as GeometryReader was causing views to fill whole 
 
 **Changes to code**
 
-YoutubeStreamerView
-- added a bogus navigation title to hide navigation bar.
-
 ImageModifiers
 - changed *IconView* to take in a width and height instead of a *GeometryProxy* 
 - changed toIcon function to take in a width and height instead of a *GeometryProxy*
@@ -112,6 +109,9 @@ YoutubeTabBar
 CustomTabBarView
 - removed *GeometryReader* and instead passed in a *GeometryProxy* from parent View so inner View does not become inflexible.
 - Moved frame from parent view to this view
+
+YoutubeHomeView
+- added a bogus navigation title to hide navigation bar.
 
 YoutubeView
 - removed the title from the view and moved to Youtube tab bar
