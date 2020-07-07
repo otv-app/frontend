@@ -16,15 +16,19 @@ struct CustomTabBarView: View {
     var geometry: GeometryProxy
     
     /**
-     Creates a `CustomTabBarView` 
+     Creates a `CustomTabBarView` struct.
+     
+     - Parameters:
+        - viewRouter: a given `ViewRouter` to track current tab
+        - geometry: the parent view container
      */
     init(_ viewRouter: ViewRouter, geometry: GeometryProxy) {
         self.viewRouter = viewRouter
         self.geometry = geometry
     }
     
+    /// The body of this custom tab bar that displays the icons for each pages of this app.
     var body: some View {
-        //each image uses a ViewModifier to modify the icon
         ZStack {
             Color.black.edgesIgnoringSafeArea(.bottom)
                 .frame(width: geometry.size.width, height: geometry.size.height/8)
@@ -39,6 +43,16 @@ struct CustomTabBarView: View {
         }
     }
     
+    /**
+     helper function that creates an icon for the tab bar
+     
+     - Parameters:
+        - iconImageString: a given string url of an image
+        - tab: the tab page this icon is associated with
+        - focusColor: the color of the icon when the page is in focus.
+     
+     - Returns: some `View` that represents the body for an icon on the tab bar.
+     */
     private func TabBarIcon(iconImageString: String, tab: TabBarPage, focusColor: Color) -> some View {
         Image(iconImageString)
             .renderingMode(.template)
