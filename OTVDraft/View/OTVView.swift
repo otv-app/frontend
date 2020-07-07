@@ -9,20 +9,26 @@
 import SwiftUI
 
 struct OTVView: View {
-    //this is an observedObject so when objectWillChange.send() is called when @Published changes,
-    //this will redraw the view. This happens when currentView changes which keeps track of what
-    //tab we are on, and also happens when model changes like maybe when a new youtube video is
-    //out or something and view will be redrawn
-    //we can use @State for the currentView keeping track of tabs, ObservedObject is basically
-    //keeping track of a state but with complex data so instead of a string or int
+    /// An `ObservedObject` that will redraw this `View` if tab pages changes.
     @ObservedObject var viewRouter: ViewRouter
+    /// An `ObservedObject` that will redraw this `View` if the view model changes.
     @ObservedObject var viewModel: OTVViewModel
     
+    /**
+     Creates an `OTVView` struct.
+     
+     - Parameters:
+        - viewRouter: a given `ViewRouter` that tracks the current tab bar
+        - viewModel: a given `OTVViewModel`
+     */
     init(_ viewRouter: ViewRouter, _ viewModel: OTVViewModel) {
         self.viewRouter = viewRouter
         self.viewModel = viewModel
     }
     
+    /**
+     The body for this `View`. Displays the appropriate view for the current tab and puts a `CustomTabBarView` at the bottom.
+     */
     var body: some View {
         GeometryReader { geometry in
             VStack (spacing: 0) {
@@ -33,8 +39,11 @@ struct OTVView: View {
         }
     }
     
-    //swiftui is new and sucks so it doesn't allow control flow in @ViewBuilders so I needa
-    //cast these views into AnyView
+    /**
+     Gets the appropriate `View` for the current tab. Returns an `AnyView` as `ViewBuilder` does not allow control flow.
+     
+     - Returns: the appropriate view for the current tab.
+     */
     func getPageView() -> AnyView {
         switch self.viewRouter.currentView {
             case TabBarPage.twitch: return AnyView(TwitchView())

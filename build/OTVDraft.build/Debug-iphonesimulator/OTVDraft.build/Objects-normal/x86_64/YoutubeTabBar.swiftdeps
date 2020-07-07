@@ -33,6 +33,7 @@ depends-top-level:
 - "YoutubeTabBar"
 - !private "ZStack"
 depends-member:
+- !private ["7SwiftUI9AlignmentV", "leading"]
 - !private ["7SwiftUI10AnimatableP", "foregroundColor"]
 - !private ["7SwiftUI10AnimatableP", "height"]
 - !private ["7SwiftUI10AnimatableP", "init"]
@@ -83,12 +84,15 @@ depends-member:
 - !private ["SQ", "height"]
 - !private ["SQ", "home"]
 - !private ["SQ", "init"]
+- !private ["SQ", "leading"]
+- !private ["SQ", "padding"]
 - !private ["SQ", "red"]
 - !private ["SQ", "renderingMode"]
 - !private ["SQ", "resizable"]
 - !private ["SQ", "showAll"]
 - !private ["SQ", "template"]
 - !private ["SQ", "toIcon"]
+- !private ["SQ", "toTitle"]
 - !private ["SQ", "white"]
 - !private ["SQ", "width"]
 - !private ["s23ExpressibleByNilLiteralP", "black"]
@@ -135,8 +139,9 @@ depends-member:
 - !private ["7SwiftUI10ShapeStyleP", "red"]
 - !private ["7SwiftUI10ShapeStyleP", "white"]
 - !private ["7SwiftUI5ImageV21TemplateRenderingModeO", "template"]
-- !private ["7SwiftUI4TextV", "frame"]
 - !private ["7SwiftUI4TextV", "init"]
+- !private ["7SwiftUI4TextV", "padding"]
+- !private ["7SwiftUI4TextV", "toTitle"]
 - !private ["7SwiftUI6VStackV", "frame"]
 - !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Binding"]
@@ -162,6 +167,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "numberOfIcons"]
 - !private ["7SwiftUI4ViewP", "onTapGesture"]
+- !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "red"]
 - !private ["7SwiftUI4ViewP", "renderingMode"]
 - !private ["7SwiftUI4ViewP", "resizable"]
@@ -169,8 +175,10 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "tab"]
 - !private ["7SwiftUI4ViewP", "template"]
 - !private ["7SwiftUI4ViewP", "toIcon"]
+- !private ["7SwiftUI4ViewP", "toTitle"]
 - !private ["7SwiftUI4ViewP", "white"]
 - !private ["7SwiftUI4ViewP", "youtubeIconBarHeight"]
+- !private ["7SwiftUI4ViewP", "youtubeTitleScaleFactor"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - ["8OTVDraft10YoutubeTabO", "=="]
 - ["8OTVDraft10YoutubeTabO", "__derived_enum_equals"]
@@ -208,6 +216,7 @@ depends-member:
 - ["8OTVDraft13YoutubeTabBarV", "numberOfIcons"]
 - ["8OTVDraft13YoutubeTabBarV", "tab"]
 - ["8OTVDraft13YoutubeTabBarV", "youtubeIconBarHeight"]
+- ["8OTVDraft13YoutubeTabBarV", "youtubeTitleScaleFactor"]
 - !private ["7SwiftUI6ZStackV", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
@@ -218,6 +227,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "white"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 depends-nominal:
+- !private "7SwiftUI9AlignmentV"
 - !private "7SwiftUI10AnimatableP"
 - !private "So6CGSizeV"
 - !private "7SwiftUI5ColorV"
@@ -282,4 +292,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "0305982fe1f13b35b939b30a20600809"
+interface-hash: "c1ef83f1c7f882b3dc00254671a188b4"

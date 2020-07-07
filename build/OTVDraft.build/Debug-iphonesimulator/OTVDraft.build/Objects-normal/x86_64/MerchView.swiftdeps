@@ -78,12 +78,16 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "open"]
+- !private ["s28CustomDebugStringConvertibleP", "semibold"]
 - !private ["s28CustomDebugStringConvertibleP", "separatorStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "showsVerticalScrollIndicator"]
+- !private ["s28CustomDebugStringConvertibleP", "system"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "semibold"]
+- !private ["s17CustomReflectableP", "system"]
 - !private ["s17CustomReflectableP", "width"]
 - !private ["s23CustomStringConvertibleP", "appearance"]
 - !private ["s23CustomStringConvertibleP", "init"]
@@ -93,13 +97,19 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "showsVerticalScrollIndicator"]
 - !private ["Se", "height"]
 - !private ["Se", "init"]
+- !private ["Se", "semibold"]
+- !private ["Se", "system"]
 - !private ["Se", "width"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["7SwiftUI18DynamicViewContentP", "init"]
 - !private ["SE", "height"]
 - !private ["SE", "init"]
+- !private ["SE", "semibold"]
+- !private ["SE", "system"]
 - !private ["SE", "width"]
 - !private ["SQ", "appearance"]
+- !private ["SQ", "font"]
+- !private ["SQ", "fontWeight"]
 - !private ["SQ", "height"]
 - !private ["SQ", "horizontal"]
 - !private ["SQ", "init"]
@@ -108,26 +118,35 @@ depends-member:
 - !private ["SQ", "open"]
 - !private ["SQ", "resizable"]
 - !private ["SQ", "scaledToFit"]
+- !private ["SQ", "semibold"]
 - !private ["SQ", "separatorStyle"]
 - !private ["SQ", "shared"]
 - !private ["SQ", "showsVerticalScrollIndicator"]
+- !private ["SQ", "system"]
 - !private ["SQ", "width"]
 - !private ["s25ExpressibleByArrayLiteralP", "horizontal"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "semibold"]
+- !private ["s23ExpressibleByNilLiteralP", "system"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["7SwiftUI4FontV", "system"]
 - !private ["7SwiftUI7ForEachV", "init"]
 - !private ["7SwiftUI13GeometryProxyV", "size"]
 - !private ["7SwiftUI14GeometryReaderV", "init"]
+- !private ["7SwiftUI7GestureP", "semibold"]
+- !private ["7SwiftUI7GestureP", "system"]
 - !private ["7SwiftUI6HStackV", "init"]
 - !private ["SH", "appearance"]
 - !private ["SH", "init"]
 - !private ["SH", "none"]
 - !private ["SH", "open"]
+- !private ["SH", "semibold"]
 - !private ["SH", "separatorStyle"]
 - !private ["SH", "shared"]
 - !private ["SH", "showsVerticalScrollIndicator"]
+- !private ["SH", "system"]
 - !private ["7SwiftUI19HorizontalAlignmentV", "leading"]
 - !private ["s12IdentifiableP", "image"]
 - !private ["s12IdentifiableP", "link"]
@@ -166,12 +185,16 @@ depends-member:
 - ["8OTVDraft13MerchItemViewV", "buttonSizeMultiplier"]
 - ["8OTVDraft13MerchItemViewV", "cornerRadius"]
 - ["8OTVDraft13MerchItemViewV", "deinit"]
+- ["8OTVDraft13MerchItemViewV", "imageHeight"]
+- ["8OTVDraft13MerchItemViewV", "imageWidth"]
 - ["8OTVDraft13MerchItemViewV", "init"]
 - ["8OTVDraft13MerchItemViewV", "merch"]
+- ["8OTVDraft13MerchItemViewV", "merchPriceScaleFactor"]
 - !private ["8OTVDraft13MerchItemViewV", "padding"]
 - ["8OTVDraft13MerchItemViewV", "shadowRadius"]
 - ["8OTVDraft13MerchItemViewV", "size"]
 - ["8OTVDraft12MerchRowViewV", "Body"]
+- ["8OTVDraft12MerchRowViewV", "CGFloat"]
 - ["8OTVDraft12MerchRowViewV", "CGSize"]
 - !private ["8OTVDraft12MerchRowViewV", "ForEach"]
 - !private ["8OTVDraft12MerchRowViewV", "HStack"]
@@ -187,6 +210,7 @@ depends-member:
 - ["8OTVDraft12MerchRowViewV", "body"]
 - ["8OTVDraft12MerchRowViewV", "deinit"]
 - ["8OTVDraft12MerchRowViewV", "init"]
+- ["8OTVDraft12MerchRowViewV", "merchStreamerNameScaleFactor"]
 - ["8OTVDraft12MerchRowViewV", "size"]
 - ["8OTVDraft12MerchRowViewV", "streamer"]
 - ["8OTVDraft9MerchViewV", "$viewModel"]
@@ -249,6 +273,8 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "streamers"]
 - ["7SwiftUI14ObservedObjectV", "init"]
 - !private ["s9OptionSetP", "horizontal"]
+- !private ["Sq", "semibold"]
+- !private ["Sq", "system"]
 - !private ["7SwiftUI16PlainButtonStyleV", "init"]
 - !private ["7SwiftUI15PreviewProviderP", "MerchView"]
 - !private ["7SwiftUI15PreviewProviderP", "OTVViewModel"]
@@ -275,6 +301,8 @@ depends-member:
 - !private ["8OTVDraft13StreamerMerchV", "merches"]
 - !private ["SS", "init"]
 - !private ["Sy", "init"]
+- !private ["7SwiftUI4TextV", "font"]
+- !private ["7SwiftUI4TextV", "fontWeight"]
 - !private ["7SwiftUI4TextV", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
@@ -380,21 +408,30 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "buttonStyle"]
 - !private ["7SwiftUI4ViewP", "callAsFunction"]
 - !private ["7SwiftUI4ViewP", "cornerRadius"]
+- !private ["7SwiftUI4ViewP", "font"]
+- !private ["7SwiftUI4ViewP", "fontWeight"]
 - !private ["7SwiftUI4ViewP", "frame"]
+- !private ["7SwiftUI4ViewP", "imageHeight"]
+- !private ["7SwiftUI4ViewP", "imageWidth"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "merch"]
+- !private ["7SwiftUI4ViewP", "merchPriceScaleFactor"]
+- !private ["7SwiftUI4ViewP", "merchStreamerNameScaleFactor"]
 - !private ["7SwiftUI4ViewP", "navigationBarTitle"]
 - !private ["7SwiftUI4ViewP", "navigationViewStyle"]
 - !private ["7SwiftUI4ViewP", "onAppear"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "resizable"]
 - !private ["7SwiftUI4ViewP", "scaledToFit"]
+- !private ["7SwiftUI4ViewP", "semibold"]
 - !private ["7SwiftUI4ViewP", "shadow"]
 - !private ["7SwiftUI4ViewP", "shadowRadius"]
 - !private ["7SwiftUI4ViewP", "size"]
 - !private ["7SwiftUI4ViewP", "streamer"]
+- !private ["7SwiftUI4ViewP", "system"]
 - !private ["7SwiftUI4ViewP", "viewModel"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["7SwiftUI4FontV6WeightV", "semibold"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
@@ -415,6 +452,8 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "showsVerticalScrollIndicator"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "semibold"]
+- !private ["s21_ObjectiveCBridgeableP", "system"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - !private ["7SwiftUI16_PreviewProviderP", "MerchView"]
 - !private ["7SwiftUI16_PreviewProviderP", "OTVViewModel"]
@@ -447,12 +486,15 @@ depends-nominal:
 - !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "7SwiftUI4FontV"
 - !private "7SwiftUI7ForEachV"
 - !private "7SwiftUI13GeometryProxyV"
 - !private "7SwiftUI14GeometryReaderV"
+- !private "7SwiftUI7GestureP"
 - !private "7SwiftUI6HStackV"
 - !private "SH"
 - !private "7SwiftUI19HorizontalAlignmentV"
@@ -476,6 +518,7 @@ depends-nominal:
 - !private "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
 - !private "s9OptionSetP"
+- !private "Sq"
 - !private "7SwiftUI16PlainButtonStyleV"
 - "7SwiftUI15PreviewProviderP"
 - !private "7SwiftUI20PrimitiveButtonStyleP"
@@ -520,6 +563,7 @@ depends-nominal:
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
+- !private "7SwiftUI4FontV6WeightV"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
@@ -564,4 +608,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "45f6360703b5ff95b2cfeb2b9a02d806"
+interface-hash: "a491954aee00002d8a43fd7f341a3f83"

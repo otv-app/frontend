@@ -122,13 +122,13 @@ depends-member:
 - ["8OTVDraft13URLImageModelC", "_Default_ObjectWillChangePublisher"]
 - !private ["8OTVDraft13URLImageModelC", "_image"]
 - ["8OTVDraft13URLImageModelC", "deinit"]
-- ["8OTVDraft13URLImageModelC", "getImageFromResponse"]
+- !private ["8OTVDraft13URLImageModelC", "getImageFromResponse"]
 - ["8OTVDraft13URLImageModelC", "image"]
 - ["8OTVDraft13URLImageModelC", "init"]
 - ["8OTVDraft13URLImageModelC", "loadImage"]
-- ["8OTVDraft13URLImageModelC", "loadImageFromURL"]
+- !private ["8OTVDraft13URLImageModelC", "loadImageFromURL"]
 - ["8OTVDraft13URLImageModelC", "objectWillChange"]
-- ["8OTVDraft13URLImageModelC", "urlString"]
+- !private ["8OTVDraft13URLImageModelC", "urlString"]
 - !private ["So12NSURLSessionC", "dataTask"]
 - !private ["So12NSURLSessionC", "shared"]
 - !private ["So20NSURLSessionDataTaskC", "resume"]
@@ -219,4 +219,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8de724e598384bf4779059de550a2a71"
+interface-hash: "f67696de1fc0a640ca8feabd1966266b"

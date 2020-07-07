@@ -116,10 +116,30 @@ YoutubeHomeView
 YoutubeView
 - removed the title from the view and moved to Youtube tab bar
 
+###### **July 7th**
+
+Cleaned up some code, fixed the scaling for some text and added swift documentation.
+
+**Changes to code**
+
+CustomTabBarView
+- added a helper function to help make the tab bar icons
+- put the calculated value icon width/height into variables
+
+YoutubeTabBar
+- added ViewModfiers to title, made font bold, color white, added padding, and scaled font size to *GeometryProxy* with a scale factor.
+- put the text modifiers into an extension
+
+TextModifiers
+- created a new extension to help with modifying fonts in the app
+
+MerchView
+- made the fonts scale to *GeometryProxy* and changed image width/height into variables
+
 
 ## Goals today
 - [ ] Use Saahil's YoutubeStreamerView for YoutubeHomeView
 - [ ] Change the home button
-- [ ] Make font size scale with device, currently text on IPad Pro is too small
+- [x] Make font size scale with device, currently text on IPad Pro is too small
 - [ ] Add a button overlay on Youtube tab bar icons so it covers whole tab
 - [ ] Try to abstract certain view layouts

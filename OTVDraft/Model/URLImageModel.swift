@@ -9,34 +9,49 @@
 import SwiftUI
 import Foundation
 
+/**
+This class is a model used for converting an image's url to an `UIImage`. The class implements an `ObservableObject` protocol so that the model can inform a View to be redrawn when a `Published` object indificates a change.
+ */
 class URLImageModel: ObservableObject {
-    //when this image changes, so basically when the image loads, objectWillChange.send() is called whereever this ObservableObject is
+    /// An `Optional<UIImage>` to store a loaded image
     @Published var image: UIImage?
-    //I assume every youtube video or image url is not nil, so this isn't optional. I can guard agaisnt Optionals if need be
-    var urlString: String
+    /// A `String` for an image's url
+    private var urlString: String
     
-    //image is initialized after this object is created
+    /**
+     Creates an `URLImageModel` object and attempts to load an image from the image's url
+     
+     - Parameter urlString: an image's url
+     */
     init(urlString: String) {
         self.urlString = urlString
         self.loadImage()
     }
     
-    //calls loadImageFromURL()
+    ///The function attempts to load an image
     func loadImage() {
         loadImageFromURL()
     }
     
-    
-    func loadImageFromURL() {
-        //converts the string url into an URL object
+    ///The function attemps to load an image from a string url. Uses an `URLSession` to load an image async
+    private func loadImageFromURL() {
         let url = URL(string: urlString)
         
-        //lets this task run async with current thread so program isnt' turbostuck
         let task = URLSession.shared.dataTask(with: url!, completionHandler: getImageFromResponse(data:response:error:))
         task.resume()
     }
     
-    func getImageFromResponse(data: Data?, response: URLResponse?, error: Error?) {
+    /**
+     The function pushes the task of loading the image to main thread async and will intialize the `Optional<UIImage>` if sucessful. Otherwise, the process is stopped.
+     
+     - Parameters:
+        - data: data received from the URL
+        - response:the response from `URLSession` required by a completionhandler.
+        - error: an error returned by this task
+     
+     
+     */
+    private func getImageFromResponse(data: Data?, response: URLResponse?, error: Error?) {
         //if error is not nil, the else will be called, which exits the function
         guard error == nil else {
             return

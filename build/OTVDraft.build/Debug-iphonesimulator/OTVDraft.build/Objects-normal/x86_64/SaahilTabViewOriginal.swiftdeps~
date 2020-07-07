@@ -1,13 +1,10 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "SaahilTabViewOriginal"
-- "CustomTabsView_Previews"
 provides-nominal:
 - "8OTVDraft21SaahilTabViewOriginalV"
-- "8OTVDraft23CustomTabsView_PreviewsV"
 provides-member:
 - ["8OTVDraft21SaahilTabViewOriginalV", ""]
-- ["8OTVDraft23CustomTabsView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "*"
@@ -18,8 +15,6 @@ depends-top-level:
 - !private "Button"
 - !private "CGFloat"
 - !private "Color"
-- !private "CustomTabsView"
-- "CustomTabsView_Previews"
 - "Environment"
 - "Float"
 - !private "FloatLiteralType"
@@ -27,7 +22,6 @@ depends-top-level:
 - !private "Image"
 - "Int"
 - !private "IntegerLiteralType"
-- "PreviewProvider"
 - "SaahilTabViewOriginal"
 - !private "Spacer"
 - !private "StringLiteralType"
@@ -37,7 +31,6 @@ depends-top-level:
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["SB", "init"]
-- !private ["7SwiftUI7BindingV", "constant"]
 - !private ["7SwiftUI6ButtonV", "foregroundColor"]
 - !private ["7SwiftUI6ButtonV", "init"]
 - !private ["12CoreGraphics7CGFloatV", "init"]
@@ -63,20 +56,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "purple"]
 - !private ["s23CustomStringConvertibleP", "red"]
 - !private ["s23CustomStringConvertibleP", "white"]
-- !private ["8OTVDraft23CustomTabsView_PreviewsV", "Binding"]
-- !private ["8OTVDraft23CustomTabsView_PreviewsV", "CustomTabsView"]
-- ["8OTVDraft23CustomTabsView_PreviewsV", "Previews"]
-- ["8OTVDraft23CustomTabsView_PreviewsV", "View"]
-- ["8OTVDraft23CustomTabsView_PreviewsV", "_Default_Previews"]
-- ["8OTVDraft23CustomTabsView_PreviewsV", "_platform"]
-- ["8OTVDraft23CustomTabsView_PreviewsV", "_previews"]
-- ["8OTVDraft23CustomTabsView_PreviewsV", "deinit"]
-- ["8OTVDraft23CustomTabsView_PreviewsV", "init"]
-- ["8OTVDraft23CustomTabsView_PreviewsV", "platform"]
-- ["8OTVDraft23CustomTabsView_PreviewsV", "previews"]
 - !private ["Se", "compact"]
 - !private ["Se", "init"]
-- !private ["7SwiftUI15DynamicPropertyP", "constant"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
 - !private ["SE", "compact"]
@@ -122,15 +103,6 @@ depends-member:
 - !private ["s9OptionSetP", "bottom"]
 - !private ["s9OptionSetP", "horizontal"]
 - !private ["Sq", "compact"]
-- !private ["7SwiftUI15PreviewProviderP", "Binding"]
-- !private ["7SwiftUI15PreviewProviderP", "CustomTabsView"]
-- ["7SwiftUI15PreviewProviderP", "Previews"]
-- ["7SwiftUI15PreviewProviderP", ""]
-- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
-- ["7SwiftUI15PreviewProviderP", "_platform"]
-- ["7SwiftUI15PreviewProviderP", "_previews"]
-- ["7SwiftUI15PreviewProviderP", "platform"]
-- ["7SwiftUI15PreviewProviderP", "previews"]
 - !private ["SY", "bottom"]
 - !private ["SY", "horizontal"]
 - ["8OTVDraft21SaahilTabViewOriginalV", "$index"]
@@ -215,19 +187,9 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "compact"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s26_OptionalNilComparisonTypeV", "compact"]
-- !private ["7SwiftUI16_PreviewProviderP", "Binding"]
-- !private ["7SwiftUI16_PreviewProviderP", "CustomTabsView"]
-- ["7SwiftUI16_PreviewProviderP", "Previews"]
-- ["7SwiftUI16_PreviewProviderP", ""]
-- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
-- ["7SwiftUI16_PreviewProviderP", "_platform"]
-- ["7SwiftUI16_PreviewProviderP", "_previews"]
-- ["7SwiftUI16_PreviewProviderP", "platform"]
-- ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
 - !private "SB"
-- !private "7SwiftUI7BindingV"
 - !private "7SwiftUI6ButtonV"
 - !private "12CoreGraphics7CGFloatV"
 - !private "s7CVarArgP"
@@ -236,7 +198,6 @@ depends-nominal:
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- "8OTVDraft23CustomTabsView_PreviewsV"
 - !private "Se"
 - "7SwiftUI15DynamicPropertyP"
 - !private "SE"
@@ -255,7 +216,6 @@ depends-nominal:
 - !private "Sj"
 - !private "s9OptionSetP"
 - !private "Sq"
-- "7SwiftUI15PreviewProviderP"
 - !private "SY"
 - "8OTVDraft21SaahilTabViewOriginalV"
 - !private "7SwiftUI4EdgeO3SetV"
@@ -274,7 +234,6 @@ depends-nominal:
 - !private "7SwiftUI18_FormatSpecifiableP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s26_OptionalNilComparisonTypeV"
-- "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -308,4 +267,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2de24d75f7c3f8855798c803174b47a4"
+interface-hash: "cc3957cdb4435155706421babf53570c"

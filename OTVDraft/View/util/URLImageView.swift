@@ -8,19 +8,35 @@
 
 import SwiftUI
 
+/// a struct that implements `View`. This struct represents an `Image` loaded from a URL.
 struct URLImageView: View {
-    //this view is redrawn when objectWillChange.send() is called, basically when the image is done loading.
+    
+    /// an `ObservedObject` that will redraw this `View` if this object changes. Is an `URLImageModel` that loads the image.
     @ObservedObject var urlImageModel: URLImageModel
+    /// width of the image
     let width: CGFloat
+    /// height of the image
     let height: CGFloat
     
+    /**
+     Creates a `URLImageView` struct.
+     
+     - Parameters:
+        - urlString: the url string of the image
+        - width: width of the image
+        - height: height of the image
+     */
     init (urlString: String, width: CGFloat, height: CGFloat) {
         urlImageModel = URLImageModel(urlString: urlString)
         self.width = width
         self.height = height
     }
     
-    //image is the default one unless urlImageModel.image is not nil
+    /**
+     Creates the body this `URLImageView`. Loads an image from a url, else displays a default image.
+     
+     - Returns: some `View` that represents an image loaded from a url.
+     */
     var body: some View {
         Image(uiImage: urlImageModel.image ?? URLImageView.defaultImage!)
             .resizable()
@@ -28,6 +44,6 @@ struct URLImageView: View {
             .frame(width: width, height: height)
     }
     
-    //i need to find a better default image than this lol
+    /// a default image that this `View` displays when url doesn't load.
     static var defaultImage = UIImage(named: "YoutubeDefault")
 }

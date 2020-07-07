@@ -10,16 +10,15 @@ import SwiftUI
 import Foundation
 import Combine
 
-//this viewrouter is an observableObject which means it can be observed with a @ObservedObject tag.
-//this viewRouter is placed inside a View struct, and when a @Published changes, it will call
-//objectWillChange.send() in an objservedObject which will then redraw the view
-//used a class for this ViewRouter as I wanted this to be a reference not a value
+/** This class implements an `ObservableObject` protocol which will redraw the view at this `ViewRouter` is in when a change is indicated by the `Published` object. `ViewRouter` needs to be a reference type so it can be passed into the appropriate `View`s
+ */
 class ViewRouter: ObservableObject {
     
-    //published tag notifies all ObservableObject to update when this is changed
+    /// a currentView that holds the current tab that the tab bar is on.
     @Published var currentView = TabBarPage.home
 }
 
+/// an enum of the tab bar pages
 public enum TabBarPage {
     case twitch
     case twitter

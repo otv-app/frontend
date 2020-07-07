@@ -7,14 +7,21 @@ provides-member:
 - ["8OTVDraft19YoutubeStreamerViewV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "AssignmentPrecedence"
+- "OTVViewModel"
+- "ObservedObject"
 - !private "StringLiteralType"
 - !private "Text"
 - "View"
 - "YoutubeStreamerView"
 depends-member:
+- ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["SQ", "init"]
+- ["8OTVDraft12OTVViewModelC", "deinit"]
+- ["7SwiftUI14ObservedObjectV", "init"]
 - !private ["7SwiftUI4TextV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
+- ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
@@ -22,17 +29,26 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "viewModel"]
+- ["8OTVDraft19YoutubeStreamerViewV", "$viewModel"]
 - ["8OTVDraft19YoutubeStreamerViewV", "Body"]
+- ["8OTVDraft19YoutubeStreamerViewV", "OTVViewModel"]
+- ["8OTVDraft19YoutubeStreamerViewV", "ObservedObject"]
 - !private ["8OTVDraft19YoutubeStreamerViewV", "Text"]
 - ["8OTVDraft19YoutubeStreamerViewV", "View"]
 - ["8OTVDraft19YoutubeStreamerViewV", "_Default_Body"]
 - ["8OTVDraft19YoutubeStreamerViewV", "_makeView"]
 - ["8OTVDraft19YoutubeStreamerViewV", "_makeViewList"]
+- !private ["8OTVDraft19YoutubeStreamerViewV", "_viewModel"]
 - ["8OTVDraft19YoutubeStreamerViewV", "body"]
 - ["8OTVDraft19YoutubeStreamerViewV", "deinit"]
 - ["8OTVDraft19YoutubeStreamerViewV", "init"]
+- ["8OTVDraft19YoutubeStreamerViewV", "viewModel"]
 depends-nominal:
+- "7SwiftUI15DynamicPropertyP"
 - !private "SQ"
+- "8OTVDraft12OTVViewModelC"
+- "7SwiftUI14ObservedObjectV"
 - !private "7SwiftUI4TextV"
 - "7SwiftUI4ViewP"
 - "8OTVDraft19YoutubeStreamerViewV"
@@ -69,4 +85,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "280af9edb2bd7389b96a2424a17be973"
+interface-hash: "454fef204ea37448029d0a94618dcadd"

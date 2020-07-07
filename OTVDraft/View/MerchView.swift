@@ -7,29 +7,36 @@
 //
 import SwiftUI
 
-//i pass in a viewModel
+/// This is a struct that implements the `View` protocol. Represents the `View` for the app's merch page.
 struct MerchView: View {
+    /// An `ObservedObject` that redraws this view if the view model changes.
     @ObservedObject var viewModel: OTVViewModel
     
+    /**
+     Creates a `MerchView`. Hides the vertical scroll indicator.
+     
+     - Parameter viewModel: a given view model.
+     */
     init(_ viewModel: OTVViewModel) {
         self.viewModel = viewModel
         UITableView.appearance().showsVerticalScrollIndicator = false
     }
     
-    
+    /**
+     The body for the `View`. Displays the merch for all streamers and their price.
+     */
     var body: some View {
-        
-        //CHANGES: foreach only takes in an Array<T> where T: Identifiable since u can
-        //iterate through identifiables. I pass a Streamer into the MerchRowView instead of
-        //StreamerMerch since i moved name to Streamer so i need access to that
-        //Wrapped view with a geometryreader so I can pass in a refernce to device size.
         GeometryReader { geometry in
             self.body(for: geometry.size)
         }
     }
     
-    //CHANGES: put body in helper function so that we don't need to explicitly state reference to
-    //self for every variable, apparently swiftui will fix this issue soon but idk
+    /**
+     a helper function that creates the body so that variables in the body don't have to explicitly state `self`. Puts the streamer merchs in rows sorted by streamer using `NavigationView`.
+     
+     - Returns: some `View` that represents the body for this `MerchView`.
+     */
+    
     private func body(for size: CGSize) -> some View {
         NavigationView {
             List {
@@ -46,19 +53,19 @@ struct MerchView: View {
     }
 }
 
+/// a struct that represents a single row in this `MerchView`.
 struct MerchRowView: View {
     
-    //CHANGE: renamed this variable from streamerAndMerch to just streamer of type OTVStreamer instead
-    //of StreamerMerch
+    /// the streamer that this row is for
     var streamer: OTVStreamer
-    //CHANGE: added this variable to store size
+    /// the size of the parent view container.
     var size: CGSize
     
+    /// the body for a single row. Displays the streamer name and a `ScrollView` of their merchs.
     var body: some View {
         
-        //CHANGE: Text() now gets the name from a OTVSTreamer struct not a StreamerMerch
         VStack (alignment: .leading) {
-            Text(streamer.name)
+            Text(streamer.name).font(.system(size: size.height * merchStreamerNameScaleFactor)).fontWeight(.semibold)
             ScrollView(.horizontal, showsIndicators: false) {
                 
                 HStack {
@@ -70,14 +77,20 @@ struct MerchRowView: View {
             }
         }
     }
+    
+    // MARK: - Drawing Constants
+    let merchStreamerNameScaleFactor: CGFloat = 0.03
 }
 
+/// a struct that represents the `View` of a single merch item.
 struct MerchItemView: View {
     
+    /// the merch item to be displayed
     var merch: Merch
-    //CHANGE: added this variable to store size
+    /// the size of the parent container view.
     var size: CGSize
     
+    /// The body for a single merch item. Creates an image of the merch, price, and clicking on the image will send you to the merch page.
     var body: some View {
         VStack {
             Button(action: {
@@ -88,11 +101,11 @@ struct MerchItemView: View {
                 Image(self.merch.image)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: size.width/2, height: size.height/3)
+                    .frame(width: imageWidth, height: imageHeight)
                     .cornerRadius(self.cornerRadius)
             }.buttonStyle(PlainButtonStyle())
             
-            Text("$" + String(self.merch.price))
+            Text("$" + String(self.merch.price)).font(.system(size: size.height * merchPriceScaleFactor))
         }
         .frame(width: size.width/2 * buttonSizeMultiplier, height: size.height/3 * buttonSizeMultiplier)
         .cornerRadius(self.cornerRadius)
@@ -100,9 +113,16 @@ struct MerchItemView: View {
     }
     
     // MARK: - Drawing Constants
-    let cornerRadius: CGFloat = 20
+    let cornerRadius: CGFloat = 2
     let shadowRadius: CGFloat = 10
     let buttonSizeMultiplier: CGFloat = 1.25
+    let merchPriceScaleFactor: CGFloat = 0.025
+    var imageWidth: CGFloat {
+        size.width/2
+    }
+    var imageHeight: CGFloat {
+        size.height/3
+    }
 }
 
 struct MerchView_Previews: PreviewProvider {

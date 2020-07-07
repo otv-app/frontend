@@ -8,16 +8,23 @@
 
 import Foundation
 
-//view model is a class since I want to pass a reference to a viewmodel
-//pretty sure the viewmodel is where the api stuff takes place
+/**
+ This class is a view model for this program. The class implements an `ObservableObject` protocol so that it can redraw a view if a `Published` object indicates a change. The view model is a class because the program needs to hold reference to a viewmodel instance that will be passed around in the program.
+ */
 class OTVViewModel: ObservableObject {
     
     //private model which will call objectWillChange.send() when this model changes. objectWillChange.send() is a function
     //that all structs with ObservableObject protocol have. I needa do more research on this tho
+    /// The model so the view model can call intent functions on. The variable is initialized with a static function because the model is initialized after this view model object is initialized
     @Published private var model: OTVModel<OTVStreamer> = OTVViewModel.createOTVModel()
     
     //static func to create a model, the model will be made by the api stuff patrick is doing in the future
     //this needs to be static cuz this function is in the class and u cant initialize the model before this function
+    /**
+        This static function creates a model of type `OTVStreamer`.
+     
+     - Returns: An `OTVModel<OTVStreamer>` to be used as the model in this program.
+     */
     static func createOTVModel() -> OTVModel<OTVStreamer> {
         let streamerMerchInfo: [StreamerMerch] = [
             .init(id: 0, merches: [.init(id: 0, price: 44.99, image: "offlinetv1", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-split-hoodie-black-white-limited-edition"), .init(id: 1, price: 49.99, image: "offlinetv2", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-slant-hoodie-black-yellow-limited-edition"), .init(id: 2, price: 79.99, image: "offlinetv3", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-split-windbreaker-black-white-limited-edition"), .init(id: 3, price: 19.99, image: "offlinetv4", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-stacked-tee-black"), .init(id: 4, price: 24.99, image: "offlinetv5", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-embroidered-logo-tee-white"), .init(id: 5, price: 24.99, image: "offlinetv6", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-embroidered-logo-tee-black")]),
@@ -44,6 +51,7 @@ class OTVViewModel: ObservableObject {
     }
     
     // MARK: - Access to model
+    /// a copy of the `Array<OTVStreamer>` in model so the program can access the model view only.
     var streamers: Array<OTVStreamer> {
         model.streamers
     }
@@ -54,6 +62,13 @@ class OTVViewModel: ObservableObject {
     //function gets latest x videos from all streamers
     //if we want to implement filters in the future, we should use a calculated streamers array that filters and checks for latest videos
     //for now its hard coded
+    /**
+     This function gets a given number of latest videos in an `Array`.
+     
+     - Parameter numVid: the number of videos to return
+     
+     - Returns: an `Array<YoutubeVideo>` of the latest youtube videos from streamers
+     */
     func getLatestVideos(latest numVid: Int) -> Array<YoutubeVideo>{
         [ .init(id: "x2_nbkP6AU8", title: "BIG SCHNOOZER", channelName: "xqcow", views: 9000, thumbnailURL: "https://img.youtube.com/vi/x2_nbkP6AU8/0.jpg", rawDuration: "duration", rawDate: "date"),
           .init(id: "CfR0wln_p8s", title: "Mr. Cow reacts to Daily Dose of Internet", channelName: "xqcow", views: 10000, thumbnailURL: "https://img.youtube.com/vi/CfR0wln_p8s/0.jpg", rawDuration: "duration", rawDate: "date")
