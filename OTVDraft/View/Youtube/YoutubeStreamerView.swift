@@ -50,7 +50,7 @@ struct YoutubeRowView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(streamer.youtubeVideos) {
-                        item in YoutubeVidView(vid: item, size: self.size).padding(5)
+                        item in YoutubeVidView(vid: item, size: self.size, w: self.imageWidth, h: self.imageHeight, titleScaleFactor: self.youtubeTitleScaleFactor, descScaleFactor: self.youtubeDescriptionScaleFactor).padding(5)
                     }
                 }
             }
@@ -59,6 +59,14 @@ struct YoutubeRowView: View {
     
     // MARK: - Drawing Constants
     let youtubeChannelNameScaleFactor: CGFloat = 0.05
+    var imageWidth: CGFloat {
+        size.width/2
+    }
+    var imageHeight: CGFloat {
+        size.height/3
+    }
+    let youtubeTitleScaleFactor: CGFloat = 0.04
+    let youtubeDescriptionScaleFactor: CGFloat = 0.03
 }
 
 struct YoutubeVidView: View {
@@ -67,11 +75,26 @@ struct YoutubeVidView: View {
     
     var size: CGSize
     
+    // MARK: - Drawing Constants
+    var imageWidth: CGFloat
+    var imageHeight: CGFloat
+    var youtubeTitleScaleFactor: CGFloat
+    var youtubeDescriptionScaleFactor: CGFloat
+    
+    init(vid: YoutubeVideo, size: CGSize, w imageWidth: CGFloat, h imageHeight: CGFloat, titleScaleFactor youtubeTitleScaleFactor: CGFloat, descScaleFactor youtubeDescriptionScaleFactor: CGFloat) {
+        self.vid = vid
+        self.size = size
+        self.imageWidth = imageWidth
+        self.imageHeight = imageHeight
+        self.youtubeTitleScaleFactor = youtubeTitleScaleFactor
+        self.youtubeDescriptionScaleFactor = youtubeDescriptionScaleFactor
+    }
+    
     var body: some View {
         VStack (alignment: .leading) {
             URLImageView(urlString: vid.thumbnailURL, width: imageWidth, height: imageHeight)
             
-            VStack (alignment: .leading){
+            VStack (alignment: .leading) {
                 Text(vid.title)
                     .toYoutubeTitle(fontScaleFactor: youtubeTitleScaleFactor, size: size, color: .black)
                     .frame(width: imageWidth, alignment: .leading)
@@ -80,17 +103,6 @@ struct YoutubeVidView: View {
                     .toYoutubeDescription(fontScaleFactor: youtubeDescriptionScaleFactor, size: size, color: .gray)
             }
         }
-    }
-    
-    //MARK: - Drawing Constants
-    let youtubeTitleScaleFactor:CGFloat = 0.04
-    let youtubeDescriptionScaleFactor: CGFloat = 0.03
-    
-    var imageWidth: CGFloat {
-        size.width/2
-    }
-    var imageHeight: CGFloat {
-        size.height/3
     }
 }
 

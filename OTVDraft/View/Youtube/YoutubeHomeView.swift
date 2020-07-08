@@ -47,7 +47,9 @@ struct YoutubeHomeView: View {
             List {
                 VStack (alignment: .center) {
                     ForEach(viewModel.getLatestVideos(latest: 10)) { video in
-                        YoutubeVidView(vid: video, size: size)
+                        HStack (spacing: 0) {
+                            YoutubeVidView(vid: video, size: size, w: size.width, h: size.height/2, titleScaleFactor: 0.04, descScaleFactor: 0.03)
+                        }
                     }
                 }
                 .navigationBarTitle("Latest Videos")

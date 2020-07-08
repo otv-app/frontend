@@ -141,13 +141,25 @@ MerchView
 
 ###### **July 8th**
 
-In progress...
+Cleaned up the view for *YoutubeStreamerView*, abstracted the thumbnail+info view to be resuable in other youtube pages. Added in a custom font. 
 
 **Changes to code**
 
+YoutubeHomeView
+- 
+
 YoutubeStreamerView
+- moved text `ViewModifier`s to an extension
+- scaled `Text`s font size with parent view container size
+- enforced a one line rule to youtube titles.
 
 TextModifiers
+- added a helper to extension to make a youtube title
+- added a helper to extension to make a youtube description
+
+Info.plist
+- added the "Fonts provided by algorithmn" property for custom fonts
+- added KenyanCoffee.ttf for youtube logo font
 
 
 ## Goals today
@@ -155,4 +167,5 @@ TextModifiers
 - [x] Change the home button
 - [x] Make font size scale with device, currently text on IPad Pro is too small
 - [x] Add a button overlay on Youtube tab bar icons so it covers whole tab
-- [ ] Try to abstract Youtube card view 
+- [x] Try to abstract Youtube card view 
+- [ ] Fix home layout its kinda wack and off

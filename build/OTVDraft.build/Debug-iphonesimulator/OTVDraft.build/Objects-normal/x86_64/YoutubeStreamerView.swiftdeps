@@ -88,7 +88,6 @@ depends-member:
 - !private ["SE", "width"]
 - !private ["SQ", "appearance"]
 - !private ["SQ", "black"]
-- !private ["SQ", "center"]
 - !private ["SQ", "font"]
 - !private ["SQ", "fontWeight"]
 - !private ["SQ", "gray"]
@@ -122,7 +121,6 @@ depends-member:
 - !private ["SH", "separatorStyle"]
 - !private ["SH", "showsVerticalScrollIndicator"]
 - !private ["SH", "system"]
-- !private ["7SwiftUI19HorizontalAlignmentV", "center"]
 - !private ["7SwiftUI19HorizontalAlignmentV", "leading"]
 - !private ["s12IdentifiableP", "name"]
 - !private ["s12IdentifiableP", "rawDate"]
@@ -309,10 +307,14 @@ depends-member:
 - ["8OTVDraft14YoutubeRowViewV", "_makeViewList"]
 - ["8OTVDraft14YoutubeRowViewV", "body"]
 - ["8OTVDraft14YoutubeRowViewV", "deinit"]
+- ["8OTVDraft14YoutubeRowViewV", "imageHeight"]
+- ["8OTVDraft14YoutubeRowViewV", "imageWidth"]
 - ["8OTVDraft14YoutubeRowViewV", "init"]
 - ["8OTVDraft14YoutubeRowViewV", "size"]
 - ["8OTVDraft14YoutubeRowViewV", "streamer"]
 - ["8OTVDraft14YoutubeRowViewV", "youtubeChannelNameScaleFactor"]
+- ["8OTVDraft14YoutubeRowViewV", "youtubeDescriptionScaleFactor"]
+- ["8OTVDraft14YoutubeRowViewV", "youtubeTitleScaleFactor"]
 - ["8OTVDraft19YoutubeStreamerViewV", "$viewModel"]
 - ["8OTVDraft19YoutubeStreamerViewV", "Body"]
 - ["8OTVDraft19YoutubeStreamerViewV", "CGSize"]
@@ -515,4 +517,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2b399473a613eab199b1a40274e46edd"
+interface-hash: "96acf8c9d9291a0d667a14af8320524f"

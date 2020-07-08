@@ -1,15 +1,15 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "7988eea12473d06248ece11bdd21a57a"
-build_time: [1594182286, 270251000]
+build_time: [1594221923, 860158000]
 inputs:
   "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/util/ViewRouter.swift": [1594131512, 493616914]
-  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/Youtube/YoutubeHomeView.swift": [1594182110, 341864589]
+  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/Youtube/YoutubeHomeView.swift": [1594221923, 774087565]
   "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/TwitchView.swift": [1593685864, 321605355]
   "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/AppDelegate.swift": [1593716361, 373468378]
   "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/Model/OTVModel.swift": [1593849901, 35024942]
   "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/Youtube/YoutubeTabBar.swift": [1594181771, 21073668]
   "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/Youtube/YoutubeAllView.swift": [1593877506, 42168626]
-  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/Youtube/YoutubeStreamerView.swift": [1594182286, 111902286]
+  "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/Youtube/YoutubeStreamerView.swift": [1594221694, 785721599]
   "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/SceneDelegate.swift": [1593802171, 6193511]
   "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/Model/URLImageModel.swift": [1594131512, 606578302]
   "/Users/Kewlwasabi/Documents/HOME/Dev/IOS/OTVDraft/OTVDraft/View/HomeView.swift": [1593685575, 265329676]
