@@ -15,17 +15,31 @@ extension Text {
      This function transforms a `Text` into a title format by applying the appropriate `ViewModifier`s.
      
      - Parameters:
-        - fontScaleFactor: a scale factor that scales a view's container to font size
-        - size: the parent view container's size
-        - color: the color of the text
+     - fontScaleFactor: a scale factor that scales a view's container to font size
+     - size: the parent view container's size
+     - color: the color of the text
      
      - Returns: a `Text` after applying `ViewModifier`s
      
      */
-    func toTitle(fontScaleFactor: CGFloat, size: CGFloat, color: Color) -> Text {
+    func toYoutubeLogo(fontScaleFactor: CGFloat, size: CGFloat, color: Color) -> Text {
         self
             .fontWeight(.bold)
-            .font(.system(size: size * fontScaleFactor))
+            .font(.custom("KenyanCoffee", size: size * fontScaleFactor))
             .foregroundColor(color)
+    }
+    
+    func toYoutubeTitle(fontScaleFactor: CGFloat, size: CGSize, color: Color) -> some View {
+        self
+            .font(.system(size: size.height * fontScaleFactor))
+            .foregroundColor(color)
+            .lineLimit(1)
+    }
+    
+    func toYoutubeDescription(fontScaleFactor: CGFloat, size: CGSize, color: Color) -> some View {
+        self
+            .font(.system(size: size.height * fontScaleFactor))
+            .foregroundColor(color)
+            .lineLimit(1)
     }
 }

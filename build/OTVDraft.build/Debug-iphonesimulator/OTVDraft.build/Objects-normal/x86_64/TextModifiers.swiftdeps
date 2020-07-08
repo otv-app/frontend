@@ -3,52 +3,89 @@ provides-top-level:
 provides-nominal:
 provides-member:
 - ["7SwiftUI4TextV", ""]
-- ["7SwiftUI4TextV", "toTitle"]
+- ["7SwiftUI4TextV", "toYoutubeLogo"]
+- ["7SwiftUI4TextV", "toYoutubeTitle"]
+- ["7SwiftUI4TextV", "toYoutubeDescription"]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "*"
 - "CGFloat"
+- "CGSize"
 - "Color"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "StringLiteralType"
 - "Text"
+- "View"
 depends-member:
+- !private ["7SwiftUI10AnimatableP", "height"]
+- !private ["So6CGSizeV", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "bold"]
+- !private ["s28CustomDebugStringConvertibleP", "custom"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "system"]
 - !private ["s17CustomReflectableP", "bold"]
+- !private ["s17CustomReflectableP", "custom"]
+- !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "system"]
 - !private ["Se", "bold"]
+- !private ["Se", "custom"]
+- !private ["Se", "height"]
 - !private ["Se", "system"]
 - !private ["SE", "bold"]
+- !private ["SE", "custom"]
+- !private ["SE", "height"]
 - !private ["SE", "system"]
 - !private ["SQ", "bold"]
+- !private ["SQ", "custom"]
 - !private ["SQ", "font"]
 - !private ["SQ", "fontWeight"]
 - !private ["SQ", "foregroundColor"]
+- !private ["SQ", "height"]
+- !private ["SQ", "lineLimit"]
 - !private ["SQ", "system"]
 - !private ["s23ExpressibleByNilLiteralP", "bold"]
+- !private ["s23ExpressibleByNilLiteralP", "custom"]
 - !private ["s23ExpressibleByNilLiteralP", "system"]
+- !private ["7SwiftUI4FontV", "custom"]
 - !private ["7SwiftUI4FontV", "system"]
 - !private ["7SwiftUI7GestureP", "bold"]
+- !private ["7SwiftUI7GestureP", "custom"]
 - !private ["7SwiftUI7GestureP", "system"]
 - !private ["SH", "bold"]
+- !private ["SH", "custom"]
 - !private ["SH", "system"]
 - !private ["Sq", "bold"]
+- !private ["Sq", "custom"]
 - !private ["Sq", "system"]
 - ["7SwiftUI4TextV", "CGFloat"]
+- ["7SwiftUI4TextV", "CGSize"]
 - ["7SwiftUI4TextV", "Color"]
 - ["7SwiftUI4TextV", "Text"]
+- ["7SwiftUI4TextV", "View"]
 - !private ["7SwiftUI4TextV", "font"]
 - !private ["7SwiftUI4TextV", "fontWeight"]
 - !private ["7SwiftUI4TextV", "foregroundColor"]
-- ["7SwiftUI4TextV", "toTitle"]
+- !private ["7SwiftUI4TextV", "lineLimit"]
+- ["7SwiftUI4TextV", "toYoutubeDescription"]
+- ["7SwiftUI4TextV", "toYoutubeLogo"]
+- ["7SwiftUI4TextV", "toYoutubeTitle"]
 - !private ["7SwiftUI4ViewP", "bold"]
+- !private ["7SwiftUI4ViewP", "custom"]
 - !private ["7SwiftUI4ViewP", "font"]
 - !private ["7SwiftUI4ViewP", "fontWeight"]
 - !private ["7SwiftUI4ViewP", "foregroundColor"]
+- !private ["7SwiftUI4ViewP", "lineLimit"]
 - !private ["7SwiftUI4ViewP", "system"]
 - !private ["7SwiftUI4FontV6WeightV", "bold"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "bold"]
+- !private ["s21_ObjectiveCBridgeableP", "custom"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "system"]
 depends-nominal:
+- !private "7SwiftUI10AnimatableP"
+- !private "So6CGSizeV"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - !private "Se"
@@ -62,6 +99,7 @@ depends-nominal:
 - "7SwiftUI4TextV"
 - !private "7SwiftUI4ViewP"
 - !private "7SwiftUI4FontV6WeightV"
+- !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
@@ -96,4 +134,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a53b9f69a446c741e4bea4cbfc992d11"
+interface-hash: "e49215101da025879a157f84952da33e"

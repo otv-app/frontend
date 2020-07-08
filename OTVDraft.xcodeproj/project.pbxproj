@@ -33,6 +33,8 @@
 		B244584724B0E12800D8443A /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244584624B0E12800D8443A /* URLImageView.swift */; };
 		B244584924B0E43900D8443A /* URLImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244584824B0E43900D8443A /* URLImageModel.swift */; };
 		B29DEC2824B45F3300ABA441 /* TextModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29DEC2724B45F3300ABA441 /* TextModifiers.swift */; };
+		B29DEC2A24B57A8800ABA441 /* TradeGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B29DEC2924B57A8800ABA441 /* TradeGothic.otf */; };
+		B29DEC2D24B57C0300ABA441 /* KenyanCoffee.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B29DEC2C24B57C0300ABA441 /* KenyanCoffee.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		B244584624B0E12800D8443A /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
 		B244584824B0E43900D8443A /* URLImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageModel.swift; sourceTree = "<group>"; };
 		B29DEC2724B45F3300ABA441 /* TextModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifiers.swift; sourceTree = "<group>"; };
+		B29DEC2924B57A8800ABA441 /* TradeGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TradeGothic.otf; sourceTree = "<group>"; };
+		B29DEC2C24B57C0300ABA441 /* KenyanCoffee.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KenyanCoffee.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,7 @@
 		B244583724AF9CD000D8443A /* util */ = {
 			isa = PBXGroup;
 			children = (
+				B29DEC2B24B57A9900ABA441 /* fonts */,
 				B24457E524AE5C0D00D8443A /* ImageModifiers.swift */,
 				B29DEC2724B45F3300ABA441 /* TextModifiers.swift */,
 				B24457D324ADE4EC00D8443A /* ViewRouter.swift */,
@@ -228,6 +233,15 @@
 				B244584424B0D9E000D8443A /* YoutubeAllView.swift */,
 			);
 			path = Youtube;
+			sourceTree = "<group>";
+		};
+		B29DEC2B24B57A9900ABA441 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B29DEC2C24B57C0300ABA441 /* KenyanCoffee.ttf */,
+				B29DEC2924B57A8800ABA441 /* TradeGothic.otf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +351,8 @@
 				B24457AE24ADDC4F00D8443A /* LaunchScreen.storyboard in Resources */,
 				B24457AB24ADDC4F00D8443A /* Preview Assets.xcassets in Resources */,
 				B24457A824ADDC4F00D8443A /* Assets.xcassets in Resources */,
+				B29DEC2D24B57C0300ABA441 /* KenyanCoffee.ttf in Resources */,
+				B29DEC2A24B57A8800ABA441 /* TradeGothic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

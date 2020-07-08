@@ -69,7 +69,7 @@ struct MerchRowView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 
                 HStack {
-                    ForEach(streamer.merch.merches) { item in
+                    ForEach(streamer.merch) { item in
                         MerchItemView(merch: item, size: self.size).padding(5)
                     }
                 }

@@ -17,12 +17,12 @@ depends-top-level:
 - !private "FloatLiteralType"
 - "Int"
 - !private "IntegerLiteralType"
+- !private "Merch"
 - "OTVModel"
 - "OTVStreamer"
 - "OTVViewModel"
 - "ObservableObject"
 - "Published"
-- !private "StreamerMerch"
 - !private "StringLiteralType"
 - "YoutubeVideo"
 depends-member:
@@ -51,12 +51,12 @@ depends-member:
 - !private ["8OTVDraft12OTVViewModelC", "$model"]
 - ["8OTVDraft12OTVViewModelC", "Array"]
 - ["8OTVDraft12OTVViewModelC", "Int"]
+- !private ["8OTVDraft12OTVViewModelC", "Merch"]
 - ["8OTVDraft12OTVViewModelC", "OTVModel"]
 - ["8OTVDraft12OTVViewModelC", "OTVStreamer"]
 - ["8OTVDraft12OTVViewModelC", "OTVViewModel"]
 - ["8OTVDraft12OTVViewModelC", "ObjectWillChangePublisher"]
 - ["8OTVDraft12OTVViewModelC", "Published"]
-- !private ["8OTVDraft12OTVViewModelC", "StreamerMerch"]
 - ["8OTVDraft12OTVViewModelC", "YoutubeVideo"]
 - ["8OTVDraft12OTVViewModelC", "_Default_ObjectWillChangePublisher"]
 - !private ["8OTVDraft12OTVViewModelC", "_model"]
@@ -83,7 +83,6 @@ depends-member:
 - !private ["Sm", "subscript"]
 - !private ["ST", "subscript"]
 - !private ["8OTVDraft8StreamerP", "init"]
-- !private ["8OTVDraft13StreamerMerchV", "init"]
 - !private ["8OTVDraft12YoutubeVideoV", "init"]
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
@@ -118,7 +117,6 @@ depends-nominal:
 - !private "Sm"
 - !private "ST"
 - !private "8OTVDraft8StreamerP"
-- !private "8OTVDraft13StreamerMerchV"
 - !private "8OTVDraft12YoutubeVideoV"
 - !private "s14_ArrayProtocolP"
 - !private "s24_DestructorSafeContainerP"

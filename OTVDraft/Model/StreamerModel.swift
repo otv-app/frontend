@@ -17,7 +17,7 @@ struct OTVStreamer: Streamer {
     var name: String
     let platform: String
     let url: String
-    let merch: StreamerMerch
+    let merch: [Merch]
     var youtubeVideos: [YoutubeVideo]
 }
 
@@ -44,10 +44,4 @@ struct Merch: Identifiable {
     let price: Double
     let image: String
     let link: String
-}
-
-//CHANGE: moved name variable to the Streamer protocol
-struct StreamerMerch: Identifiable {
-    let id: Int
-    let merches: [Merch]
 }

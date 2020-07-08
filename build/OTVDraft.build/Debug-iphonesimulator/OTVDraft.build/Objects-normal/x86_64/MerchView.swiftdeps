@@ -151,7 +151,6 @@ depends-member:
 - !private ["s12IdentifiableP", "image"]
 - !private ["s12IdentifiableP", "link"]
 - !private ["s12IdentifiableP", "merch"]
-- !private ["s12IdentifiableP", "merches"]
 - !private ["s12IdentifiableP", "name"]
 - !private ["s12IdentifiableP", "price"]
 - !private ["7SwiftUI5ImageV", "init"]
@@ -298,7 +297,6 @@ depends-member:
 - !private ["7SwiftUI24StackNavigationViewStyleV", "init"]
 - !private ["8OTVDraft8StreamerP", "merch"]
 - !private ["8OTVDraft8StreamerP", "name"]
-- !private ["8OTVDraft13StreamerMerchV", "merches"]
 - !private ["SS", "init"]
 - !private ["Sy", "init"]
 - !private ["7SwiftUI4TextV", "font"]
@@ -532,7 +530,6 @@ depends-nominal:
 - !private "s10SetAlgebraP"
 - !private "7SwiftUI24StackNavigationViewStyleV"
 - !private "8OTVDraft8StreamerP"
-- !private "8OTVDraft13StreamerMerchV"
 - !private "SS"
 - !private "Sy"
 - !private "7SwiftUI4TextV"

@@ -125,10 +125,13 @@ Cleaned up some code, fixed the scaling for some text and added swift documentat
 CustomTabBarView
 - added a helper function to help make the tab bar icons
 - put the calculated value icon width/height into variables
+- changed tappable images into buttons
 
 YoutubeTabBar
 - added ViewModfiers to title, made font bold, color white, added padding, and scaled font size to *GeometryProxy* with a scale factor.
 - put the text modifiers into an extension
+- changed tappable images into buttons.
+- added a shadow below tab bar so the white bar below icon is more obvious
 
 TextModifiers
 - created a new extension to help with modifying fonts in the app
@@ -136,10 +139,20 @@ TextModifiers
 MerchView
 - made the fonts scale to *GeometryProxy* and changed image width/height into variables
 
+###### **July 8th**
+
+In progress...
+
+**Changes to code**
+
+YoutubeStreamerView
+
+TextModifiers
+
 
 ## Goals today
-- [ ] Use Saahil's YoutubeStreamerView for YoutubeHomeView
-- [ ] Change the home button
+- [x] Use Saahil's YoutubeStreamerView for YoutubeHomeView
+- [x] Change the home button
 - [x] Make font size scale with device, currently text on IPad Pro is too small
-- [ ] Add a button overlay on Youtube tab bar icons so it covers whole tab
-- [ ] Try to abstract certain view layouts
+- [x] Add a button overlay on Youtube tab bar icons so it covers whole tab
+- [ ] Try to abstract Youtube card view 

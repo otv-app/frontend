@@ -92,7 +92,7 @@ depends-member:
 - !private ["8OTVDraft13YoutubeTabBarV", "deinit"]
 - !private ["8OTVDraft13YoutubeTabBarV", "init"]
 - ["8OTVDraft11YoutubeViewV", "$tab"]
-- ["8OTVDraft11YoutubeViewV", "$viewModel"]
+- !private ["8OTVDraft11YoutubeViewV", "$viewModel"]
 - ["8OTVDraft11YoutubeViewV", "AnyView"]
 - ["8OTVDraft11YoutubeViewV", "Body"]
 - !private ["8OTVDraft11YoutubeViewV", "GeometryReader"]
@@ -117,7 +117,7 @@ depends-member:
 - !private ["8OTVDraft11YoutubeViewV", "getYoutubeTabView"]
 - ["8OTVDraft11YoutubeViewV", "init"]
 - ["8OTVDraft11YoutubeViewV", "tab"]
-- ["8OTVDraft11YoutubeViewV", "viewModel"]
+- !private ["8OTVDraft11YoutubeViewV", "viewModel"]
 - !private ["8OTVDraft20YoutubeView_PreviewsV", "OTVViewModel"]
 - ["8OTVDraft20YoutubeView_PreviewsV", "Previews"]
 - ["8OTVDraft20YoutubeView_PreviewsV", "View"]
@@ -194,4 +194,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "4d83b4227b2d2e64690d04663a7dfe33"
+interface-hash: "9478f3e076e312ba37ed7f371127a997"

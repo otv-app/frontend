@@ -45,42 +45,16 @@ struct YoutubeHomeView: View {
     private func body(for size: CGSize) -> some View {
         NavigationView {
             List {
-                ForEach(viewModel.getLatestVideos(latest: 10)) { video in
-                    YoutubeVidCard(size: size, youtubeVid: video)
+                VStack (alignment: .center) {
+                    ForEach(viewModel.getLatestVideos(latest: 10)) { video in
+                        YoutubeVidView(vid: video, size: size)
+                    }
                 }
-                //in order to hide the navigation bar u need to make a title so this wont show up
-                .navigationBarTitle("youtube")
-                .navigationBarHidden(true)
+                .navigationBarTitle("Latest Videos")
                 
             }.onAppear {
                 UITableView.appearance().separatorStyle = .none
             }
         }.navigationViewStyle(StackNavigationViewStyle())
-    }
-}
-
-/// A struct that implements a `View`protocol. This struct represents a single Youtube video component `View` that displays the youtube video thumbnail and its relevant information.
-struct YoutubeVidCard: View {
-    /// the size of the parent container view.
-    var size: CGSize
-    
-    //should this variable be passed in? this is part of the model so idk if this is good design
-    /// a `YoutubeVideo` that holds a youtube video's information
-    var youtubeVid: YoutubeVideo
-    
-    /**
-     Creates the body for this `View`. Should display a thumbnail and the youtube video's relevant information.
-     */
-    var body: some View {
-        VStack {
-            URLImageView(urlString: youtubeVid.thumbnailURL, width: size.width/2, height: size.height/3)
-            Text(youtubeVid.title)
-            HStack {
-                Text(youtubeVid.channelName)
-                Text("\(youtubeVid.views)")
-                Text(youtubeVid.rawDuration)
-            }
-        }
-        .frame(width: size.width)
     }
 }

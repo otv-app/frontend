@@ -54,12 +54,13 @@ struct CustomTabBarView: View {
      - Returns: some `View` that represents the body for an icon on the tab bar.
      */
     private func TabBarIcon(iconImageString: String, tab: TabBarPage, focusColor: Color) -> some View {
+        Button(action: {
+            self.viewRouter.currentView = tab
+        }) {
         Image(iconImageString)
             .renderingMode(.template)
             .resizable().toIcon(width: iconWidth, height: iconHeight)
             .foregroundColor(self.viewRouter.currentView == tab ? focusColor : .white)
-            .onTapGesture {
-                self.viewRouter.currentView = tab
         }
     }
     

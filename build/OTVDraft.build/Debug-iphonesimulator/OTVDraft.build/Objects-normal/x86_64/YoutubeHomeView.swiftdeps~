@@ -1,23 +1,18 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "YoutubeHomeView"
-- "YoutubeVidCard"
 provides-nominal:
 - "8OTVDraft15YoutubeHomeViewV"
-- "8OTVDraft14YoutubeVidCardV"
 provides-member:
 - ["8OTVDraft15YoutubeHomeViewV", ""]
-- ["8OTVDraft14YoutubeVidCardV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "/"
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "CGSize"
 - "FloatLiteralType"
 - !private "ForEach"
 - !private "GeometryReader"
-- !private "HStack"
 - !private "IntegerLiteralType"
 - !private "List"
 - !private "NavigationView"
@@ -25,63 +20,38 @@ depends-top-level:
 - "ObservedObject"
 - !private "StackNavigationViewStyle"
 - !private "StringLiteralType"
-- !private "Text"
 - !private "UITableView"
-- !private "URLImageView"
-- !private "VStack"
 - "View"
 - "YoutubeHomeView"
-- "YoutubeVidCard"
-- "YoutubeVideo"
+- !private "YoutubeVidView"
 depends-member:
-- !private ["7SwiftUI10AnimatableP", "height"]
-- !private ["7SwiftUI10AnimatableP", "width"]
 - !private ["So15CALayerDelegateP", "appearance"]
 - !private ["So15CALayerDelegateP", "separatorStyle"]
 - !private ["So15CALayerDelegateP", "showsVerticalScrollIndicator"]
-- !private ["So6CGSizeV", "height"]
-- !private ["So6CGSizeV", "width"]
 - !private ["s7CVarArgP", "appearance"]
 - !private ["s7CVarArgP", "separatorStyle"]
 - !private ["s7CVarArgP", "showsVerticalScrollIndicator"]
 - !private ["s28CustomDebugStringConvertibleP", "appearance"]
-- !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "separatorStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "showsVerticalScrollIndicator"]
-- !private ["s28CustomDebugStringConvertibleP", "width"]
-- !private ["s17CustomReflectableP", "height"]
-- !private ["s17CustomReflectableP", "width"]
 - !private ["s23CustomStringConvertibleP", "appearance"]
 - !private ["s23CustomStringConvertibleP", "separatorStyle"]
 - !private ["s23CustomStringConvertibleP", "showsVerticalScrollIndicator"]
-- !private ["Se", "height"]
-- !private ["Se", "width"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["7SwiftUI18DynamicViewContentP", "init"]
 - !private ["7SwiftUI18DynamicViewContentP", "navigationBarTitle"]
-- !private ["SE", "height"]
-- !private ["SE", "width"]
 - !private ["SQ", "appearance"]
-- !private ["SQ", "height"]
-- !private ["SQ", "init"]
 - !private ["SQ", "none"]
 - !private ["SQ", "separatorStyle"]
 - !private ["SQ", "showsVerticalScrollIndicator"]
-- !private ["SQ", "width"]
 - !private ["7SwiftUI7ForEachV", "init"]
 - !private ["7SwiftUI7ForEachV", "navigationBarTitle"]
 - !private ["7SwiftUI13GeometryProxyV", "size"]
 - !private ["7SwiftUI14GeometryReaderV", "init"]
-- !private ["7SwiftUI6HStackV", "init"]
 - !private ["SH", "appearance"]
 - !private ["SH", "none"]
 - !private ["SH", "separatorStyle"]
 - !private ["SH", "showsVerticalScrollIndicator"]
-- !private ["s12IdentifiableP", "channelName"]
-- !private ["s12IdentifiableP", "rawDuration"]
-- !private ["s12IdentifiableP", "thumbnailURL"]
-- !private ["s12IdentifiableP", "title"]
-- !private ["s12IdentifiableP", "views"]
 - !private ["7SwiftUI4ListV", "init"]
 - !private ["7SwiftUI4ListV", "onAppear"]
 - !private ["So8NSCodingP", "appearance"]
@@ -103,11 +73,6 @@ depends-member:
 - !private ["SY", "none"]
 - !private ["So29UITableViewCellSeparatorStyleV", "none"]
 - !private ["7SwiftUI24StackNavigationViewStyleV", "init"]
-- !private ["7SwiftUI18LocalizedStringKeyV0D13InterpolationV", "appendInterpolation"]
-- !private ["7SwiftUI18LocalizedStringKeyV0D13InterpolationV", "appendLiteral"]
-- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
-- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
-- !private ["7SwiftUI4TextV", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "appearance"]
 - !private ["So29UIAccessibilityIdentificationP", "separatorStyle"]
 - !private ["So29UIAccessibilityIdentificationP", "showsVerticalScrollIndicator"]
@@ -168,39 +133,26 @@ depends-member:
 - !private ["So6UIViewC", "appearance"]
 - !private ["So6UIViewC", "separatorStyle"]
 - !private ["So6UIViewC", "showsVerticalScrollIndicator"]
-- !private ["8OTVDraft12URLImageViewV", "deinit"]
-- !private ["8OTVDraft12URLImageViewV", "init"]
-- !private ["7SwiftUI6VStackV", "frame"]
-- !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
 - !private ["7SwiftUI4ViewP", "GeometryReader"]
-- !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "List"]
 - !private ["7SwiftUI4ViewP", "NavigationView"]
 - ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "StackNavigationViewStyle"]
-- !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "UITableView"]
-- !private ["7SwiftUI4ViewP", "URLImageView"]
-- !private ["7SwiftUI4ViewP", "VStack"]
-- !private ["7SwiftUI4ViewP", "YoutubeVidCard"]
+- !private ["7SwiftUI4ViewP", "YoutubeVidView"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "callAsFunction"]
-- !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "navigationBarHidden"]
 - !private ["7SwiftUI4ViewP", "navigationBarTitle"]
 - !private ["7SwiftUI4ViewP", "navigationViewStyle"]
 - !private ["7SwiftUI4ViewP", "onAppear"]
-- !private ["7SwiftUI4ViewP", "size"]
 - !private ["7SwiftUI4ViewP", "viewModel"]
-- !private ["7SwiftUI4ViewP", "youtubeVid"]
-- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - ["8OTVDraft15YoutubeHomeViewV", "$viewModel"]
 - ["8OTVDraft15YoutubeHomeViewV", "Body"]
 - ["8OTVDraft15YoutubeHomeViewV", "CGSize"]
@@ -213,7 +165,7 @@ depends-member:
 - !private ["8OTVDraft15YoutubeHomeViewV", "StackNavigationViewStyle"]
 - !private ["8OTVDraft15YoutubeHomeViewV", "UITableView"]
 - ["8OTVDraft15YoutubeHomeViewV", "View"]
-- !private ["8OTVDraft15YoutubeHomeViewV", "YoutubeVidCard"]
+- !private ["8OTVDraft15YoutubeHomeViewV", "YoutubeVidView"]
 - ["8OTVDraft15YoutubeHomeViewV", "_Default_Body"]
 - ["8OTVDraft15YoutubeHomeViewV", "_makeView"]
 - ["8OTVDraft15YoutubeHomeViewV", "_makeViewList"]
@@ -222,60 +174,30 @@ depends-member:
 - ["8OTVDraft15YoutubeHomeViewV", "deinit"]
 - ["8OTVDraft15YoutubeHomeViewV", "init"]
 - ["8OTVDraft15YoutubeHomeViewV", "viewModel"]
-- ["8OTVDraft14YoutubeVidCardV", "Body"]
-- ["8OTVDraft14YoutubeVidCardV", "CGSize"]
-- !private ["8OTVDraft14YoutubeVidCardV", "HStack"]
-- !private ["8OTVDraft14YoutubeVidCardV", "Text"]
-- !private ["8OTVDraft14YoutubeVidCardV", "URLImageView"]
-- !private ["8OTVDraft14YoutubeVidCardV", "VStack"]
-- ["8OTVDraft14YoutubeVidCardV", "View"]
-- ["8OTVDraft14YoutubeVidCardV", "YoutubeVideo"]
-- ["8OTVDraft14YoutubeVidCardV", "_Default_Body"]
-- ["8OTVDraft14YoutubeVidCardV", "_makeView"]
-- ["8OTVDraft14YoutubeVidCardV", "_makeViewList"]
-- ["8OTVDraft14YoutubeVidCardV", "body"]
-- ["8OTVDraft14YoutubeVidCardV", "deinit"]
-- ["8OTVDraft14YoutubeVidCardV", "init"]
-- ["8OTVDraft14YoutubeVidCardV", "size"]
-- ["8OTVDraft14YoutubeVidCardV", "youtubeVid"]
-- !private ["8OTVDraft12YoutubeVideoV", "channelName"]
+- !private ["8OTVDraft14YoutubeVidViewV", "deinit"]
+- !private ["8OTVDraft14YoutubeVidViewV", "init"]
 - !private ["8OTVDraft12YoutubeVideoV", "deinit"]
-- !private ["8OTVDraft12YoutubeVideoV", "rawDuration"]
-- !private ["8OTVDraft12YoutubeVideoV", "thumbnailURL"]
-- !private ["8OTVDraft12YoutubeVideoV", "title"]
-- !private ["8OTVDraft12YoutubeVideoV", "views"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "height"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "appearance"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "separatorStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "showsVerticalScrollIndicator"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "appearance"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "separatorStyle"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "showsVerticalScrollIndicator"]
-- !private ["s21_ObjectiveCBridgeableP", "height"]
-- !private ["s21_ObjectiveCBridgeableP", "width"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "appearance"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "separatorStyle"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "showsVerticalScrollIndicator"]
 depends-nominal:
-- !private "7SwiftUI10AnimatableP"
 - !private "So15CALayerDelegateP"
-- !private "So6CGSizeV"
 - !private "s7CVarArgP"
 - !private "s28CustomDebugStringConvertibleP"
-- !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
-- !private "Se"
 - "7SwiftUI15DynamicPropertyP"
 - !private "7SwiftUI18DynamicViewContentP"
-- !private "SE"
 - !private "SQ"
 - !private "7SwiftUI7ForEachV"
 - !private "7SwiftUI13GeometryProxyV"
 - !private "7SwiftUI14GeometryReaderV"
-- !private "7SwiftUI6HStackV"
 - !private "SH"
-- !private "s12IdentifiableP"
 - !private "7SwiftUI4ListV"
 - !private "So8NSCodingP"
 - !private "So8NSObjectC"
@@ -288,9 +210,6 @@ depends-nominal:
 - !private "SY"
 - !private "So29UITableViewCellSeparatorStyleV"
 - !private "7SwiftUI24StackNavigationViewStyleV"
-- !private "7SwiftUI18LocalizedStringKeyV0D13InterpolationV"
-- !private "s27StringInterpolationProtocolP"
-- !private "7SwiftUI4TextV"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
@@ -311,17 +230,12 @@ depends-nominal:
 - !private "So18UITraitEnvironmentP"
 - !private "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
-- !private "8OTVDraft12URLImageViewV"
-- !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
-- !private "7SwiftUI11ViewBuilderV"
 - "8OTVDraft15YoutubeHomeViewV"
-- "8OTVDraft14YoutubeVidCardV"
+- !private "8OTVDraft14YoutubeVidViewV"
 - !private "8OTVDraft12YoutubeVideoV"
-- !private "s30_CustomPlaygroundQuickLookableP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
-- !private "s21_ObjectiveCBridgeableP"
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
@@ -356,4 +270,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "601377c49c4bfa6bdf5ffb63d76452ed"
+interface-hash: "26fb7ab22f863ef39aa50914cd38c8ff"

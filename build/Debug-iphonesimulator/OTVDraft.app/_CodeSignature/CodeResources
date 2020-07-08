@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		KNuaL19SFLj34l6Oozk3+gew7wY=
+		wjnm4l068fTCscYEsr6/FudNxug=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		E7eUEzzDA91zUrpBKGNkO0vHRrI=
+		fgJMA5o9KZmRXFGbu/H6E+f1GOY=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,15 +18,23 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		++aWnnZV+9yEwt6LECEN7hvEJDM=
+		rNWpiRcFxkAdm26NwyiWd++OuoQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6ys4xGLv6eSv0dz478zwFZZxihU=
+		45s0eDl0LlJgDjzYJUSxFAFbJzQ=
+		</data>
+		<key>KenyanCoffee.ttf</key>
+		<data>
+		ZRAbvhQ2cDqIP7Bgu3NQxyubsGI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>TradeGothic.otf</key>
+		<data>
+		xma0z9IIiwGSO8HnsAImkRhSzU8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,14 +43,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tAomO+Hq06AM/ykENr48ahMW+XcXTnTCU9ktVSUfU7k=
+			L4SdYeZ9UBr9k2+rx7vd9c9+dOWJOq5e+ONj7FnXD+0=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sXofVoNqj5yzgc6hsn5fM5qBkNLZ4sgOg82g4CHD7UY=
+			q/M6H7E7/FJ/c2ksP//JAQx/6VRHxkepomPyYRVtW6s=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -56,7 +64,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cc5P79kN/T681AD98VsDNthXZn+5mUnvc2U6J7cMq9U=
+			zUn4ixG6TrKPg4zzk91LQHvtMr+/TESqEJXKd0c3t70=
+			</data>
+		</dict>
+		<key>KenyanCoffee.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n1LH8wEPaQM7vRWc0rQIKROaqVNrgiu3x2XhNg91wbc=
+			</data>
+		</dict>
+		<key>TradeGothic.otf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kDJgb4gNzhZQxH/+wJy/Pc7NZn3Z2MmqAZxsMpU0rCY=
 			</data>
 		</dict>
 	</dict>

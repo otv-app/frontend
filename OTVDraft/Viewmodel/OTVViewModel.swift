@@ -21,17 +21,21 @@ class OTVViewModel: ObservableObject {
     //static func to create a model, the model will be made by the api stuff patrick is doing in the future
     //this needs to be static cuz this function is in the class and u cant initialize the model before this function
     /**
-        This static function creates a model of type `OTVStreamer`.
+     This static function creates a model of type `OTVStreamer`.
      
      - Returns: An `OTVModel<OTVStreamer>` to be used as the model in this program.
      */
     static func createOTVModel() -> OTVModel<OTVStreamer> {
-        let streamerMerchInfo: [StreamerMerch] = [
-            .init(id: 0, merches: [.init(id: 0, price: 44.99, image: "offlinetv1", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-split-hoodie-black-white-limited-edition"), .init(id: 1, price: 49.99, image: "offlinetv2", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-slant-hoodie-black-yellow-limited-edition"), .init(id: 2, price: 79.99, image: "offlinetv3", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-split-windbreaker-black-white-limited-edition"), .init(id: 3, price: 19.99, image: "offlinetv4", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-stacked-tee-black"), .init(id: 4, price: 24.99, image: "offlinetv5", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-embroidered-logo-tee-white"), .init(id: 5, price: 24.99, image: "offlinetv6", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-embroidered-logo-tee-black")]),
-            .init(id: 1, merches: [.init(id: 0, price: 25.55, image: "lilyShirt", link: "https://lilypichustore.com/products/temmies-short-sleeve-t-shirt"), .init(id: 1, price: 15.00, image: "lilySticker1", link: "https://lilypichustore.com/products/lily-sticker-set-pack-of-3"), .init(id: 2, price: 15.00, image: "lilySticker2", link: "https://lilypichustore.com/products/temmie-sticker-set-pack-of-3")]),
-            .init(id: 2, merches: [.init(id: 0, price: 24.99, image: "fedHat", link: "https://metathreads.com/collections/fedmyster/products/fedmyster-black-snapback")]),
-            .init(id: 3, merches: [.init(id: 0, price: 0.99, image: "gasPoki", link: "https://www.google.com/"), .init(id: 1, price: 2.99, image: "uwuPoki", link: "https://www.google.com/")]),
-            .init(id: 4, merches: [.init(id: 0, price: 10.99, image: "toast", link: "https://disguisedtoast.com/")])
+        let streamerMerchInfo: [[Merch]] = [
+            [.init(id: 0, price: 44.99, image: "offlinetv1", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-split-hoodie-black-white-limited-edition"), .init(id: 1, price: 49.99, image: "offlinetv2", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-slant-hoodie-black-yellow-limited-edition"), .init(id: 2, price: 79.99, image: "offlinetv3", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-split-windbreaker-black-white-limited-edition"), .init(id: 3, price: 19.99, image: "offlinetv4", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-stacked-tee-black"), .init(id: 4, price: 24.99, image: "offlinetv5", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-embroidered-logo-tee-white"), .init(id: 5, price: 24.99, image: "offlinetv6", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-embroidered-logo-tee-black")],
+            
+            [.init(id: 0, price: 25.55, image: "lilyShirt", link: "https://lilypichustore.com/products/temmies-short-sleeve-t-shirt"), .init(id: 1, price: 15.00, image: "lilySticker1", link: "https://lilypichustore.com/products/lily-sticker-set-pack-of-3"), .init(id: 2, price: 15.00, image: "lilySticker2", link: "https://lilypichustore.com/products/temmie-sticker-set-pack-of-3")],
+            
+            [.init(id: 0, price: 24.99, image: "fedHat", link: "https://metathreads.com/collections/fedmyster/products/fedmyster-black-snapback")],
+            
+            [.init(id: 0, price: 0.99, image: "gasPoki", link: "https://www.google.com/"), .init(id: 1, price: 2.99, image: "uwuPoki", link: "https://www.google.com/")],
+            
+            [.init(id: 0, price: 10.99, image: "toast", link: "https://disguisedtoast.com/")]
         ]
         
         let videos: [YoutubeVideo] = [

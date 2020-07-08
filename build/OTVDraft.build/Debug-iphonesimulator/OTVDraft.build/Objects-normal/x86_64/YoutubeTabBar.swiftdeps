@@ -15,6 +15,7 @@ depends-top-level:
 - "=="
 - !private "AssignmentPrecedence"
 - "Binding"
+- !private "Button"
 - "CGFloat"
 - !private "Color"
 - "FloatLiteralType"
@@ -39,6 +40,7 @@ depends-member:
 - !private ["7SwiftUI10AnimatableP", "init"]
 - !private ["7SwiftUI10AnimatableP", "size"]
 - !private ["7SwiftUI10AnimatableP", "width"]
+- !private ["7SwiftUI6ButtonV", "init"]
 - !private ["So6CGSizeV", "height"]
 - !private ["So6CGSizeV", "width"]
 - !private ["7SwiftUI5ColorV", "black"]
@@ -92,7 +94,7 @@ depends-member:
 - !private ["SQ", "showAll"]
 - !private ["SQ", "template"]
 - !private ["SQ", "toIcon"]
-- !private ["SQ", "toTitle"]
+- !private ["SQ", "toYoutubeLogo"]
 - !private ["SQ", "white"]
 - !private ["SQ", "width"]
 - !private ["s23ExpressibleByNilLiteralP", "black"]
@@ -141,11 +143,12 @@ depends-member:
 - !private ["7SwiftUI5ImageV21TemplateRenderingModeO", "template"]
 - !private ["7SwiftUI4TextV", "init"]
 - !private ["7SwiftUI4TextV", "padding"]
-- !private ["7SwiftUI4TextV", "toTitle"]
+- !private ["7SwiftUI4TextV", "toYoutubeLogo"]
 - !private ["7SwiftUI6VStackV", "frame"]
 - !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Binding"]
 - ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "Button"]
 - !private ["7SwiftUI4ViewP", "Color"]
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "Image"]
@@ -166,16 +169,17 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "geometry"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "numberOfIcons"]
-- !private ["7SwiftUI4ViewP", "onTapGesture"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "red"]
 - !private ["7SwiftUI4ViewP", "renderingMode"]
 - !private ["7SwiftUI4ViewP", "resizable"]
+- !private ["7SwiftUI4ViewP", "shadow"]
+- !private ["7SwiftUI4ViewP", "shadowRadius"]
 - !private ["7SwiftUI4ViewP", "size"]
 - !private ["7SwiftUI4ViewP", "tab"]
 - !private ["7SwiftUI4ViewP", "template"]
 - !private ["7SwiftUI4ViewP", "toIcon"]
-- !private ["7SwiftUI4ViewP", "toTitle"]
+- !private ["7SwiftUI4ViewP", "toYoutubeLogo"]
 - !private ["7SwiftUI4ViewP", "white"]
 - !private ["7SwiftUI4ViewP", "youtubeIconBarHeight"]
 - !private ["7SwiftUI4ViewP", "youtubeTitleScaleFactor"]
@@ -192,6 +196,7 @@ depends-member:
 - ["8OTVDraft13YoutubeTabBarV", "$tab"]
 - ["8OTVDraft13YoutubeTabBarV", "Binding"]
 - ["8OTVDraft13YoutubeTabBarV", "Body"]
+- !private ["8OTVDraft13YoutubeTabBarV", "Button"]
 - ["8OTVDraft13YoutubeTabBarV", "CGFloat"]
 - !private ["8OTVDraft13YoutubeTabBarV", "Color"]
 - ["8OTVDraft13YoutubeTabBarV", "GeometryProxy"]
@@ -214,10 +219,12 @@ depends-member:
 - ["8OTVDraft13YoutubeTabBarV", "geometry"]
 - ["8OTVDraft13YoutubeTabBarV", "init"]
 - ["8OTVDraft13YoutubeTabBarV", "numberOfIcons"]
+- ["8OTVDraft13YoutubeTabBarV", "shadowRadius"]
 - ["8OTVDraft13YoutubeTabBarV", "tab"]
 - ["8OTVDraft13YoutubeTabBarV", "youtubeIconBarHeight"]
 - ["8OTVDraft13YoutubeTabBarV", "youtubeTitleScaleFactor"]
 - !private ["7SwiftUI6ZStackV", "init"]
+- !private ["7SwiftUI6ZStackV", "shadow"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - !private ["s21_ObjectiveCBridgeableP", "black"]
@@ -229,6 +236,7 @@ depends-member:
 depends-nominal:
 - !private "7SwiftUI9AlignmentV"
 - !private "7SwiftUI10AnimatableP"
+- !private "7SwiftUI6ButtonV"
 - !private "So6CGSizeV"
 - !private "7SwiftUI5ColorV"
 - !private "s28CustomDebugStringConvertibleP"
@@ -292,4 +300,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c1ef83f1c7f882b3dc00254671a188b4"
+interface-hash: "334f92743a3e660d851ddb288497d725"

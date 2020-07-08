@@ -10,6 +10,7 @@ depends-top-level:
 - "/"
 - !private "=="
 - "AssignmentPrecedence"
+- !private "Button"
 - "CGFloat"
 - "Color"
 - "CustomTabBarView"
@@ -22,13 +23,14 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - "TabBarPage"
-- "TernaryPrecedence"
+- !private "TernaryPrecedence"
 - "View"
 - "ViewRouter"
 - !private "ZStack"
 depends-member:
 - !private ["7SwiftUI10AnimatableP", "height"]
 - !private ["7SwiftUI10AnimatableP", "width"]
+- !private ["7SwiftUI6ButtonV", "init"]
 - !private ["So6CGSizeV", "height"]
 - !private ["So6CGSizeV", "width"]
 - !private ["7SwiftUI5ColorV", "black"]
@@ -57,6 +59,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "yellow"]
 - ["8OTVDraft16CustomTabBarViewV", "$viewRouter"]
 - ["8OTVDraft16CustomTabBarViewV", "Body"]
+- !private ["8OTVDraft16CustomTabBarViewV", "Button"]
 - ["8OTVDraft16CustomTabBarViewV", "CGFloat"]
 - ["8OTVDraft16CustomTabBarViewV", "Color"]
 - ["8OTVDraft16CustomTabBarViewV", "GeometryProxy"]
@@ -167,6 +170,7 @@ depends-member:
 - !private ["8OTVDraft10TabBarPageO", "youtube"]
 - !private ["7SwiftUI5ImageV21TemplateRenderingModeO", "template"]
 - ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "Button"]
 - ["7SwiftUI4ViewP", "Color"]
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "Image"]
@@ -189,7 +193,6 @@ depends-member:
 - ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "merchFocusColor"]
 - !private ["7SwiftUI4ViewP", "numberOfIcons"]
-- !private ["7SwiftUI4ViewP", "onTapGesture"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "purple"]
 - !private ["7SwiftUI4ViewP", "red"]
@@ -212,6 +215,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 depends-nominal:
 - !private "7SwiftUI10AnimatableP"
+- !private "7SwiftUI6ButtonV"
 - !private "So6CGSizeV"
 - "7SwiftUI5ColorV"
 - !private "s28CustomDebugStringConvertibleP"

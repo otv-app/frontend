@@ -4,19 +4,16 @@ provides-top-level:
 - "Streamer"
 - "YoutubeVideo"
 - "Merch"
-- "StreamerMerch"
 provides-nominal:
 - "8OTVDraft11OTVStreamerV"
 - "8OTVDraft8StreamerP"
 - "8OTVDraft12YoutubeVideoV"
 - "8OTVDraft5MerchV"
-- "8OTVDraft13StreamerMerchV"
 provides-member:
 - ["8OTVDraft11OTVStreamerV", ""]
 - ["8OTVDraft8StreamerP", ""]
 - ["8OTVDraft12YoutubeVideoV", ""]
 - ["8OTVDraft5MerchV", ""]
-- ["8OTVDraft13StreamerMerchV", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "Double"
@@ -25,7 +22,6 @@ depends-top-level:
 - "Merch"
 - "OTVStreamer"
 - "Streamer"
-- "StreamerMerch"
 - "String"
 - "YoutubeVideo"
 depends-member:
@@ -51,7 +47,7 @@ depends-member:
 - ["8OTVDraft5MerchV", "price"]
 - ["8OTVDraft11OTVStreamerV", "ID"]
 - ["8OTVDraft11OTVStreamerV", "Int"]
-- ["8OTVDraft11OTVStreamerV", "StreamerMerch"]
+- ["8OTVDraft11OTVStreamerV", "Merch"]
 - ["8OTVDraft11OTVStreamerV", "String"]
 - ["8OTVDraft11OTVStreamerV", "YoutubeVideo"]
 - ["8OTVDraft11OTVStreamerV", "_Default_ID"]
@@ -72,14 +68,6 @@ depends-member:
 - ["8OTVDraft8StreamerP", "name"]
 - ["8OTVDraft8StreamerP", "platform"]
 - ["8OTVDraft8StreamerP", "url"]
-- ["8OTVDraft13StreamerMerchV", "ID"]
-- ["8OTVDraft13StreamerMerchV", "Int"]
-- ["8OTVDraft13StreamerMerchV", "Merch"]
-- ["8OTVDraft13StreamerMerchV", "_Default_ID"]
-- ["8OTVDraft13StreamerMerchV", "deinit"]
-- ["8OTVDraft13StreamerMerchV", "id"]
-- ["8OTVDraft13StreamerMerchV", "init"]
-- ["8OTVDraft13StreamerMerchV", "merches"]
 - ["8OTVDraft12YoutubeVideoV", "ID"]
 - ["8OTVDraft12YoutubeVideoV", "Int"]
 - ["8OTVDraft12YoutubeVideoV", "String"]
@@ -98,7 +86,6 @@ depends-nominal:
 - "8OTVDraft5MerchV"
 - "8OTVDraft11OTVStreamerV"
 - "8OTVDraft8StreamerP"
-- "8OTVDraft13StreamerMerchV"
 - "8OTVDraft12YoutubeVideoV"
 depends-dynamic-lookup:
 depends-external:
@@ -133,4 +120,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "17c3cee3da9fc80ea9a6bfb76cfa31d9"
+interface-hash: "78f6699e78799d70a47e457cb328401f"
