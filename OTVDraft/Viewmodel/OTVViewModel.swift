@@ -26,6 +26,11 @@ class OTVViewModel: ObservableObject {
      - Returns: An `OTVModel<OTVStreamer>` to be used as the model in this program.
      */
     static func createOTVModel() -> OTVModel<OTVStreamer> {
+//        let otvChannel: YoutubeChannel = try! .init(id: "UCDK9qD5DAQML-pzrtA7A4oA")
+//        let reevesChannel: YoutubeChannel = try! .init(id: "UCtHaxi4GTYDpJgMSGy7AeSw")
+//        let toastChannel: YoutubeChannel = try! .init(id: "UCUT8RoNBTJvwW1iErP6-b-A")
+        print("getting channels")
+        
         let streamerMerchInfo: [[Merch]] = [
             [.init(id: 0, price: 44.99, image: "offlinetv1", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-split-hoodie-black-white-limited-edition"), .init(id: 1, price: 49.99, image: "offlinetv2", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-slant-hoodie-black-yellow-limited-edition"), .init(id: 2, price: 79.99, image: "offlinetv3", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-split-windbreaker-black-white-limited-edition"), .init(id: 3, price: 19.99, image: "offlinetv4", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-stacked-tee-black"), .init(id: 4, price: 24.99, image: "offlinetv5", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-embroidered-logo-tee-white"), .init(id: 5, price: 24.99, image: "offlinetv6", link: "https://offlinetv.3blackdot.com/collections/frontpage/products/offlinetv%C2%AE-embroidered-logo-tee-black")],
             
@@ -39,18 +44,31 @@ class OTVViewModel: ObservableObject {
         ]
         
         let videos: [YoutubeVideo] = [
-            .init(id: "x2_nbkP6AU8", title: "BIG SCHNOOZER", channelName: "xqcow", views: 9000, thumbnailURL: "https://img.youtube.com/vi/x2_nbkP6AU8/0.jpg", rawDuration: "duration", rawDate: "date"),
-            .init(id: "CfR0wln_p8s", title: "Mr. Cow reacts to Daily Dose of Internet", channelName: "xqcow", views: 10000, thumbnailURL: "https://img.youtube.com/vi/CfR0wln_p8s/0.jpg", rawDuration: "duration", rawDate: "date")
+            .init(id: "x2_nbkP6AU8", title: "BIG SCHNOOZER", thumbnailURL: "https://img.youtube.com/vi/x2_nbkP6AU8/0.jpg", rawDuration: "duration", rawDate: "date"),
+            .init(id: "CfR0wln_p8s", title: "Mr. Cow reacts to Daily Dose of Internet", thumbnailURL: "https://img.youtube.com/vi/CfR0wln_p8s/0.jpg", rawDuration: "duration", rawDate: "date")
         ]
+        
+//        let otvVids: [YoutubeVideo] = try! otvChannel.getVideos()
+//        let toastVids: [YoutubeVideo] = try! toastChannel.getVideos()
+//        let reevesVids: [YoutubeVideo] = try! reevesChannel.getVideos()
+        
+        print("getting vids")
         
         
         let streamers: [OTVStreamer] = [
             .init(id: 0, name: "OfflineTV", platform: "Youtube", url: "youtube.com/otv", merch: streamerMerchInfo[0], youtubeVideos: videos),
             .init(id: 1, name: "LilyPichu", platform: "Twitch", url: "twitch.tv/lily", merch: streamerMerchInfo[1], youtubeVideos: videos),
-            .init(id: 2, name: "Predmyster", platform: "Rehab", url: "twitch.tv/pred", merch: streamerMerchInfo[2], youtubeVideos: videos),
+            .init(id: 2, name: "Michael Reeves", platform: "Robotz", url: "twitch.tv/mykull", merch: streamerMerchInfo[2], youtubeVideos: videos),
             .init(id: 3, name: "Pokimane", platform: "Twitch", url: "twitch.tv/pokimane", merch: streamerMerchInfo[3], youtubeVideos: videos),
             .init(id: 4, name: "DisguisedToast", platform: "Youtube", url: "youtube.com/toast", merch: streamerMerchInfo[4], youtubeVideos: videos)
         ]
+//        let streamers: [OTVStreamer] = [
+//            .init(id: 0, name: "OfflineTV", platform: "Youtube", url: "youtube.com/otv", merch: streamerMerchInfo[0], youtubeVideos: otvVids, youtubeChannel: otvChannel),
+//            .init(id: 1, name: "LilyPichu", platform: "Twitch", url: "twitch.tv/lily", merch: streamerMerchInfo[1], youtubeVideos: otvVids, youtubeChannel: otvChannel),
+//            .init(id: 2, name: "Michael Reeves", platform: "Robotz", url: "twitch.tv/mykull", merch: streamerMerchInfo[2], youtubeVideos: reevesVids, youtubeChannel: reevesChannel),
+//            .init(id: 3, name: "Pokimane", platform: "Twitch", url: "twitch.tv/pokimane", merch: streamerMerchInfo[3], youtubeVideos: reevesVids, youtubeChannel: otvChannel),
+//            .init(id: 4, name: "DisguisedToast", platform: "Youtube", url: "youtube.com/toast", merch: streamerMerchInfo[4], youtubeVideos: toastVids, youtubeChannel: toastChannel)
+//        ]
         return OTVModel<OTVStreamer>(streamers: streamers)
     }
     
@@ -74,8 +92,8 @@ class OTVViewModel: ObservableObject {
      - Returns: an `Array<YoutubeVideo>` of the latest youtube videos from streamers
      */
     func getLatestVideos(latest numVid: Int) -> Array<YoutubeVideo>{
-        [ .init(id: "x2_nbkP6AU8", title: "BIG SCHNOOZER", channelName: "xqcow", views: 9000, thumbnailURL: "https://img.youtube.com/vi/x2_nbkP6AU8/0.jpg", rawDuration: "duration", rawDate: "date"),
-          .init(id: "CfR0wln_p8s", title: "Mr. Cow reacts to Daily Dose of Internet", channelName: "xqcow", views: 10000, thumbnailURL: "https://img.youtube.com/vi/CfR0wln_p8s/0.jpg", rawDuration: "duration", rawDate: "date")
+        [ .init(id: "x2_nbkP6AU8", title: "BIG SCHNOOZER", thumbnailURL: "https://img.youtube.com/vi/x2_nbkP6AU8/0.jpg", rawDuration: "duration", rawDate: "date"),
+          .init(id: "CfR0wln_p8s", title: "Mr. Cow reacts to Daily Dose of Internet", thumbnailURL: "https://img.youtube.com/vi/CfR0wln_p8s/0.jpg", rawDuration: "duration", rawDate: "date")
         ]
     }
 }

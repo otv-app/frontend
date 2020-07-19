@@ -42,4 +42,18 @@ extension Text {
             .foregroundColor(color)
             .lineLimit(1)
     }
+    
+    func toMerchLogo(fontScaleFactor: CGFloat, size: CGFloat, color: Color) -> Text {
+        self
+            .fontWeight(.bold)
+            .font(.custom("KenyanCoffee", size: size * fontScaleFactor))
+            .foregroundColor(color)
+    }
+    
+    func toMerchStreamerName(fontScaleFactor: CGFloat, size: CGFloat, color: Color) -> Text {
+        self
+            .font(.system(size: fontScaleFactor)).fontWeight(.semibold)
+    }
+    
+
 }

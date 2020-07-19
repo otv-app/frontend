@@ -12,9 +12,14 @@ struct YoutubeStreamerView: View {
     
     @ObservedObject var viewModel: OTVViewModel
     
-    init(_ viewModel: OTVViewModel) {
+    @Binding var showFullTab: Bool
+    
+    @GestureState private var dragOffset = CGSize.zero
+    
+    init(_ viewModel: OTVViewModel, showFullTab: Binding<Bool>) {
         self.viewModel = viewModel
         UITableView.appearance().showsVerticalScrollIndicator = false
+        self._showFullTab = showFullTab
     }
     
     var body: some View {
@@ -27,14 +32,29 @@ struct YoutubeStreamerView: View {
         NavigationView {
             List {
                 ForEach(viewModel.streamers) {
-                    streamer in YoutubeRowView(streamer: streamer, size: size)
+                    streamer in YoutubeRowView(streamer: streamer, size: size, showFullTab: self.$showFullTab)
                 }
-            }.navigationBarTitle(Text("By Channel"))
+            }
+            .simultaneousGesture(DragGesture()
+                       .updating($dragOffset, body: { (value, state, transaction) in
+                        
+                                               state = value.translation
+                                           })
+                .onChanged({ _ in
+//                    if self.dragOffset.height > 0 {
+//                        self.showFullTab = true
+//                    } else {
+//                        self.showFullTab = false
+//                    }
+                    print(self.dragOffset.height)
+                })
+                )
+            .navigationBarTitle(Text("By Channel"))
                 .onAppear {
                     UITableView.appearance().separatorStyle = .none
             }
-            .navigationViewStyle(StackNavigationViewStyle())
-        }
+//            .navigationViewStyle(StackNavigationViewStyle())
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
@@ -44,13 +64,19 @@ struct YoutubeRowView: View {
     
     var size: CGSize
     
+    @Binding var showFullTab: Bool
+    
     var body: some View {
         VStack (alignment: .leading) {
-            Text(streamer.name).font(.system(size: size.height * youtubeChannelNameScaleFactor)).fontWeight(.semibold)
+            HStack {
+//                URLImageView(urlString: streamer.youtubeChannel.pfpURL, width: pfpWidth, height: pfpHeight, cShape: 0)
+                Text(streamer.name).font(.system(size: size.height * youtubeChannelNameScaleFactor)).fontWeight(.semibold)
+            }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(streamer.youtubeVideos) {
-                        item in YoutubeVidView(vid: item, size: self.size, w: self.imageWidth, h: self.imageHeight, titleScaleFactor: self.youtubeTitleScaleFactor, descScaleFactor: self.youtubeDescriptionScaleFactor).padding(5)
+                        item in
+                            YoutubeVidView(vid: item, size: self.size, w: self.imageWidth, h: self.imageHeight, titleScaleFactor: self.youtubeTitleScaleFactor, descScaleFactor: self.youtubeDescriptionScaleFactor).padding(5)
                     }
                 }
             }
@@ -64,6 +90,12 @@ struct YoutubeRowView: View {
     }
     var imageHeight: CGFloat {
         size.height/3
+    }
+    var pfpWidth: CGFloat {
+        size.width / 5
+    }
+    var pfpHeight: CGFloat {
+        size.height / 5
     }
     let youtubeTitleScaleFactor: CGFloat = 0.04
     let youtubeDescriptionScaleFactor: CGFloat = 0.03
@@ -92,15 +124,15 @@ struct YoutubeVidView: View {
     
     var body: some View {
         VStack (alignment: .leading) {
-            URLImageView(urlString: vid.thumbnailURL, width: imageWidth, height: imageHeight)
+            URLImageView(urlString: vid.thumbnailURL, width: imageWidth, height: imageHeight, cShape: 1)
             
             VStack (alignment: .leading) {
                 Text(vid.title)
                     .toYoutubeTitle(fontScaleFactor: youtubeTitleScaleFactor, size: size, color: .black)
                     .frame(width: imageWidth, alignment: .leading)
                     
-                Text("\(vid.views) views • \(vid.rawDate)")
-                    .toYoutubeDescription(fontScaleFactor: youtubeDescriptionScaleFactor, size: size, color: .gray)
+//                Text("\(vid.views) views • \(vid.rawDate)")
+//                    .toYoutubeDescription(fontScaleFactor: youtubeDescriptionScaleFactor, size: size, color: .gray)
             }
         }
     }
@@ -108,6 +140,6 @@ struct YoutubeVidView: View {
 
 struct YoutubeStreamerView_Previews: PreviewProvider {
     static var previews: some View {
-        YoutubeStreamerView(OTVViewModel())
+        YoutubeStreamerView(OTVViewModel(), showFullTab: Binding.constant(true))
     }
 }

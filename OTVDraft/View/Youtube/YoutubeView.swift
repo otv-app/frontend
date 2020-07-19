@@ -15,6 +15,8 @@ struct YoutubeView: View {
     /// a `State<YoutubeTab> ` to keep track of which tab this youtube page is on
     @State var tab: YoutubeTab = YoutubeTab.home
     
+    @State var showFullTab: Bool = true
+    
     /**
      Creates a `YoutubeView` object.
      */
@@ -27,7 +29,7 @@ struct YoutubeView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack (spacing: 0) {
-                YoutubeTabBar(tab: self.$tab, geometry: geometry)
+                YoutubeTabBar(tab: self.$tab, showFullTab: self.$showFullTab, geometry: geometry)
                 Spacer()
                 self.getYoutubeTabView()
             }
@@ -42,7 +44,7 @@ struct YoutubeView: View {
     private func getYoutubeTabView() -> AnyView {
         switch self.tab {
         case YoutubeTab.home: return AnyView(YoutubeHomeView(self.viewModel))
-        case YoutubeTab.byStreamer: return AnyView(YoutubeStreamerView(self.viewModel))
+        case YoutubeTab.byStreamer: return AnyView(YoutubeStreamerView(self.viewModel, showFullTab: self.$showFullTab))
             case YoutubeTab.showAll: return AnyView(YoutubeAllView())
         }
     }

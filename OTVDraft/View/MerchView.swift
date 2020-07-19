@@ -38,19 +38,60 @@ struct MerchView: View {
      */
     
     private func body(for size: CGSize) -> some View {
-        NavigationView {
-            List {
-                
-                ForEach(viewModel.streamers) { streamer in
-                    MerchRowView(streamer: streamer, size: size)
-                }
-                
-            }.navigationBarTitle(Text("Merch"))
-                .onAppear {
-                    UITableView.appearance().separatorStyle = .none
-            }
-        }.navigationViewStyle(StackNavigationViewStyle())
+        GeometryReader { geometry in
+            ScrollView {
+                    VStack {
+                        // non-stretch header
+//                        ZStack(alignment: .leading) {
+//                            self.merchFocusColor
+//                            Text("Merch").toMerchLogo(fontScaleFactor: 0.08, size: geometry.size.height, color: Color.white).padding(10)
+//                        }
+//                        .frame(width: geometry.size.width, height: geometry.size.height / 9)
+//                        .padding(.bottom, 50)
+                        
+                        // stretchy benner
+                        GeometryReader { g in
+                            ZStack(alignment: .leading) {
+                                self.merchFocusColor
+                                VStack {
+                                    Spacer()
+                                    Text("Merch").toMerchLogo(fontScaleFactor: 0.08, size: geometry.size.height, color: Color.white).padding(10)
+                                }
+                            }
+                            .offset(y: g.frame(in: .global).minY > 0 ? -g.frame(in: .global).minY : 0)
+                            .frame(height: g.frame(in: .global).minY > 0 ?
+                                UIScreen.main.bounds.height / self.stretchEffect + g.frame(in: .global).minY :
+                                UIScreen.main.bounds.height / self.stretchEffect)
+                        }
+                        .frame(width: geometry.size.width, height: geometry.size.height / 9)
+                        .padding(.bottom, 50)
+                        
+                        // EVERYTHING ABOVE THIS IS STRETCHY HEADER
+                        
+    //                        .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!+10)
+                        
+                        // navigation view of merch items
+    //                    NavigationView {
+    //                        List {
+                        VStack {
+                                ForEach(self.viewModel.streamers) { streamer in
+                                    MerchRowView(streamer: streamer, size: size)
+                                }
+                        }
+    //
+    //                        }.navigationBarTitle(Text(""))
+    //                            .navigationBarHidden(true)
+    //                            .onAppear {
+    //                                UITableView.appearance().separatorStyle = .none
+    //                        }
+    //                    }.navigationViewStyle(StackNavigationViewStyle())
+                    }
+            }.edgesIgnoringSafeArea(.top)
+        }
     }
+    
+    let merchFocusColor: Color = Color(red: 255/55, green: 113/255, blue: 181/255)
+    let stretchEffect: CGFloat = 7
 }
 
 /// a struct that represents a single row in this `MerchView`.
@@ -65,7 +106,7 @@ struct MerchRowView: View {
     var body: some View {
         
         VStack (alignment: .leading) {
-            Text(streamer.name).font(.system(size: size.height * merchStreamerNameScaleFactor)).fontWeight(.semibold)
+            Text(streamer.name).font(.system(size: size.height * merchStreamerNameScaleFactor)).fontWeight(.semibold).padding(.leading, 10)
             ScrollView(.horizontal, showsIndicators: false) {
                 
                 HStack {
@@ -79,7 +120,7 @@ struct MerchRowView: View {
     }
     
     // MARK: - Drawing Constants
-    let merchStreamerNameScaleFactor: CGFloat = 0.03
+    let merchStreamerNameScaleFactor: CGFloat = 0.045
 }
 
 /// a struct that represents the `View` of a single merch item.
@@ -100,20 +141,21 @@ struct MerchItemView: View {
             }) {
                 Image(self.merch.image)
                     .resizable()
+                    .cornerRadius(self.cornerRadius)
                     .scaledToFit()
                     .frame(width: imageWidth, height: imageHeight)
-                    .cornerRadius(self.cornerRadius)
+//                    .cornerRadius(self.cornerRadius)
             }.buttonStyle(PlainButtonStyle())
             
             Text("$" + String(self.merch.price)).font(.system(size: size.height * merchPriceScaleFactor))
         }
         .frame(width: size.width/2 * buttonSizeMultiplier, height: size.height/3 * buttonSizeMultiplier)
-        .cornerRadius(self.cornerRadius)
+//        .cornerRadius(self.cornerRadius)
         .shadow(radius: self.shadowRadius)
     }
     
     // MARK: - Drawing Constants
-    let cornerRadius: CGFloat = 2
+    let cornerRadius: CGFloat = 30
     let shadowRadius: CGFloat = 10
     let buttonSizeMultiplier: CGFloat = 1.25
     let merchPriceScaleFactor: CGFloat = 0.025

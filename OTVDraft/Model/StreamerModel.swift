@@ -19,6 +19,7 @@ struct OTVStreamer: Streamer {
     let url: String
     let merch: [Merch]
     var youtubeVideos: [YoutubeVideo]
+//    var youtubeChannel: YoutubeChannel
 }
 
 //protocol for a streamer
@@ -29,15 +30,15 @@ protocol Streamer: Identifiable {
     var url: String { get }
 }
 
-struct YoutubeVideo: Identifiable {
-    let id: String
-    var title: String
-    var channelName: String
-    var views: Int
-    var thumbnailURL: String
-    var rawDuration: String
-    var rawDate: String
-}
+//struct YoutubeVideo: Identifiable {
+//    let id: String
+//    var title: String
+//    var channelName: String
+//    var views: Int
+//    var thumbnailURL: String
+//    var rawDuration: String
+//    var rawDate: String
+//}
 
 struct Merch: Identifiable {
     let id: Int
