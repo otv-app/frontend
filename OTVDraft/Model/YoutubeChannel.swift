@@ -40,7 +40,6 @@ class YoutubeChannel {
                                              rawDate: videoInfo.snippet.publishedAt))
         }
         
-        
         return listOfVideos
     }
 }
