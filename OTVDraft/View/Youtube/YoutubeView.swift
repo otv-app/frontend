@@ -29,10 +29,12 @@ struct YoutubeView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack (spacing: 0) {
+//            ScrollView {
+                
                 YoutubeTabBar(tab: self.$tab, showFullTab: self.$showFullTab, geometry: geometry)
                 Spacer()
                 self.getYoutubeTabView()
-            }
+            }.edgesIgnoringSafeArea(.top)
         }
     }
     

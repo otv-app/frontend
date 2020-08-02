@@ -9,6 +9,7 @@ import Foundation
 
 class YoutubeChannel {
     var id: String
+    var url: String
     var username: String
     var pfpURL: String
     
@@ -22,6 +23,8 @@ class YoutubeChannel {
         let channelAPIURL = "https://www.googleapis.com/youtube/v3/search?key=" + Key.YTAPIKEY + "&channelId=" + id + "&part=snippet,id&order=date&maxResults=20"
         
         self.username = try Utility.getYoutubeUsername(url: channelAPIURL)
+        
+        self.url = "https://www.youtube.com/channel/" + self.id
     }
     
     func getVideos() throws -> [YoutubeVideo] {
@@ -35,10 +38,11 @@ class YoutubeChannel {
             let rawDurationVid = try Utility.getYoutubeVideoRawDuration(id: videoInfo.id.videoId)
             listOfVideos.append(YoutubeVideo(id: videoInfo.id.videoId,
                                              title: videoInfo.snippet.title,
-                                             thumbnailURL: videoInfo.snippet.thumbnails.defaultThumb.url,
+                                             thumbnailURL: videoInfo.snippet.thumbnails.medium.url,
                                              rawDuration: rawDurationVid,
                                              rawDate: videoInfo.snippet.publishedAt))
         }
+        
         
         return listOfVideos
     }

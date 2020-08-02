@@ -56,9 +56,10 @@ struct URLImageView: View {
             } else {
                 Image(uiImage: urlImageModel.image ?? URLImageView.defaultImage!)
                     .resizable()
-                    .scaledToFit()
+                    .cornerRadius(15)
+                    .aspectRatio(16/9, contentMode: .fit)
+//                    .scaledToFit()
                     .frame(width: width, height: height)
-                    .clipShape(Rectangle())
             }
         }
     }

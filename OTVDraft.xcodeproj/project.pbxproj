@@ -11,6 +11,8 @@
 		6D91C2F924BE0BA000E25405 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D91C2F824BE0BA000E25405 /* Utility.swift */; };
 		6D91C2FB24BE0BC600E25405 /* YoutubeChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D91C2FA24BE0BC600E25405 /* YoutubeChannel.swift */; };
 		6D91C2FD24BE0BDF00E25405 /* YoutubeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D91C2FC24BE0BDF00E25405 /* YoutubeVideo.swift */; };
+		6DEE287424D343D30045FF5F /* YoutubeVidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEE287324D343D30045FF5F /* YoutubeVidView.swift */; };
+		6DEE287624D3C4880045FF5F /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEE287524D3C4880045FF5F /* DateUtility.swift */; };
 		B24457A224ADDC4600D8443A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24457A124ADDC4600D8443A /* AppDelegate.swift */; };
 		B24457A424ADDC4600D8443A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24457A324ADDC4600D8443A /* SceneDelegate.swift */; };
 		B24457A624ADDC4600D8443A /* OTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24457A524ADDC4600D8443A /* OTVView.swift */; };
@@ -63,6 +65,8 @@
 		6D91C2F824BE0BA000E25405 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		6D91C2FA24BE0BC600E25405 /* YoutubeChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeChannel.swift; sourceTree = "<group>"; };
 		6D91C2FC24BE0BDF00E25405 /* YoutubeVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideo.swift; sourceTree = "<group>"; };
+		6DEE287324D343D30045FF5F /* YoutubeVidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVidView.swift; sourceTree = "<group>"; };
+		6DEE287524D3C4880045FF5F /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
 		B244579E24ADDC4600D8443A /* OTVDraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTVDraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24457A124ADDC4600D8443A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B24457A324ADDC4600D8443A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 				6D91C2F824BE0BA000E25405 /* Utility.swift */,
 				6D91C2FA24BE0BC600E25405 /* YoutubeChannel.swift */,
 				6D91C2FC24BE0BDF00E25405 /* YoutubeVideo.swift */,
+				6DEE287524D3C4880045FF5F /* DateUtility.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				B244584024B0D9C200D8443A /* YoutubeHomeView.swift */,
 				B244584224B0D9D300D8443A /* YoutubeStreamerView.swift */,
 				B244584424B0D9E000D8443A /* YoutubeAllView.swift */,
+				6DEE287324D343D30045FF5F /* YoutubeVidView.swift */,
 			);
 			path = Youtube;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 				B24457E424AE45C500D8443A /* OTVModel.swift in Sources */,
 				6D91C2FB24BE0BC600E25405 /* YoutubeChannel.swift in Sources */,
 				B244583F24B0C04100D8443A /* YoutubeTabBar.swift in Sources */,
+				6DEE287624D3C4880045FF5F /* DateUtility.swift in Sources */,
 				B244584524B0D9E000D8443A /* YoutubeAllView.swift in Sources */,
 				B244584324B0D9D300D8443A /* YoutubeStreamerView.swift in Sources */,
 				B24457A424ADDC4600D8443A /* SceneDelegate.swift in Sources */,
@@ -407,6 +414,7 @@
 				B24457E624AE5C0D00D8443A /* ImageModifiers.swift in Sources */,
 				6D91C2F724BE0B8300E25405 /* Keys.swift in Sources */,
 				6D91C2F924BE0BA000E25405 /* Utility.swift in Sources */,
+				6DEE287424D343D30045FF5F /* YoutubeVidView.swift in Sources */,
 				6D91C2FD24BE0BDF00E25405 /* YoutubeVideo.swift in Sources */,
 				B24457D224ADDCF100D8443A /* CustomTabBarView.swift in Sources */,
 				B244583C24AFA38C00D8443A /* StreamerModel.swift in Sources */,

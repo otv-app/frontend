@@ -33,7 +33,7 @@ extension Text {
         self
             .font(.system(size: size.height * fontScaleFactor))
             .foregroundColor(color)
-            .lineLimit(1)
+            .lineLimit(2)
     }
     
     func toYoutubeDescription(fontScaleFactor: CGFloat, size: CGSize, color: Color) -> some View {

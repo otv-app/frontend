@@ -9,6 +9,9 @@
 import Foundation
 
 struct Key {
-    static let YTAPIKEY : String = "AIzaSyC0_4wdY_7-uN7jgDkWdQsMUamhU2AOGqk"
+    static let SAAHILKEY : String = "AIzaSyC0_4wdY_7-uN7jgDkWdQsMUamhU2AOGqk"
+    static let SAAHILKEY2: String = "AIzaSyCJAd06to_fsxD4ER8jH9tRA8q7O0XqPYg"
     static let PATRICKKEY : String = "AIzaSyDicp8qEd84ljPJrnzd388psVJNK3sMN2I"
+    static let CHENGKEY : String = "AIzaSyAVpRd3qW7uPAFkgcWuJZ0SCalUFzqDlu8"
+    static let YTAPIKEY : String = PATRICKKEY
 }

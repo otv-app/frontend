@@ -19,7 +19,7 @@ struct OTVStreamer: Streamer {
     let url: String
     let merch: [Merch]
     var youtubeVideos: [YoutubeVideo]
-//    var youtubeChannel: YoutubeChannel
+    var youtubeChannel: YoutubeChannel
 }
 
 //protocol for a streamer
