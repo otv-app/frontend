@@ -28,10 +28,10 @@ class OTVViewModel: ObservableObject {
     static func createOTVModel() -> OTVModel<OTVStreamer> {
         
         let otvChannel: YoutubeChannel = try! .init(id: "UCDK9qD5DAQML-pzrtA7A4oA")
-//        let reevesChannel: YoutubeChannel = try! .init(id: "UCtHaxi4GTYDpJgMSGy7AeSw")
-//        let toastChannel: YoutubeChannel = try! .init(id: "UCUT8RoNBTJvwW1iErP6-b-A")
-//        let lilyChannel: YoutubeChannel = try! .init(id: "UCvWU1K29wCZ8j1NsXsRrKnA")
-//        let pokiChannel: YoutubeChannel = try! .init(id: "UChXKjLEzAB1K7EZQey7Fm1Q")
+        let reevesChannel: YoutubeChannel = try! .init(id: "UCtHaxi4GTYDpJgMSGy7AeSw")
+        let toastChannel: YoutubeChannel = try! .init(id: "UCUT8RoNBTJvwW1iErP6-b-A")
+        let lilyChannel: YoutubeChannel = try! .init(id: "UCvWU1K29wCZ8j1NsXsRrKnA")
+        let pokiChannel: YoutubeChannel = try! .init(id: "UChXKjLEzAB1K7EZQey7Fm1Q")
         print("getting channels")
         
         let streamerMerchInfo: [[Merch]] = [
@@ -52,28 +52,30 @@ class OTVViewModel: ObservableObject {
         ]
         
         let otvVids: [YoutubeVideo] = try! otvChannel.getVideos()
-//        let toastVids: [YoutubeVideo] = try! toastChannel.getVideos()
-//        let reevesVids: [YoutubeVideo] = try! reevesChannel.getVideos()
-//        let lilyVids: [YoutubeVideo] = try! lilyChannel.getVideos()
-//        let pokiVids: [YoutubeVideo] = try! pokiChannel.getVideos()
+        let toastVids: [YoutubeVideo] = try! toastChannel.getVideos()
+        let reevesVids: [YoutubeVideo] = try! reevesChannel.getVideos()
+        let lilyVids: [YoutubeVideo] = try! lilyChannel.getVideos()
+        let pokiVids: [YoutubeVideo] = try! pokiChannel.getVideos()
         
         print("getting vids")
         
-        
-//        let streamers: [OTVStreamer] = [
-//            .init(id: 0, name: "OfflineTV", platform: "Youtube", url: "youtube.com/otv", merch: streamerMerchInfo[0], youtubeVideos: videos),
-//            .init(id: 1, name: "LilyPichu", platform: "Twitch", url: "twitch.tv/lily", merch: streamerMerchInfo[1], youtubeVideos: videos),
-//            .init(id: 2, name: "Michael Reeves", platform: "Robotz", url: "twitch.tv/mykull", merch: streamerMerchInfo[2], youtubeVideos: videos),
-//            .init(id: 3, name: "Pokimane", platform: "Twitch", url: "twitch.tv/pokimane", merch: streamerMerchInfo[3], youtubeVideos: videos),
-//            .init(id: 4, name: "DisguisedToast", platform: "Youtube", url: "youtube.com/toast", merch: streamerMerchInfo[4], youtubeVideos: videos)
-//        ]
         let streamers: [OTVStreamer] = [
             .init(id: 0, name: "OfflineTV", platform: "Youtube", url: "youtube.com/otv", merch: streamerMerchInfo[0], youtubeVideos: otvVids, youtubeChannel: otvChannel),
-            .init(id: 1, name: "LilyPichu", platform: "Twitch", url: "twitch.tv/lily", merch: streamerMerchInfo[1], youtubeVideos: otvVids, youtubeChannel: otvChannel),
-            .init(id: 2, name: "Michael Reeves", platform: "Robotz", url: "twitch.tv/mykull", merch: streamerMerchInfo[2], youtubeVideos: otvVids, youtubeChannel: otvChannel),
-            .init(id: 3, name: "Pokimane", platform: "Twitch", url: "twitch.tv/pokimane", merch: streamerMerchInfo[3], youtubeVideos: otvVids, youtubeChannel: otvChannel),
-            .init(id: 4, name: "DisguisedToast", platform: "Youtube", url: "youtube.com/toast", merch: streamerMerchInfo[4], youtubeVideos: otvVids, youtubeChannel: otvChannel)
+            .init(id: 1, name: "LilyPichu", platform: "Twitch", url: "twitch.tv/lily", merch: streamerMerchInfo[1], youtubeVideos: lilyVids, youtubeChannel: lilyChannel),
+            .init(id: 2, name: "Michael Reeves", platform: "Robotz", url: "twitch.tv/mykull", merch: streamerMerchInfo[2], youtubeVideos: reevesVids, youtubeChannel: reevesChannel),
+            .init(id: 3, name: "Pokimane", platform: "Twitch", url: "twitch.tv/pokimane", merch: streamerMerchInfo[3], youtubeVideos: pokiVids, youtubeChannel: pokiChannel),
+            .init(id: 4, name: "DisguisedToast", platform: "Youtube", url: "youtube.com/toast", merch: streamerMerchInfo[4], youtubeVideos: toastVids, youtubeChannel: toastChannel)
         ]
+        
+        // uncomment when debugging so don't go over api quota
+//        let streamers: [OTVStreamer] = [
+//            .init(id: 0, name: "OfflineTV", platform: "Youtube", url: "youtube.com/otv", merch: streamerMerchInfo[0], youtubeVideos: otvVids, youtubeChannel: otvChannel),
+//            .init(id: 1, name: "LilyPichu", platform: "Twitch", url: "twitch.tv/lily", merch: streamerMerchInfo[1], youtubeVideos: otvVids, youtubeChannel: otvChannel),
+//            .init(id: 2, name: "Michael Reeves", platform: "Robotz", url: "twitch.tv/mykull", merch: streamerMerchInfo[2], youtubeVideos: otvVids, youtubeChannel: otvChannel),
+//            .init(id: 3, name: "Pokimane", platform: "Twitch", url: "twitch.tv/pokimane", merch: streamerMerchInfo[3], youtubeVideos: otvVids, youtubeChannel: otvChannel),
+//            .init(id: 4, name: "DisguisedToast", platform: "Youtube", url: "youtube.com/toast", merch: streamerMerchInfo[4], youtubeVideos: otvVids, youtubeChannel: otvChannel)
+//        ]
+        
         return OTVModel<OTVStreamer>(streamers: streamers)
     }
     
@@ -97,9 +99,60 @@ class OTVViewModel: ObservableObject {
      - Returns: an `Array<YoutubeVideo>` of the latest youtube videos from streamers
      */
     func getLatestVideos(latest numVid: Int) -> Array<YoutubeVideo>{
-        [ .init(id: "x2_nbkP6AU8", title: "BIG SCHNOOZER", thumbnailURL:
-            "https://i.ytimg.com/vi/x2_nbkP6AU8/mq1.jpg", rawDuration: "duration", rawDate: "2020-07-10T21:00:11Z"),
-          .init(id: "CfR0wln_p8s", title: "Mr. Cow reacts to Daily Dose of Internet", thumbnailURL: "https://img.youtube.com/vi/CfR0wln_p8s/0.jpg", rawDuration: "duration", rawDate: "2020-07-10T21:00:11Z")
-        ]
+        let numStreamers = streamers.count
+        
+        
+        var latestVids: [YoutubeVideo] = []
+        var indices: [Int] = [Int](repeating: 0, count: numStreamers)
+        var curRecent: YoutubeVideo
+        var mostRecentIndex: Int
+        
+        for _ in 1...numVid {
+            curRecent = streamers[0].youtubeVideos[indices[0]]
+            mostRecentIndex = 0
+            
+            for j in 0...(numStreamers-1) {
+                if compareDates(vid1: streamers[j].youtubeVideos[indices[j]], vid2: curRecent) > 0 {
+                    curRecent = streamers[j].youtubeVideos[indices[j]]
+                    mostRecentIndex = j
+                }
+            }
+            
+            latestVids.append(curRecent)
+            indices[mostRecentIndex]+=1
+        }
+        
+        return latestVids
+    }
+    
+    private func compareDates(vid1: YoutubeVideo, vid2: YoutubeVideo) -> Int {
+        let date1: [Int] = self.getDate(vid: vid1)
+        let date2: [Int] = self.getDate(vid: vid2)
+        
+        for i in 0...(date1.count - 1) {
+            if date1[i] != date2[i] {
+                return date1[i] - date2[i]
+            }
+        }
+        
+        return 0
+    }
+    
+    private func getDate(vid: YoutubeVideo) -> [Int]{
+        let firstHalf = vid.rawDate.components(separatedBy: "T")[0]
+        var secondHalf = vid.rawDate.components(separatedBy: "T")[1]
+        
+        let dateFormat = firstHalf.components(separatedBy: "-")
+        let year: Int = Int(dateFormat[0])!
+        let month: Int = Int(dateFormat[1])!
+        let day: Int = Int(dateFormat[2])!
+        
+        secondHalf.removeLast()
+        let timeFormat = secondHalf.components(separatedBy: ":")
+        let hour: Int = Int(timeFormat[0])!
+        let minute: Int = Int(timeFormat[1])!
+        let second: Int = Int(timeFormat[2])!
+        
+        return [year, month, day, hour, minute, second]
     }
 }

@@ -156,10 +156,10 @@
 				B244583624AF9C9E00D8443A /* View */,
 				B24457A124ADDC4600D8443A /* AppDelegate.swift */,
 				B24457A324ADDC4600D8443A /* SceneDelegate.swift */,
-				B24457A724ADDC4F00D8443A /* Assets.xcassets */,
-				B24457AC24ADDC4F00D8443A /* LaunchScreen.storyboard */,
 				B24457AF24ADDC4F00D8443A /* Info.plist */,
 				B24457A924ADDC4F00D8443A /* Preview Content */,
+				B24457A724ADDC4F00D8443A /* Assets.xcassets */,
+				B24457AC24ADDC4F00D8443A /* LaunchScreen.storyboard */,
 			);
 			path = OTVDraft;
 			sourceTree = "<group>";

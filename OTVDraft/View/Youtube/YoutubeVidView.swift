@@ -29,7 +29,7 @@ struct YoutubeVidView: View {
         }
         
         var body: some View {
-            VStack (alignment: .leading, spacing: 0) {
+            VStack (alignment: .leading) {
                 ZStack {
                     Button(action: {
                         let url: NSURL = URL(string: self.vid.url)! as NSURL

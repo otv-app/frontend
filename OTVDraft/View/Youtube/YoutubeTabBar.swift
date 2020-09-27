@@ -30,6 +30,7 @@ struct YoutubeTabBar: View {
                 //the padding and frame are called outside the dimension as those are not really part of the text, but the frame
                 Spacer()
                 Spacer()
+                Spacer()
                 Text("Youtube").toYoutubeLogo(fontScaleFactor: youtubeTitleScaleFactor, size: geometry.size.height, color: .white)
                     .padding()
                     .frame(width: geometry.size.width, height: geometry.size.height/10, alignment: .leading)

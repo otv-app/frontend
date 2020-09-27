@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OTVDraft
 This project is a draft copy of the OfflineTV IOS app made by Saahil, Patrick, and Cheng. I will be documenting the frontend changes here to be implemented into the main project.
 
@@ -169,3 +170,11 @@ Info.plist
 - [x] Add a button overlay on Youtube tab bar icons so it covers whole tab
 - [x] Try to abstract Youtube card view 
 - [ ] Fix home layout its kinda wack and off
+=======
+# Front end for OfflineTV App
+Things done: Custom Tab Bar
+
+Things in progress: merch page, yt page
+
+Things still left to do: twitch page, home page, twitter page pls (- patrick)
+>>>>>>> 841500bdff3f3aa41d695ea174b371dde8125dc2

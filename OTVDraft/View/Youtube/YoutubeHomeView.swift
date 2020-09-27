@@ -48,7 +48,7 @@ struct YoutubeHomeView: View {
                 VStack (alignment: .center) {
                     ForEach(viewModel.getLatestVideos(latest: 10)) { video in
                         HStack (spacing: 0) {
-                            YoutubeVidView(vid: video, size: size, w: size.width, h: size.height/2, titleScaleFactor: 0.04, descScaleFactor: 0.03)
+                            YoutubeVidView(vid: video, size: size, w: size.width / 1.1, h: size.height/2, titleScaleFactor: 0.04, descScaleFactor: 0.03)
                         }
                     }
                 }
